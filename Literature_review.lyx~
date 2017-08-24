@@ -987,8 +987,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figs/micropiv1.png
-	width 8cm
-	rotateOrigin center
+	rotateOrigin centerTop
 
 \end_inset
 
