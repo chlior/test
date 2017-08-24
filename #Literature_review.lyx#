@@ -1,0 +1,1025 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Literature Review
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Standard
+Electrorheological fluids (ERF) are mixtures of dielectric fluid and active
+ dipole particles.
+ The rheological properties (the relationship between the shear stress and
+ the shear strain rate for liquids 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Doraiswamy:2002}
+\end_layout
+
+\end_inset
+
+, in simple Newtonian fluid cases it is only viscosity 
+\begin_inset Formula $\eta$
+\end_inset
+
+) change when an external electrical field is applied.
+\end_layout
+
+\begin_layout Section
+Rheology
+\end_layout
+
+\begin_layout Standard
+In this short section we briefly review the central parameters and definitions
+ of the properties discussed later in the context of ERF.
+ Rheological properties of our interest are the shear stress (
+\begin_inset Formula $\tau$
+\end_inset
+
+), shear rate or shear strain rate (
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+), dynamic viscosity (
+\begin_inset Formula $\eta$
+\end_inset
+
+) and kinematic viscosity (
+\begin_inset Formula $\nu$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The shear stress (
+\begin_inset Formula $\tau$
+\end_inset
+
+, N m
+\begin_inset Formula $^{-2}$
+\end_inset
+
+) is defined as the component of stress coplanar with a material cross section.
+ Shear stress arises from the force vector component 
+\begin_inset Formula $F$
+\end_inset
+
+ parallel to the cross section, 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\tau=\frac{F}{A}\label{eq:tau}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The shear rate(
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+, sec
+\begin_inset Formula $^{-1}$
+\end_inset
+
+) is commonly defined as the rate of change of velocity 
+\begin_inset Formula $u$
+\end_inset
+
+, in the component parallel to the applied force, at which one layer of
+ fluid passes over an adjacent layer (inter-layer infinitesimal distance
+ is 
+\begin_inset Formula $dy$
+\end_inset
+
+): 
+\begin_inset Formula 
+\begin{equation}
+\dot{\gamma}=\frac{du}{dy}\label{eq:gamma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The dynamic viscosity (
+\begin_inset Formula $\eta$
+\end_inset
+
+) is the fluid property that relates shearing stress and fluid motion.
+ For Newtonian fluids, the absolute viscosity (
+\begin_inset Formula $\eta$
+\end_inset
+
+) can be calculated as a linear rate of shear stress to shear rate: 
+\begin_inset Formula 
+\begin{equation}
+\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{eq:eta}
+\end{equation}
+
+\end_inset
+
+and the kinematic viscosity (
+\begin_inset Formula $\nu$
+\end_inset
+
+) is then 
+\begin_inset Formula 
+\begin{equation}
+\nu=\frac{\eta}{\rho}\label{eq:nu}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For non-Newtonian fluids the shearing stress is not linearly related to
+ the rate of shearing strain.
+ For simplicity an apparent viscosity is sometimes defined as 
+\begin_inset Formula 
+\begin{equation}
+\eta_{a}=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{eq:eta_a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are several rheological models, classified into Bingham plastic and
+ pseudo-plastic (that have non-zero yield stress), shear-thinning and shear-thic
+kening (that increase or decrease resistance with stronger shear) as can
+ see in figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:non-newtonian"
+
+\end_inset
+
+.
+ Each of the lines can be described by one of the theoretical models.
+ For instance, a power law (or Ostwald) model, in a form of: 
+\begin_inset Formula 
+\begin{equation}
+\eta=K\dot{\gamma}^{n-1}\label{eq:power-law}
+\end{equation}
+
+\end_inset
+
+where for Newtonian fluids 
+\begin_inset Formula $n=1$
+\end_inset
+
+ resulting in 
+\begin_inset Formula $\eta=K$
+\end_inset
+
+, shear-thinning fluids 
+\begin_inset Formula $n<1$
+\end_inset
+
+, and shear-thickening fluids 
+\begin_inset Formula $n>1$
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+placement !ht
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename D:/Photos and Documents/לימודים/תואר 2/תזה/אלכס ליברזון/Thesis work/Thesis - Copy/figs/no_newtonian_1.png
+	width 50text%
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:non-newtonian"
+
+\end_inset
+
+.
+ Classification of fluids according to shear stress - shear rate relation:
+ Pseudoplastic (shear thinning), Bingham and Bingham pseudoplastic all show
+ reduction in apparent viscosity with increasing shear rate.
+ Dilatant (shear thickening) show opposite behavior.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+microFlow in Channel
+\end_layout
+
+\begin_layout Standard
+\noindent
+Nominally, microchannels can be defined as channels whose dimensions are
+ less than 1 millimeter and greater than 1 micron.Above 1 millimeter the
+ flow exhibits behavior that is the same as most macroscopic flows.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sharp:2005"
+
+\end_inset
+
+ Fluids that are Newtonian at ordinary rates of shear and extension can
+ become non-Newtonian at very high rates.
+ The pressure gradient becomes especially large in small cross section channels.
+ Electrokinetic effects occur at the interface between liquids and solids
+ such as glass due to chemical interaction.
+ The result is an electrically charged double layer that induces a charge
+ distribution in a very thin layer of fluid close to the wall.
+ Application of an electric field to this layer creates a body force capable
+ of moving the fluid as if it were slipping over the wall.
+ It is important to aware that effects such the electroosmotic effect and
+ the electrophoretic effect (charges around particles) are occuring at small
+ scale.
+ At any electrode immersed in an electrolyte solution,a specific interfacial
+ region is formed.This region is called the double layer.
+ The electrical properties of such a layer are important, since they significant
+ly affect the electrochemical measurements.
+ The pressure drop in microchannel flow can be very large, and since all
+ of the work of the pressure difference against the mean flow ultimately
+ goes into viscous dissipation.
+ Liquids in contact with solids have surface tension in the interface.
+ At the microscale, the surface tension force becomes one of the most important
+ forces, far exceeding body forces such as gravity and electrostatic fields.
+ Slip boundery may exist due to the large shear forces apllied on the wall.
+ Phenomenon of slip: Any flow situation where the tangential fluid velocity
+ component appears to be different from that of the solid surface immediately
+ in contact with it.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen:2006"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Continuum Fluid Mechanics At Small Scales
+\end_layout
+
+\begin_layout Standard
+Even in very small devices and geometries, fluids, especially liquids, can
+ be considered to be continuous.
+ Hence, well-established continuum approaches for analysing flows can be
+ used.
+ The three primary conservation laws that are used to model thermofluid
+ dynamics problems are conservation of mass, momentum, and energy.
+ In partial differential equation form, these are 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen:2006"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\frac{{\partial\rho}}{{\partial t}}+\frac{{\partial\rho}}{{\partial{x_{i}}}}\left({\rho{u_{i}}}\right)=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+[\frac{\partial}{{\partial t}}\left({r{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+[\frac{\partial}{{\partial t}}\left({\rho e}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}e}\right)=-p\frac{{\partial{u_{i}}}}{{\partial{x_{i}}}}+{\tau_{ji}}\frac{{\partial{u_{i}}}}{{\partial{x_{j}}}}+\frac{{\partial{q_{i}}}}{{\partial{x_{i}}}}]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ERF
+\end_layout
+
+\begin_layout Standard
+The electrorheology effect was first discover by
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Winslow:1949"
+
+\end_inset
+
+, yet the benefits of the ERF to numerous applications are yet to be discovered.
+ The unique ability to change viscosity with fast response time provides
+ new tools and solutions to dampers, actuators and clutches.
+ There are recent works on micro-fluidic applications, e.g.
+ the so-called "giant" ERF (GERF) effect was discover by
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wen:2003a"
+
+\end_inset
+
+ and GERF microvalves were recently introduced by
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wang:2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ERF contain at least two main components of a carrier fluid (solvent) and
+ particles.
+ Upon a strong electric field applied, particles connect to form a structure
+ that look like a chain or a string.
+ These connected particles create a stronger dipole and form micro solid
+ structures inside the fluid.
+ These formations change the viscosity of the fluid towards a more viscous
+ state.
+\end_layout
+
+\begin_layout Subsection
+ER fluid behavior
+\end_layout
+
+\begin_layout Paragraph
+Volume fraction:
+\end_layout
+
+\begin_layout Standard
+It is expected that with larger number of particles in the fluid, the higher
+ the yield strength is of the fluid.
+ The volume fraction of some phase is defined as: 
+\begin_inset Formula 
+\begin{equation}
+{\varphi_{i}}=\frac{{v_{i}}}{{\sum{v_{i}}}}\times100\%
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ is a volume of particles phase, and it is measured as a percentage of a
+ total volume (including the solute and the particles).
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Paragraph
+Dielectric constant:
+\end_layout
+
+\begin_layout Plain Layout
+A quantity that defines the ability of a substance to store electrical energy
+ in an applied electric field: 
+\begin_inset Formula 
+\begin{equation}
+{{\varepsilon}_{r}}(\omega)=\frac{\varepsilon(\omega)}{{{\varepsilon}_{0}}}=\varepsilon{{(\omega)}_{r,real}}+i\cdot\varepsilon{{(\omega)}_{r,imagenery}}
+\end{equation}
+
+\end_inset
+
+where ..
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+alex{
+\end_layout
+
+\end_inset
+
+define the terms in the equation
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+alex{
+\end_layout
+
+\end_inset
+
+we do not write terms using 
+\begin_inset Quotes eld
+\end_inset
+
+names
+\begin_inset Quotes erd
+\end_inset
+
+, but only subscripts and define them, i.e.
+ instead of 
+\begin_inset Formula $()_{real}$
+\end_inset
+
+ we use 
+\begin_inset Formula $\Re()$
+\end_inset
+
+ and 
+\begin_inset Formula $\Im()$
+\end_inset
+
+ and write 
+\begin_inset Formula $\Re(\omega)$
+\end_inset
+
+ is a real part of a complex frequency - i actually do not understand what
+ is written there ?.
+ I suggest to read Klingenberg paper and adopt his notation
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Paragraph
+Shear strain rate:
+\end_layout
+
+\begin_layout Plain Layout
+describes the shearing deformation rate of change in time for two dimensional
+ channel flow.
+ 
+\begin_inset Formula 
+\begin{equation}
+\dot{\gamma}=\frac{u}{h}=\frac{\partial{u}}{\partial{y}}+\frac{\partial{v}}{\partial{x}}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $u$
+\end_inset
+
+ is the velocity along the channel and 
+\begin_inset Formula $h$
+\end_inset
+
+ is the channel height.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are the Cartesian coordinate axis.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+General model of stress
+\end_layout
+
+\begin_layout Standard
+The general shear stress is important property of the ER fluid.
+ It strongly affecting the varies ERF application described above.
+ The most widely accepted model of ERF has been proposed by
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Klingenberg:1991"
+
+\end_inset
+
+.
+ It relates the shear stress to the shear rate and electrical field: 
+\begin_inset Formula 
+\begin{equation}
+\tau(\dot{\gamma},E)=\tau_{y}(E)+\eta_{\inf}\dot{\gamma}+\tau_{ex}(\dot{\gamma},E)\label{eq:klingenberg}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\tau_{y}(E)$
+\end_inset
+
+ is the dynamic yield stress.
+ 
+\begin_inset Formula $\eta_{\inf}\dot{\gamma}$
+\end_inset
+
+ is the viscous contribution to the shear stress at large shear rates and
+ no electric field.
+ 
+\begin_inset Formula $\tau_{ex}(\dot{\gamma},E)$
+\end_inset
+
+ is the excess stress representing the coupling of hydrodynamic and electrostati
+c polarization interactions.
+ Using experimental data We able to obtain these terms.Then the general shear
+ stress can be calculate.
+\end_layout
+
+\begin_layout Paragraph
+Mason number (Mn)
+\end_layout
+
+\begin_layout Standard
+: This is the key dimensionless parameter developed by
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Allan:1962"
+
+\end_inset
+
+.
+ Mn defines when the ER effect is dominant over viscous effects in the flow.
+ When Mn 
+\begin_inset Formula $\ll1$
+\end_inset
+
+, the characteristics of the fluid depend strongly on electric field.
+ For Mn 
+\begin_inset Formula $>1$
+\end_inset
+
+ the viscous effects are dominant: 
+\begin_inset Formula 
+\begin{equation}
+Mn=\frac{{{\eta_{a}}\dot{\gamma}}}{{2{\varepsilon_{0}}{K_{f}}{{\left({\beta E}\right)}^{2}}}}\label{eq:Mn}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+ is the permittivity of the free space, 
+\begin_inset Formula $K_{f}$
+\end_inset
+
+ is the relative permittivity of the carrier liquid, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is the dielectric mismatch parameter.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ is the electric field (effective viscosity 
+\begin_inset Formula $\eta_{a}$
+\end_inset
+
+ is defined in the introduction)
+\end_layout
+
+\begin_layout Standard
+\noindent
+It is possible to estimate the apparent viscosity using the pressure drop
+ 
+\begin_inset Formula $\Delta P$
+\end_inset
+
+ (using differential pressure transducer) and wall shear stress measurements
+ (using 
+\begin_inset Formula $\mu$
+\end_inset
+
+PIV): 
+\begin_inset Formula 
+\begin{equation}
+\eta_{a}=\frac{{A\Delta P}}{S\frac{{\partial u}}{{\partial y}}\Bigr|_{\substack{y=H/2}
+}}\label{eq:apparent viscosity}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $S,A$
+\end_inset
+
+ are the wall surface and cross-section area, respectively.
+\end_layout
+
+\begin_layout Section
+GERF
+\end_layout
+
+\begin_layout Section
+Non-intrusive experimental method
+\end_layout
+
+\begin_layout Subsection
+PIV
+\end_layout
+
+\begin_layout Standard
+\noindent
+Particle image velocimetry (PIV) is a quantitative optical measurement technique
+ that provides instantaneous two-dimensional velocity fields.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Pair images of flow are capture with a known time gap.
+ Field movement is provide using pattern matching technique.
+ Then velocity field is then calculated from the time and distance data.
+ In case of colloids we will track the contrast between the particles.
+ In other case when the fluid is invisible the fluid should be seeded.
+\end_layout
+
+\begin_layout Standard
+The fluid pattern visibility alternation are Shadow-graphic or Florescent
+ seeded particles.
+ Hence pattern on fluid are normally doesn't exist the fluid 
+\end_layout
+
+\begin_layout Standard
+is possible to capture The fluid is contain particles by applying light
+ source place opposite to the camera and see the shadows of the particles.
+ In this technique the particles we assume the particles have the same dynamic
+ properties as the carrier fluid, and the particles are at size and color
+ that make them visible to the camera.
+ The other way is seeding The other is seeding.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%PIV intro
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Particle seeding (specify when sidding is not necessery)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Florecent vs shadow-graphic
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Pattern Matching (correleation: single pass multi pass, multi fft)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mu$
+\end_inset
+
+PIV
+\end_layout
+
+\begin_layout Standard
+Microscopic PIV or microPIV or 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+mpiv
+\end_layout
+
+\end_inset
+
+ is a tool to measure the flow of fluid through a microscale device using
+ an inverted microscope.
+ In regular planar PIV the light sheet applied perpendicularly to the imaging
+ axis of the camera and light sheet thickness defines the location of the
+ measurement plane.
+ In 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+mpiv
+\end_layout
+
+\end_inset
+
+ the light sheet is replaced by a volume illumination of the flow, and the
+ depth of field is determined by the numerical aperture of the objective
+ lens of the microscope.
+ As schematic view of a typical 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+mpiv
+\end_layout
+
+\end_inset
+
+ system is shown in figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Some-caption-for"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/micropiv1.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Some caption for the figure.
+ Don't forget adding label to the figure and later using the cross-reference
+ to it.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Some-caption-for-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
