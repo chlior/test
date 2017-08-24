@@ -93,19 +93,18 @@ The Electrorehology effect
 
 
 \begin_inset CommandInset citation
-LatexCommand citealt
-after "1949"
+LatexCommand citet
 key "Winslow:1949"
 
 \end_inset
 
-, will be the scope of this research; with a special emphasis into the micro
- flow scale domain.
- The effect causes the Electrorehology Effect Fluid
+ at 1949, will be the scope of this research; with a special emphasis into
+ the micro flow scale domain.
+ The effect causes the Electrorehology Fluid
 \begin_inset space ~
 \end_inset
 
-(ERF) to change its viscosity up to solid-like state, thru the application
+(ERF) to change its viscosity up to solid-like state, through the application
  of a respective electrical field.
  The unique ability to change viscosity with fast response times, provide
  new tools and solutions for dampers, actuators and clutches.
@@ -116,18 +115,18 @@ key "Winslow:1949"
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "Wen:2003a"
 
 \end_inset
 
- into GERF micro-valves recently introduced by
+ 2003 and implemented into GERF micro-valves as recently shown by
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "Wang:2011"
 
 \end_inset
@@ -181,7 +180,7 @@ PIV) technique.
 \begin_inset Formula $\mu$
 \end_inset
 
-PIV method, it is possible to obtain a velocity filed of the general motion
+PIV method, it is possible to obtain a velocity field of the general motion
  of the fluid.
  Further more, it is possible to obtain separate information with respect
  to the carrier fluid and the acting particles.
@@ -189,42 +188,6 @@ PIV method, it is possible to obtain a velocity filed of the general motion
 
 \begin_layout Standard
 This work aims to to identify ERF/GERF properties.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lior{kishkush}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-od kishkush
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mpiv
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
