@@ -14,9 +14,9 @@
 
 
 \Title{\textbf{TITLE OF THE THESIS}}
-\Author{\textbf{\large Ploni Israeli}}
-\Year{January 2015}
-\Supervisor{Prof. Israel Ploni}
+\Author{\textbf{\large Lior Chertkow}}
+\Year{January 2017}
+\Supervisor{Prof. Alex Liberzon}
 \Department{School of Mechanical Engineering}
 \Degree{Master of Science in Mechanical Engineering}
 % \Degree{Doctor of Philosophy}
@@ -349,7 +349,7 @@ filename "Summary_and_discussion.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Conclusion.lyx"
+filename "Conclusions.lyx"
 
 \end_inset
 

@@ -83,8 +83,11 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-This thesis studies the phenomena of the Electrorehology effect(ER) discover
- by
+The Electrorehology effect
+\begin_inset space ~
+\end_inset
+
+(ER) phenomena, discovered by
 \begin_inset space ~
 \end_inset
 
@@ -96,13 +99,18 @@ key "Winslow:1949"
 
 \end_inset
 
- at micro flow scale.
- The effect cause the fluid change his viscosity up to solid-like state
- with respect to electrical field applying.
- The unique ability to change viscosity with fast response time provides
- new tools and solutions to dampers, actuators and clutches.
- There are recent works on micro-fluidic applications, e.g.
- the so-called "giant" ERF (GERF) effect was discover by
+, will be the scope of this research; with a special emphasis into the micro
+ flow scale domain.
+ The effect causes the Electrorehology Effect Fluid
+\begin_inset space ~
+\end_inset
+
+(ERF) to change its viscosity up to solid-like state, thru the application
+ of a respective electrical field.
+ The unique ability to change viscosity with fast response times, provide
+ new tools and solutions for dampers, actuators and clutches.
+ As an example, works on micro-fluidic applications implement the so-called
+ "giant" ERF (GERF) effect discover by
 \begin_inset space ~
 \end_inset
 
@@ -113,7 +121,7 @@ key "Wen:2003a"
 
 \end_inset
 
- and GERF microvalves were recently introduced by
+ into GERF micro-valves recently introduced by
 \begin_inset space ~
 \end_inset
 
@@ -125,10 +133,8 @@ key "Wang:2011"
 \end_inset
 
 .
- Has application advances and new features become, the ER fluid required
- to operate in less volume flow, hence smaller particles diameter.
- ERF are mixtures of dielectric fluid and active dipole particles.
- The ERF approximated particles diameter scale is 10 
+ ERF are suspensions of a dielectric fluid and active dipole particles.
+ The ERF particles' diameter are about 10 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -139,49 +145,93 @@ key "Gawade:2012"
 
 \end_inset
 
-, for GERF the scale is nano-meter 
+, and for GERF the scale is in the nanometer regime 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wen:2003a"
 
 \end_inset
 
-
+.
+ Advances in applications and new requested features pose requirements upon
+ the ERF as to operate with less volume flow and hence smaller particle
+ diameter.
+ 
 \end_layout
 
 \begin_layout Standard
-The scope of the present thesis is to to explore the phenomena of GERF in
- micro scale.
- The explore will preformed using Microscope Particle Image Velocimetry(
+The present study, therefore, will explore the phenomena of GERF in the
+ micro scale domain.
+ The research will be preformed using the Micro Particle Image Velocimetry(
 \begin_inset Formula $\mu$
 \end_inset
 
 PIV) technique.
- The nano scale face many difficulties, the main difficulty is to observe
- the flow in very small domain.
- To track particles of nano size diameter, or to find a common behaviour
- at that scale with the regular technique, such as SEM(scanning electron
- microscope) ,Rheometer ect..
- isn't efficient enough.
- With 
+ The micro scale domain pose many difficulties.
+ The main obstacle is the observation capability of the flow in a very small
+ area.
+ Nano-sized diameter particles-tracking or finding common behaviors at that
+ scale with regular techniques such as SEM
+\begin_inset space ~
+\end_inset
+
+(scanning electron microscope), Rheometers.
+ etc; are not efficient enough.
+ With the 
 \begin_inset Formula $\mu$
 \end_inset
 
-PIV method it is possible to obtain a velocity filed of the general motion
+PIV method, it is possible to obtain a velocity filed of the general motion
  of the fluid.
- Further more it is possible to obtain separate information with respect
- to the carrier fluid and with respect to the acting particles.
+ Further more, it is possible to obtain separate information with respect
+ to the carrier fluid and the acting particles.
 \end_layout
 
 \begin_layout Standard
-In this thesis we aim to achieve a whole process to identify ERF/GERF properties.
+This work aims to to identify ERF/GERF properties.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lior{kishkush}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+od kishkush
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mpiv
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The process will include.
- Experiment setup process procedure, Measurement equipment and software
- , and specific method to obtain important properties.
- Finale we would like to use these techniques to discover new phenomenons.
+The study will include the preparation of the experimental setup and the
+ process procedure, Measurement equipment and related software , and specific
+ methods to obtain the ERF controlling properties in the micro domain.
+ Ultimately, we would like to use these techniques to identify new phenomena.
 \end_layout
 
 \begin_layout Standard
