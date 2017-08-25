@@ -87,21 +87,10 @@ Background
 \end_layout
 
 \begin_layout Standard
-Electrorheological fluids (ERF) are mixtures of dielectric fluid and active
- dipole particles.
- The rheological properties (the relationship between the shear stress and
- the shear strain rate for liquids 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Doraiswamy:2002"
-
-\end_inset
-
-, in simple Newtonian fluid cases it is only viscosity 
-\begin_inset Formula $\eta$
-\end_inset
-
-) change when an external electrical field is applied.
+Electrorheological fluids (ERF) are mixtures of active dipole particles
+ with a dielectric fluid.
+ The rheological properties of such substances, therefore, change when an
+ external electrical field is applied.
 \end_layout
 
 \begin_layout Section
@@ -109,9 +98,29 @@ Rheology
 \end_layout
 
 \begin_layout Standard
-In this short section we briefly review the central parameters and definitions
- of the properties discussed later in the context of ERF.
- Rheological properties of our interest are the shear stress (
+The Rheology branch or physics deals with deformation and flow of matter.
+ Among others it focus on the non-Newtonian flow of liquids as well as the
+ plastic flow of solids.
+ The relationship between the shear stress and the shear strain rate for
+ liquids, in simple Newtonian fluid cases turns to be only their viscosity
+ 
+\begin_inset Formula $(\eta$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Doraiswamy:2002"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Rheological properties of interest in the context of ERF, are the shear
+ stress (
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -131,7 +140,12 @@ In this short section we briefly review the central parameters and definitions
 \end_layout
 
 \begin_layout Standard
-The shear stress (
+\noindent
+The 
+\series bold
+shear stress
+\series default
+ (
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -160,7 +174,12 @@ The shear stress (
 \end_layout
 
 \begin_layout Standard
-The shear rate(
+\noindent
+The 
+\series bold
+shear rate
+\series default
+ (
 \begin_inset Formula $\dot{\gamma}$
 \end_inset
 
@@ -181,7 +200,7 @@ The shear rate(
 ): 
 \begin_inset Formula 
 \begin{equation}
-\dot{\gamma}=\frac{du}{dy}\label{eq:shear rate}
+\dot{\gamma}=\frac{d\gamma}{dt}=\frac{du}{dy}\label{eq:shear rate}
 \end{equation}
 
 \end_inset
@@ -190,24 +209,50 @@ The shear rate(
 \end_layout
 
 \begin_layout Standard
-The dynamic viscosity (
+\noindent
+where 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is 
+\series bold
+shearing strain
+\series default
+ and 
+\begin_inset Formula $dt$
+\end_inset
+
+ is the time change.
+ The 
+\series bold
+dynamic viscosity
+\series default
+ (
 \begin_inset Formula $\eta$
 \end_inset
 
 ) is the fluid property that relates shearing stress and fluid motion.
- For Newtonian fluids, the absolute viscosity (
+ For Newtonian fluids, the 
+\series bold
+dynamic viscosity isabsolute viscosity
+\series default
+ (
 \begin_inset Formula $\eta$
 \end_inset
 
 ) can be calculated as a linear rate of shear stress to shear rate: 
 \begin_inset Formula 
 \begin{equation}
-\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{dynamic viscosity}
+\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}=const.\label{dynamic viscosity}
 \end{equation}
 
 \end_inset
 
-and the kinematic viscosity (
+and the 
+\series bold
+kinematic viscosity
+\series default
+ (
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -223,20 +268,31 @@ and the kinematic viscosity (
 \end_layout
 
 \begin_layout Standard
-If the viscosity is influenced by the shear rate, it is important to specify
- that the values are different from the constant ones of an ideally viscous
- fluid.
- The values obtained are 'apparent viscosity' values.
- They represent one point of the viscosity function only
+\noindent
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density of the liquid.
 \end_layout
 
 \begin_layout Standard
+\noindent
+If the viscosity is influenced by the shear rate, it is important to emphasize
+ that, the values are different from the constant ones related to an ideally
+ viscous fluid.
+ The values obtained are apparent viscosity values.
+ They represent one point of the viscosity function only.
+\end_layout
+
+\begin_layout Standard
+\noindent
 For non-Newtonian fluids the shearing stress is not linearly related to
  the rate of shearing strain.
  For simplicity an apparent viscosity is sometimes defined as 
 \begin_inset Formula 
 \begin{equation}
-\eta_{a}=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{apparent viscosity Non-newtonian}
+\eta_{a}=\eta(\dot{\gamma})=\frac{\tau}{du/dy}\label{apparent viscosity Non-newtonian}
 \end{equation}
 
 \end_inset
@@ -245,6 +301,7 @@ For non-Newtonian fluids the shearing stress is not linearly related to
 \end_layout
 
 \begin_layout Standard
+\noindent
 There are several rheological models, classified into Bingham plastic and
  pseudo-plastic (that have non-zero yield stress), shear-thinning and shear-thic
 kening (that increase or decrease resistance with stronger shear) as can
@@ -390,7 +447,7 @@ Even in very small devices and geometries, fluids, especially liquids, can
  be considered to be continuous
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Trung:2006"
+key "nguyen:2006"
 
 \end_inset
 

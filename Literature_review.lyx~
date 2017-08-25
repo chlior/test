@@ -87,27 +87,10 @@ Background
 \end_layout
 
 \begin_layout Standard
-Electrorheological fluids (ERF) are mixtures of dielectric fluid and active
- dipole particles.
- The rheological properties (the relationship between the shear stress and
- the shear strain rate for liquids 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-citep{Doraiswamy:2002}
-\end_layout
-
-\end_inset
-
-, in simple Newtonian fluid cases it is only viscosity 
-\begin_inset Formula $\eta$
-\end_inset
-
-) change when an external electrical field is applied.
+Electrorheological fluids (ERF) are mixtures of active dipole particles
+ and a dielectric fluid.
+ The rheological properties of such substances, therefore, change when an
+ external electrical field is applied.
 \end_layout
 
 \begin_layout Section
@@ -115,9 +98,17 @@ Rheology
 \end_layout
 
 \begin_layout Standard
-In this short section we briefly review the central parameters and definitions
- of the properties discussed later in the context of ERF.
- Rheological properties of our interest are the shear stress (
+The Rheology branch or physics deals with deformation and flow of matter.
+ Among others, it focus on the non-Newtonian flow of liquids, as well as,
+ the plastic flow of solids.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+Rheological properties of interest in the context of ERF, are the shear
+ stress (
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -134,10 +125,30 @@ In this short section we briefly review the central parameters and definitions
 \end_inset
 
 ).
+ The relationship between the shear stress and the shear strain rate for
+ liquids, in simple Newtonian fluid cases turns to be only their viscosity
+ 
+\begin_inset Formula $(\eta$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Doraiswamy:2002"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-The shear stress (
+\noindent
+\align block
+The 
+\series bold
+shear stress
+\series default
+ (
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -145,19 +156,20 @@ The shear stress (
 \begin_inset Formula $^{-2}$
 \end_inset
 
-) is defined as the component of stress coplanar with a material cross section.
+) is defined as the component of stress, coplanar with the material's cross
+ section.
  Shear stress arises from the force vector component 
-\begin_inset Formula $F$
+\begin_inset Formula $(F)$
 \end_inset
 
- parallel to the cross section, 
-\begin_inset Formula $A$
+ parallel to the cross section area (
+\begin_inset Formula $A)$
 \end_inset
 
 : 
 \begin_inset Formula 
 \begin{equation}
-\tau=\frac{F}{A}\label{eq:tau}
+\tau=\frac{F}{A}\label{eq:sheer stress}
 \end{equation}
 
 \end_inset
@@ -166,7 +178,12 @@ The shear stress (
 \end_layout
 
 \begin_layout Standard
-The shear rate(
+\noindent
+The 
+\series bold
+shear rate
+\series default
+ (
 \begin_inset Formula $\dot{\gamma}$
 \end_inset
 
@@ -174,20 +191,20 @@ The shear rate(
 \begin_inset Formula $^{-1}$
 \end_inset
 
-) is commonly defined as the rate of change of velocity 
+) is commonly defined as the rate of change of the velocity component parallel
+ to the applied force (
 \begin_inset Formula $u$
 \end_inset
 
-, in the component parallel to the applied force, at which one layer of
- fluid passes over an adjacent layer (inter-layer infinitesimal distance
- is 
+), at which one layer of fluid passes over an adjacent layer (inter-layer
+ infinitesimal distance 
 \begin_inset Formula $dy$
 \end_inset
 
 ): 
 \begin_inset Formula 
 \begin{equation}
-\dot{\gamma}=\frac{du}{dy}\label{eq:gamma}
+\dot{\gamma}=\frac{d\gamma}{dt}=\frac{du}{dy}\label{eq:shear rate}
 \end{equation}
 
 \end_inset
@@ -196,31 +213,62 @@ The shear rate(
 \end_layout
 
 \begin_layout Standard
-The dynamic viscosity (
+\noindent
+where 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is 
+\series bold
+shearing strain
+\series default
+ and 
+\begin_inset Formula $dt$
+\end_inset
+
+ is the time differential.
+ The 
+\series bold
+dynamic viscosity
+\series default
+ (
 \begin_inset Formula $\eta$
 \end_inset
 
 ) is the fluid property that relates shearing stress and fluid motion.
- For Newtonian fluids, the absolute viscosity (
+ For 
+\shape italic
+Newtonian fluids
+\shape default
+, the dynamic viscosity is constant and named as
+\series bold
+ absolute viscosity
+\series default
+ (
 \begin_inset Formula $\eta$
 \end_inset
 
-) can be calculated as a linear rate of shear stress to shear rate: 
+) which can be calculated as a linear rate of shear stress to shear rate:
+ 
 \begin_inset Formula 
 \begin{equation}
-\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{eq:eta}
+\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}=const.\label{dynamic viscosity}
 \end{equation}
 
 \end_inset
 
-and the kinematic viscosity (
+and the 
+\series bold
+kinematic viscosity
+\series default
+ (
 \begin_inset Formula $\nu$
 \end_inset
 
 ) is then 
 \begin_inset Formula 
 \begin{equation}
-\nu=\frac{\eta}{\rho}\label{eq:nu}
+\nu=\frac{\eta}{\rho}\label{kinematic viscosity}
 \end{equation}
 
 \end_inset
@@ -229,12 +277,35 @@ and the kinematic viscosity (
 \end_layout
 
 \begin_layout Standard
+\noindent
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density of the liquid.
+\end_layout
+
+\begin_layout Standard
+\noindent
+If the viscosity is influenced by the shear rate it is important to emphasize,
+ that the values are different from the constant ones related to an ideally
+ viscous fluid.
+ The values obtained are apparent viscosity values.
+ They represent one point of the viscosity function only.
+\end_layout
+
+\begin_layout Standard
+\noindent
 For non-Newtonian fluids the shearing stress is not linearly related to
  the rate of shearing strain.
- For simplicity an apparent viscosity is sometimes defined as 
+ For simplicity an
+\series bold
+ apparent viscosity
+\series default
+ is sometimes defined as 
 \begin_inset Formula 
 \begin{equation}
-\eta_{a}=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{eq:eta_a}
+\eta_{a}=\eta(\dot{\gamma})=\frac{\tau}{du/dy}\label{apparent viscosity Non-newtonian}
 \end{equation}
 
 \end_inset
@@ -243,10 +314,11 @@ For non-Newtonian fluids the shearing stress is not linearly related to
 \end_layout
 
 \begin_layout Standard
+\noindent
 There are several rheological models, classified into Bingham plastic and
  pseudo-plastic (that have non-zero yield stress), shear-thinning and shear-thic
 kening (that increase or decrease resistance with stronger shear) as can
- see in figure
+ be seen in figure
 \begin_inset space ~
 \end_inset
 
@@ -262,24 +334,40 @@ reference "fig:non-newtonian"
  For instance, a power law (or Ostwald) model, in a form of: 
 \begin_inset Formula 
 \begin{equation}
-\eta=K\dot{\gamma}^{n-1}\label{eq:power-law}
+\eta=K\dot{\gamma}^{n-1}\label{eq:dynamic viscosity power-law}
 \end{equation}
 
 \end_inset
 
-where for Newtonian fluids 
+for Newtonian fluids 
 \begin_inset Formula $n=1$
 \end_inset
 
- resulting in 
+, resulting in 
 \begin_inset Formula $\eta=K$
 \end_inset
 
-, shear-thinning fluids 
+, 
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+shear-thinning fluids 
 \begin_inset Formula $n<1$
 \end_inset
 
-, and shear-thickening fluids 
+, 
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+shear-thickening fluids 
 \begin_inset Formula $n>1$
 \end_inset
 
@@ -347,8 +435,9 @@ key "sharp:2005"
  Fluids that are Newtonian at ordinary rates of shear and extension can
  become non-Newtonian at very high rates.
  The pressure gradient becomes especially large in small cross section channels.
- Electrokinetic effects occur at the interface between liquids and solids
- such as glass due to chemical interaction.
+ At any electrode immersed in an electrolyte solution Electrokinetic effects
+ occur at the interface between liquids and solids such as glass due to
+ chemical interaction.
  The result is an electrically charged double layer that induces a charge
  distribution in a very thin layer of fluid close to the wall.
  Application of an electric field to this layer creates a body force capable
@@ -356,8 +445,6 @@ key "sharp:2005"
  It is important to aware that effects such the electroosmotic effect and
  the electrophoretic effect (charges around particles) are occuring at small
  scale.
- At any electrode immersed in an electrolyte solution,a specific interfacial
- region is formed.This region is called the double layer.
  The electrical properties of such a layer are important, since they significant
 ly affect the electrochemical measurements.
  The pressure drop in microchannel flow can be very large, and since all
@@ -386,7 +473,14 @@ Continuum Fluid Mechanics At Small Scales
 
 \begin_layout Standard
 Even in very small devices and geometries, fluids, especially liquids, can
- be considered to be continuous.
+ be considered to be continuous
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nguyen:2006"
+
+\end_inset
+
+.
  Hence, well-established continuum approaches for analysing flows can be
  used.
  The three primary conservation laws that are used to model thermofluid
@@ -431,8 +525,24 @@ key "nguyen:2006"
 
 \end_layout
 
+\begin_layout Standard
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+is the density, 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+is velocity componant, 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+is the body force reffer to gravitation,...
+\end_layout
+
 \begin_layout Section
-ERF
+Electrorheological Fluid (ERF)
 \end_layout
 
 \begin_layout Standard
@@ -474,6 +584,16 @@ key "Wang:2011"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Change openning (Duplicated)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -716,7 +836,7 @@ Mason number (Mn)
 \end_layout
 
 \begin_layout Standard
-: This is the key dimensionless parameter developed by
+This is the key dimensionless parameter developed by
 \begin_inset space ~
 \end_inset
 
@@ -772,6 +892,16 @@ where
 
 \begin_layout Standard
 \noindent
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I think this is not the right place.
+ maybe in the experimental describe
+\end_layout
+
+\end_inset
+
 It is possible to estimate the apparent viscosity using the pressure drop
  
 \begin_inset Formula $\Delta P$
@@ -802,6 +932,23 @@ where
 GERF
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\begin_layout Plain Layout
+here the material table will appear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Non-intrusive experimental method
 \end_layout
@@ -821,7 +968,17 @@ Particle image velocimetry (PIV) is a quantitative optical measurement technique
 \noindent
 Pair images of flow are capture with a known time gap.
  Field movement is provide using pattern matching technique.
- Then velocity field is then calculated from the time and distance data.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cite from Hadar
+\end_layout
+
+\end_inset
+
+Then velocity field is then calculated from the time and distance data.
  In case of colloids we will track the contrast between the particles.
  In other case when the fluid is invisible the fluid should be seeded.
 \end_layout
