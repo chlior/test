@@ -134,7 +134,7 @@ Rheological properties of interest in the context of ERF, are the shear
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Doraiswamy:2002"
+key "Doraiswamy2002"
 
 \end_inset
 
@@ -442,8 +442,8 @@ Nominally, microchannels can be defined as channels whose dimensions are
  less than 1 millimeter and greater than 1 micron.Above 1 millimeter the
  flow exhibits behavior that is the same as most macroscopic flows.
 \begin_inset CommandInset citation
-LatexCommand cite
-key "sharp:2005"
+LatexCommand citep
+key "Sharp2002"
 
 \end_inset
 
@@ -474,8 +474,8 @@ ly affect the electrochemical measurements.
  in contact with it.
  
 \begin_inset CommandInset citation
-LatexCommand cite
-key "nguyen:2006"
+LatexCommand citep
+key "Nguyen1970"
 
 \end_inset
 
@@ -491,7 +491,7 @@ Even in very small devices and geometries, fluids, especially liquids, can
  be considered to be continuous
 \begin_inset CommandInset citation
 LatexCommand citep
-key "nguyen:2006"
+key "Nguyen1970"
 
 \end_inset
 
@@ -502,8 +502,8 @@ key "nguyen:2006"
  dynamics problems are conservation of mass, momentum, and energy.
  In partial differential equation form, these are 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "nguyen:2006"
+LatexCommand citep
+key "Nguyen1970"
 
 \end_inset
 
@@ -567,8 +567,8 @@ The electrorheology effect was first discover by
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Winslow:1949"
+LatexCommand citep
+key "Winslow1949"
 
 \end_inset
 
@@ -582,8 +582,8 @@ key "Winslow:1949"
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Wen:2003a"
+LatexCommand citep
+key "Wen2003a"
 
 \end_inset
 
@@ -593,8 +593,8 @@ key "Wen:2003a"
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Wang:2011"
+LatexCommand citep
+key "Wang2011"
 
 \end_inset
 
@@ -811,8 +811,8 @@ The general shear stress is important property of the ER fluid.
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Klingenberg:1991"
+LatexCommand citep
+key "Klingenberg1991"
 
 \end_inset
 
@@ -857,8 +857,8 @@ This is the key dimensionless parameter developed by
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Allan:1962"
+LatexCommand citep
+key "Allan1962"
 
 \end_inset
 

@@ -134,7 +134,7 @@ Rheological properties of interest in the context of ERF, are the shear
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Doraiswamy:2002"
+key "Doraiswamy2002"
 
 \end_inset
 
@@ -315,10 +315,19 @@ For non-Newtonian fluids the shearing stress is not linearly related to
 
 \begin_layout Standard
 \noindent
-There are several rheological models, classified into Bingham plastic and
- pseudo-plastic (that have non-zero yield stress), shear-thinning and shear-thic
-kening (that increase or decrease resistance with stronger shear) as can
- be seen in figure
+There are several rheological models, classified into Bingham plastic
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert in this definitions reference to document that explains them
+\end_layout
+
+\end_inset
+
+ and pseudo-plastic (that have non-zero yield stress), shear-thinning and
+ shear-thickening (that increase or decrease resistance with stronger shear)
+ as can be seen in figure
 \begin_inset space ~
 \end_inset
 
@@ -355,6 +364,9 @@ where
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
 shear-thinning fluids 
 \begin_inset Formula $n<1$
 \end_inset
@@ -367,6 +379,9 @@ and
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
 shear-thickening fluids 
 \begin_inset Formula $n>1$
 \end_inset

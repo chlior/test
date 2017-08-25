@@ -94,7 +94,7 @@ The Electrorehology effect
 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Winslow:1949"
+key "Winslow1949"
 
 \end_inset
 
@@ -115,8 +115,8 @@ key "Winslow:1949"
 
 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "Wen:2003a"
+LatexCommand citep
+key "Wen2003a"
 
 \end_inset
 
@@ -126,8 +126,8 @@ key "Wen:2003a"
 
 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "Wang:2011"
+LatexCommand citep
+key "Wang2011"
 
 \end_inset
 
@@ -140,14 +140,14 @@ key "Wang:2011"
 m 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Gawade:2012"
+key "Gawade2012"
 
 \end_inset
 
 , and for GERF the scale is in the nanometer regime 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Wen:2003a"
+LatexCommand citep
+key "Wen2003a"
 
 \end_inset
 
