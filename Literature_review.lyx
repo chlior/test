@@ -91,15 +91,9 @@ Electrorheological fluids (ERF) are mixtures of dielectric fluid and active
  dipole particles.
  The rheological properties (the relationship between the shear stress and
  the shear strain rate for liquids 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-citep{Doraiswamy:2002}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Doraiswamy:2002"
 
 \end_inset
 
@@ -157,7 +151,7 @@ The shear stress (
 : 
 \begin_inset Formula 
 \begin{equation}
-\tau=\frac{F}{A}\label{eq:tau}
+\tau=\frac{F}{A}\label{eq:sheer stress}
 \end{equation}
 
 \end_inset
@@ -187,7 +181,7 @@ The shear rate(
 ): 
 \begin_inset Formula 
 \begin{equation}
-\dot{\gamma}=\frac{du}{dy}\label{eq:gamma}
+\dot{\gamma}=\frac{du}{dy}\label{eq:shear rate}
 \end{equation}
 
 \end_inset
@@ -208,7 +202,7 @@ The dynamic viscosity (
 ) can be calculated as a linear rate of shear stress to shear rate: 
 \begin_inset Formula 
 \begin{equation}
-\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{eq:eta}
+\eta=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{dynamic viscosity}
 \end{equation}
 
 \end_inset
@@ -220,7 +214,7 @@ and the kinematic viscosity (
 ) is then 
 \begin_inset Formula 
 \begin{equation}
-\nu=\frac{\eta}{\rho}\label{eq:nu}
+\nu=\frac{\eta}{\rho}\label{kinematic viscosity}
 \end{equation}
 
 \end_inset
@@ -229,12 +223,20 @@ and the kinematic viscosity (
 \end_layout
 
 \begin_layout Standard
+If the viscosity is influenced by the shear rate, it is important to specify
+ that the values are different from the constant ones of an ideally viscous
+ fluid.
+ The values obtained are 'apparent viscosity' values.
+ They represent one point of the viscosity function only
+\end_layout
+
+\begin_layout Standard
 For non-Newtonian fluids the shearing stress is not linearly related to
  the rate of shearing strain.
  For simplicity an apparent viscosity is sometimes defined as 
 \begin_inset Formula 
 \begin{equation}
-\eta_{a}=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{eq:eta_a}
+\eta_{a}=\frac{\tau}{\dot{\gamma}}=\frac{\tau}{du/dy}\label{apparent viscosity Non-newtonian}
 \end{equation}
 
 \end_inset
@@ -262,7 +264,7 @@ reference "fig:non-newtonian"
  For instance, a power law (or Ostwald) model, in a form of: 
 \begin_inset Formula 
 \begin{equation}
-\eta=K\dot{\gamma}^{n-1}\label{eq:power-law}
+\eta=K\dot{\gamma}^{n-1}\label{eq:dynamic viscosity power-law}
 \end{equation}
 
 \end_inset
@@ -347,8 +349,9 @@ key "sharp:2005"
  Fluids that are Newtonian at ordinary rates of shear and extension can
  become non-Newtonian at very high rates.
  The pressure gradient becomes especially large in small cross section channels.
- Electrokinetic effects occur at the interface between liquids and solids
- such as glass due to chemical interaction.
+ At any electrode immersed in an electrolyte solution Electrokinetic effects
+ occur at the interface between liquids and solids such as glass due to
+ chemical interaction.
  The result is an electrically charged double layer that induces a charge
  distribution in a very thin layer of fluid close to the wall.
  Application of an electric field to this layer creates a body force capable
@@ -356,8 +359,6 @@ key "sharp:2005"
  It is important to aware that effects such the electroosmotic effect and
  the electrophoretic effect (charges around particles) are occuring at small
  scale.
- At any electrode immersed in an electrolyte solution,a specific interfacial
- region is formed.This region is called the double layer.
  The electrical properties of such a layer are important, since they significant
 ly affect the electrochemical measurements.
  The pressure drop in microchannel flow can be very large, and since all
@@ -386,7 +387,14 @@ Continuum Fluid Mechanics At Small Scales
 
 \begin_layout Standard
 Even in very small devices and geometries, fluids, especially liquids, can
- be considered to be continuous.
+ be considered to be continuous
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Trung:2006"
+
+\end_inset
+
+.
  Hence, well-established continuum approaches for analysing flows can be
  used.
  The three primary conservation laws that are used to model thermofluid
@@ -431,8 +439,24 @@ key "nguyen:2006"
 
 \end_layout
 
+\begin_layout Standard
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+is the density, 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+is velocity componant, 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+is the body force reffer to gravitation,...
+\end_layout
+
 \begin_layout Section
-ERF
+Electrorheological Fluid (ERF)
 \end_layout
 
 \begin_layout Standard
@@ -474,6 +498,16 @@ key "Wang:2011"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Change openning (Duplicated)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -716,7 +750,7 @@ Mason number (Mn)
 \end_layout
 
 \begin_layout Standard
-: This is the key dimensionless parameter developed by
+This is the key dimensionless parameter developed by
 \begin_inset space ~
 \end_inset
 
@@ -772,6 +806,16 @@ where
 
 \begin_layout Standard
 \noindent
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I think this is not the right place.
+ maybe in the experimental describe
+\end_layout
+
+\end_inset
+
 It is possible to estimate the apparent viscosity using the pressure drop
  
 \begin_inset Formula $\Delta P$
@@ -802,6 +846,23 @@ where
 GERF
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\begin_layout Plain Layout
+here the material table will appear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Non-intrusive experimental method
 \end_layout
@@ -821,7 +882,17 @@ Particle image velocimetry (PIV) is a quantitative optical measurement technique
 \noindent
 Pair images of flow are capture with a known time gap.
  Field movement is provide using pattern matching technique.
- Then velocity field is then calculated from the time and distance data.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cite from Hadar
+\end_layout
+
+\end_inset
+
+Then velocity field is then calculated from the time and distance data.
  In case of colloids we will track the contrast between the particles.
  In other case when the fluid is invisible the fluid should be seeded.
 \end_layout
