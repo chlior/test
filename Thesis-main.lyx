@@ -81,6 +81,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\notefontcolor #ffaaff
 \index Index
 \shortcut idx
 \color #008000
@@ -365,7 +366,7 @@ Want to add one more chapter, just copy paste the file introduction.lyx into
  the new_chapter.lyx or anything like that and copy-paste the above line
  with Include: Introduction.lyx and change the name to new_chapter.lyx.
  All the format and proper numbering of figures, tables, etc.
- will be automaticaly updated.
+ will be automatically updated.
  Just start typing the text :)
 \end_layout
 

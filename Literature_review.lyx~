@@ -50,6 +50,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\notefontcolor #ffaaff
 \index Index
 \shortcut idx
 \color #008000
@@ -439,47 +440,123 @@ microFlow in Channel
 \begin_layout Standard
 \noindent
 Nominally, microchannels can be defined as channels whose dimensions are
- less than 1 millimeter and greater than 1 micron.Above 1 millimeter the
- flow exhibits behavior that is the same as most macroscopic flows.
+ less than 1 millimeter and greater than 1 micron.
+ Above 1 millimeter, the flow exhibits a behavior that resemble most macroscopic
+ flows
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
-LatexCommand cite
-key "sharp:2005"
+LatexCommand citep
+key "Sharp2002"
 
 \end_inset
 
- Fluids that are Newtonian at ordinary rates of shear and extension can
- become non-Newtonian at very high rates.
- The pressure gradient becomes especially large in small cross section channels.
- At any electrode immersed in an electrolyte solution Electrokinetic effects
- occur at the interface between liquids and solids such as glass due to
- chemical interaction.
- The result is an electrically charged double layer that induces a charge
- distribution in a very thin layer of fluid close to the wall.
- Application of an electric field to this layer creates a body force capable
- of moving the fluid as if it were slipping over the wall.
- It is important to aware that effects such the electroosmotic effect and
- the electrophoretic effect (charges around particles) are occuring at small
- scale.
+.
+ Fluids that are Newtonian at ordinary rates of shear and extension
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+not clear what you mean by extension
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+test a grayed out comment 
+\end_layout
+
+\end_inset
+
+can become non-Newtonian at very high 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+shear? 
+\end_layout
+
+\end_inset
+
+rates.
+ The pressure gradient becomes particularly large in small cross section
+ channels.
+ Any electrode surface immersed in an electrolyte solution induces the Electroki
+netic effect.
+ It take place at the interface between liquids and solids, such as glass,
+ due to chemical interaction.
+ The result is an electrically charged double layer that originates a charge
+ distribution in a very thin layer of fluid close to the electrode surface
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Zeta potential?, add reference
+\end_layout
+
+\end_inset
+
+.
+ This double layer is similar to the one created at the surface of particles
+ in liquid suspensions.
  The electrical properties of such a layer are important, since they significant
-ly affect the electrochemical measurements.
- The pressure drop in microchannel flow can be very large, and since all
- of the work of the pressure difference against the mean flow ultimately
- goes into viscous dissipation.
- Liquids in contact with solids have surface tension in the interface.
+ly affect the electrochemical parameters.
+ Application of an electric field to this layer creates a body force capable
+ of moving the fluid as if it were slipping over a wall surface.
+ Generally, Slip boundary effect may exist in cases such as the one described
+ before, where the large shear forces are applied at the wall interface.
+ This Phenomenon of slip boundary occurs in any flow situation where the
+ tangential fluid velocity component appears to be different from that of
+ the solid surface immediately in contact with it
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nguyen1970"
+
+\end_inset
+
+.
+ It is important to be aware that other effects, such the electroosmotic
+ effect and the electrophoretic effect (charges around particles), occur
+ at the small scale domain as well
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not clear what do you mean? the previous effect is different? not clear
+\end_layout
+
+\end_inset
+
+.
+ Liquids in contact with solids have also a surface tension property at
+ the interface 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+reference
+\end_layout
+
+\end_inset
+
+.
  At the microscale, the surface tension force becomes one of the most important
  forces, far exceeding body forces such as gravity and electrostatic fields.
- Slip boundery may exist due to the large shear forces apllied on the wall.
- Phenomenon of slip: Any flow situation where the tangential fluid velocity
- component appears to be different from that of the solid surface immediately
- in contact with it.
+ Therefore, the pressure drop in a microchannel flow can be very large.
+ The work of the pressure difference on the mean flow ultimately translates
+ into viscous dissipation.
  
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nguyen:2006"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -491,19 +568,19 @@ Even in very small devices and geometries, fluids, especially liquids, can
  be considered to be continuous
 \begin_inset CommandInset citation
 LatexCommand citep
-key "nguyen:2006"
+key "Nguyen1970"
 
 \end_inset
 
 .
- Hence, well-established continuum approaches for analysing flows can be
+ Hence, well-established continuum approaches for analyzing flows can be
  used.
  The three primary conservation laws that are used to model thermofluid
  dynamics problems are conservation of mass, momentum, and energy.
  In partial differential equation form, these are 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "nguyen:2006"
+LatexCommand citep
+key "Nguyen1970"
 
 \end_inset
 
@@ -521,7 +598,7 @@ key "nguyen:2006"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-[\frac{\partial}{{\partial t}}\left({r{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}]
+\frac{\partial}{{\partial t}}\left({r{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}
 \end{equation}
 
 \end_inset
@@ -532,7 +609,7 @@ key "nguyen:2006"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-[\frac{\partial}{{\partial t}}\left({\rho e}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}e}\right)=-p\frac{{\partial{u_{i}}}}{{\partial{x_{i}}}}+{\tau_{ji}}\frac{{\partial{u_{i}}}}{{\partial{x_{j}}}}+\frac{{\partial{q_{i}}}}{{\partial{x_{i}}}}]
+\frac{\partial}{{\partial t}}\left({\rho e}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}e}\right)=-p\frac{{\partial{u_{i}}}}{{\partial{x_{i}}}}+{\tau_{ji}}\frac{{\partial{u_{i}}}}{{\partial{x_{j}}}}+\frac{{\partial{q_{i}}}}{{\partial{x_{i}}}}
 \end{equation}
 
 \end_inset
@@ -545,15 +622,25 @@ where
 \begin_inset Formula $\rho$
 \end_inset
 
-is the density, 
+ is the density, 
 \begin_inset Formula $u_{i}$
 \end_inset
 
-is velocity componant, 
+ is velocity component, 
 \begin_inset Formula $F_{i}$
 \end_inset
 
-is the body force reffer to gravitation,...
+ is the body force referred to gravitation,...
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+????
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -561,40 +648,40 @@ Electrorheological Fluid (ERF)
 \end_layout
 
 \begin_layout Standard
-The electrorheology effect was first discover by
+The electrorheology effect was already early discover in 1949
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Winslow:1949"
+LatexCommand citep
+key "Winslow1949"
 
 \end_inset
 
-, yet the benefits of the ERF to numerous applications are yet to be discovered.
- The unique ability to change viscosity with fast response time provides
- new tools and solutions to dampers, actuators and clutches.
- There are recent works on micro-fluidic applications, e.g.
- the so-called "giant" ERF (GERF) effect was discover by
+, yet its advantages for the implementation of the Electrorheological Fluid
+ (ERF) into practical applications are just been explored.
+ The fast viscosity change of this material open the ways into novel application
+s.
+ Works on micro-fluidic applications implementing the Giant ERF (GERF) effect
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Wen:2003a"
+LatexCommand citep
+key "Wen2003a"
 
 \end_inset
 
- and GERF microvalves were recently introduced by
+ were recently shown
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Wang:2011"
+LatexCommand citep
+key "Wang2011"
 
 \end_inset
 
@@ -603,7 +690,7 @@ key "Wang:2011"
 status open
 
 \begin_layout Plain Layout
-Change openning (Duplicated)
+Change opening (Duplicated)
 \end_layout
 
 \end_inset
@@ -612,10 +699,10 @@ Change openning (Duplicated)
 \end_layout
 
 \begin_layout Standard
-ERF contain at least two main components of a carrier fluid (solvent) and
- particles.
- Upon a strong electric field applied, particles connect to form a structure
- that look like a chain or a string.
+The ERF are composed of at least two main components: a carrier fluid (solvent)
+ and suspended particles.
+ Upon application of a strong electric field, the suspended particles connect
+ to form a structure resembling a chain or a string.
  These connected particles create a stronger dipole and form micro solid
  structures inside the fluid.
  These formations change the viscosity of the fluid towards a more viscous
@@ -632,7 +719,7 @@ Volume fraction:
 
 \begin_layout Standard
 It is expected that with larger number of particles in the fluid, the higher
- the yield strength is of the fluid.
+ the yield strength of the fluid.
  The volume fraction of some phase is defined as: 
 \begin_inset Formula 
 \begin{equation}
@@ -645,8 +732,8 @@ where
 \begin_inset Formula $v_{i}$
 \end_inset
 
- is a volume of particles phase, and it is measured as a percentage of a
- total volume (including the solute and the particles).
+ is the volume of particles i phase, and it is measured as a percentage
+ of the total volume (including the solute and the particles).
 \end_layout
 
 \begin_layout Standard
@@ -811,8 +898,8 @@ The general shear stress is important property of the ER fluid.
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Klingenberg:1991"
+LatexCommand citep
+key "Klingenberg1991"
 
 \end_inset
 
@@ -857,8 +944,8 @@ This is the key dimensionless parameter developed by
 
 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Allan:1962"
+LatexCommand citep
+key "Allan1962"
 
 \end_inset
 

@@ -14,7 +14,7 @@
 
 
 \Title{\textbf{TITLE OF THE THESIS}}
-\Author{\textbf{\large Lior Chertkow}}
+\Author{\textbf{\large Lior Yaakov Chertkow}}
 \Year{January 2017}
 \Supervisor{Prof. Alex Liberzon}
 \Department{School of Mechanical Engineering}
@@ -81,6 +81,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\notefontcolor #ffaaff
 \index Index
 \shortcut idx
 \color #008000
