@@ -126,7 +126,7 @@ key "Wen2003a"
 
 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Wang2011"
 
 \end_inset
@@ -170,7 +170,7 @@ PIV) technique.
  The main obstacle is the observation capability of the flow in a very small
  area.
  Nano-sized diameter particles-tracking or finding common behaviors at that
- scale with regular techniques such as SEM
+ scale with regular tools such as SEM
 \begin_inset space ~
 \end_inset
 

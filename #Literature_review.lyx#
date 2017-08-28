@@ -26,6 +26,7 @@
 \output_sync 1
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing double
 \use_hyperref false
@@ -335,7 +336,7 @@ insert in this definitions reference to document that explains them
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:non-newtonian"
+reference "fig:Classification-of-fluids"
 
 \end_inset
 
@@ -392,14 +393,13 @@ Classification of fluids according to shear stress - shear rate relation:
  Pseudoplastic (shear thinning), Bingham and Bingham pseudoplastic all show
  reduction in apparent viscosity with increasing shear rate.
  Dilatant (shear thickening) show opposite behavior.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "non_newtonian"
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Classification-of-fluids"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \end_inset
@@ -597,34 +597,120 @@ Micro Scale Effects
 \end_layout
 
 \begin_layout Standard
-strong shear stress
+Assume the channel cross section dimension are small enough, micro scale
+ , below 1mm.
+ by scaling the length the cross section area of the flow domain is decreasing
+ quadratic rate.
+ hence the flow rate calculate as shown in equation _ is decreasing accordingly
+ quadratic with the scaling 
+\begin_inset Formula $\ensuremath{Q\approx{L^{2}}U}$
+\end_inset
+
+.
+ for maintaning constant flow rate the velocity should increasing quadratic
+ as 
+\begin_inset Formula $\ensuremath{U\approx{L^{-2}}}$
+\end_inset
+
+ result its acceleration 
+\begin_inset Formula $\ensuremath{a\approx U{s^{-1}}\approx{L^{-2}}{s^{-1}}}$
+\end_inset
+
+and shear stress 
+\begin_inset Formula $\ensuremath{\tau\approx F/A\approx F{L^{-2}}}$
+\end_inset
+
+ increas 
+\begin_inset Formula $\ensuremath{P\approx F{L^{-2}}\approx\tau{L^{-4}}}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+by representing the next values as dimession sclaes of Length , Time, Force
+ , Stress acordenly symples 
+\begin_inset Formula $L,T,F,\tau$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-low flow rate
+that are Newtonian at ordinary rates of shear and extension can become non-Newto
+nian at very high rates.
+\end_layout
+
+\begin_layout Standard
+strong shear stress 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sharp2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Fluids that are Newtonian at ordinary rates of shear and extension can become
+ non-Newtonian at very high shear rates.
+ The pressure gradient becomes particularly large in small cross section
+ channels.
+ 
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 surface tension effect
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+missing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Liquids in contact with solids or gases have surface tension in the interface.
  At the microscale, the surface tension force becomes one of the most important
  forces, far exceeding body forces such as gravity and electrostatic fields.
+\end_layout
+
+\begin_layout Standard
+\noindent
+ Liquids in contact with solids have also a surface tension property at
+ the interface 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-does it really affect when the flow is already develop ? does it just an
- interpretation of slip boundary
+reference
 \end_layout
 
 \end_inset
 
-
+.
+ At the microscale, the surface tension force becomes one of the most important
+ forces, far exceeding body forces such as gravity and electrostatic fields.
+ Therefore, the pressure drop in a microchannel flow can be very large.
+ The work of the pressure difference on the mean flow ultimately translates
+ into viscous dissipation.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -648,7 +734,7 @@ key "Nguyen1970"
  neccity to deal with slip boundary condition.
  The concept of a slip boundary condition was first proposed by Navier (1823).
  Navier slip boundary condition assumes constant slip length.
-  the magnitude of the slip velocity, 
+ In Navier’s model, the magnitude of the slip velocity, 
 \begin_inset Formula $u_{0}$
 \end_inset
 
@@ -692,6 +778,7 @@ where
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -725,10 +812,6 @@ key "Rothsrein2010"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -737,7 +820,19 @@ key "Rothsrein2010"
 \begin_layout Standard
 
 \series bold
-entrance length 
+Entrance length 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+missing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -761,23 +856,31 @@ key "Nguyen1970"
 
 \end_inset
 
- 23
+ [23]
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-Electrokinetic effect
+Electrokinetic effect 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+missing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \noindent
-Fluids that are Newtonian at ordinary rates of shear and extension can become
- non-Newtonian at very high shear rates.
- The pressure gradient becomes particularly large in small cross section
- channels.
- Any electrode surface immersed in an electrolyte solution induces the Electroki
-netic effect.
+Any electrode surface immersed in an electrolyte solution induces the Electrokin
+etic effect.
  It take place at the interface between liquids and solids, such as glass,
  due to chemical interaction.
  The result is an electrically charged double layer that originates a charge
@@ -828,24 +931,6 @@ not clear what do you mean? the previous effect is different? not clear
 \end_inset
 
 .
- Liquids in contact with solids have also a surface tension property at
- the interface 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-reference
-\end_layout
-
-\end_inset
-
-.
- At the microscale, the surface tension force becomes one of the most important
- forces, far exceeding body forces such as gravity and electrostatic fields.
- Therefore, the pressure drop in a microchannel flow can be very large.
- The work of the pressure difference on the mean flow ultimately translates
- into viscous dissipation.
- 
 \end_layout
 
 \begin_layout Section
@@ -1226,6 +1311,195 @@ where
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+Flow model
+\end_layout
+
+\begin_layout Standard
+Considering flow between stationary parallel electrodes.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume electrical field is zero and the ERF in Newtonian fluid.
+ This model is a known a pressure-driven flow, name Poiseuille flow.
+ Then the velocity profile of ERF flowing in the gap is parabolic.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/poiseuille.png
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/plug_flow.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(a)Velocity profile of ERF with zero electric field.(b)Velocity profile of
+ ERF in electrode gap with electric field 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zhang2003"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However when the electric filed is applied, the ERF fluid is no logder a
+ Newtonian, and the model is consider to be Bingham plastic.
+ The velocity profile is not simply parabolic and describe as a "plug flow".
+ When a plug will appear in the middle of the gap.
+ represent the plug thickness.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+The velocity profile of laminar flow 
+\backslash
+begin{equation} u =  - 
+\backslash
+frac{1}{{8
+\backslash
+mu }}
+\backslash
+frac{{dp}}{{dx}}
+\backslash
+left( {{H^2} - 4{y^2}} 
+\backslash
+right) 
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+Then the average velocity ${u_m}$ can be given as fallowing 
+\backslash
+begin{equation} {u_m} =  - 
+\backslash
+frac{1}{{12
+\backslash
+mu H}}
+\backslash
+frac{{dp}}{{dx}}
+\backslash
+left( {{H^3} - {h^3}} 
+\backslash
+right) 
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+The volume flux 
+\backslash
+textit{q} is 
+\backslash
+begin{equation} q = bH{u_m} =  - 
+\backslash
+frac{b}{{12
+\backslash
+mu }}
+\backslash
+frac{{dp}}{{dx}}
+\backslash
+left( {{H^3} - {h^3}} 
+\backslash
+right) 
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+Assume pressure 
+\backslash
+textit{p} varies linearly along the length 
+\backslash
+textit{L} of the electrode and $
+\backslash
+Delta {P_
+\backslash
+mu }$ is the pressure drop due to viscosity.
+  
+\backslash
+begin{equation} 
+\backslash
+frac{{
+\backslash
+Delta P}}{L} =  - 
+\backslash
+frac{{dp}}{{dx}} 
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+Subtract the pressure gradient into the volume flux we obtain equation :
+ 
+\backslash
+lior{how do I cite equation?}  
+\backslash
+begin{equation} q = bH{u_m} = 
+\backslash
+frac{b}{{12
+\backslash
+mu }}
+\backslash
+frac{{
+\backslash
+Delta P}}{L}
+\backslash
+left( {{H^3} - {h^3}} 
+\backslash
+right) 
+\backslash
+end{equation} This quantity can be determined by experiment data from PIV.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Example of true materials that fulfill such behaviors is for example:
 \end_layout
 
@@ -1247,17 +1521,8 @@ key "Fludicon"
 \end_inset
 
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-need to describe the fluid
-\end_layout
-
-\end_inset
-
-
+ RheOil 4.0 can be specified as a silicon oil–based ER suspension with 50
+ vol% polyurethane particle with an average particle diameter of 3.5 mm.
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Freyer2015"
@@ -1301,26 +1566,36 @@ key "Wen2003a"
 \end_inset
 
 .
+ The GER effect mechanism is based on the alignment of molecular dipoles
+ through the hydrogen bonding network however, is explanation still lacking
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-need to add why the effect happened.
- and what are the forces acting
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chen2010,Wen2008,Hong2015"
 
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
-GERF Common Material
+GERF Material 
 \end_layout
 
 \begin_layout Standard
-The common material are used is the 
+Some fabrication process are describe at 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gong2008,Hong2015,Wen2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The common material are used and will use at this thesis is the 
 \shape italic
 GER STR 0201
 \shape default
@@ -1336,6 +1611,28 @@ key "SML"
 \end_inset
 
 .
+ Specification given of 50% particles weight percentage.
+ particles are Titanium Dioxide of 0.1um approximate diameter.
+ kinematic viscosity of 200cSt at 25 degree and density of 1.500 
+\begin_inset Formula $\frac{\textrm{g}}{\textrm{cm^{3}}}$
+\end_inset
+
+.
+ (MSDS at 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.smartmaterials.hk/"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SML"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -1526,6 +1823,7 @@ reference "fig:upiv"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
