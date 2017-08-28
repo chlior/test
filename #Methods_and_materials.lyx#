@@ -79,7 +79,43 @@
 \begin_body
 
 \begin_layout Chapter
-Results
+Methods And Materials
+\end_layout
+
+\begin_layout Standard
+Experimental setup
+\end_layout
+
+\begin_layout Standard
+Experimental assumptions and requirements
+\end_layout
+
+\begin_layout Standard
+Schematics of the concept:
+\end_layout
+
+\begin_layout Standard
+MEMS
+\end_layout
+
+\begin_layout Standard
+Micro CNC
+\end_layout
+
+\begin_layout Standard
+3D printing
+\end_layout
+
+\begin_layout Standard
+Laser cut
+\end_layout
+
+\begin_layout Standard
+Materials
+\end_layout
+
+\begin_layout Standard
+ERF
 \end_layout
 
 \begin_layout Section
@@ -143,6 +179,10 @@ name "fig:Some-caption-for"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -156,7 +196,7 @@ Tables
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -242,9 +282,85 @@ Table float first using Insert - > Float -> Table
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Use: Insert Note -> Insert List/TOC -> Bibtex Bibliography
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "IEEEabrv"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Then in the text you can use Insert citation (use the icon for the quick
+ use)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Citations
+\end_layout
+
+\begin_layout Standard
+The file references.bib in this folder is an example of how to organize the
+ bibliography database.
+ It is very simple to add a reference/citation to one of the items in the
+ bibliography list, e.g.
+ see the best source of information regarding the OpenPTV origins: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dracos1996"
+
+\end_inset
+
+.
+ Simply use: Insert -> Citation and choose from the list on the left.
+ Add it to the list on the right and you'll be able to choose the format
+ of author-year or author-number or just number to the references.
+ At the same time, at the end of the document you'll find References chapter
+ with all the cited references automatically chosen and included.
+ 
 \end_layout
 
 \end_body

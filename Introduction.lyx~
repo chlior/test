@@ -146,8 +146,8 @@ key "Gawade2012"
 
 , and for GERF the scale is in the nanometer regime 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Wen:2003a"
+LatexCommand citep
+key "Wen2003a"
 
 \end_inset
 
