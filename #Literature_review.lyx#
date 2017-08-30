@@ -463,7 +463,7 @@ key "Nguyen1970"
 : 
 \begin_inset Formula 
 \begin{equation}
-\frac{{\partial\rho}}{{\partial t}}+\frac{{\partial\rho}}{{\partial{x_{i}}}}\left({\rho{u_{i}}}\right)=0
+\frac{{\partial\rho}}{{\partial t}}+\frac{{\partial\rho}}{{\partial{x_{i}}}}\left({\rho{u_{i}}}\right)=0\label{eq:MassC}
 \end{equation}
 
 \end_inset
@@ -474,7 +474,7 @@ key "Nguyen1970"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\partial}{{\partial t}}\left({r{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}\label{eq:NS}
+\frac{\partial}{{\partial t}}\left({r{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}\label{eq:MomentumC}
 \end{equation}
 
 \end_inset
@@ -485,7 +485,7 @@ key "Nguyen1970"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\partial}{{\partial t}}\left({\rho e}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}e}\right)=-p\frac{{\partial{u_{i}}}}{{\partial{x_{i}}}}+{\tau_{ji}}\frac{{\partial{u_{i}}}}{{\partial{x_{j}}}}+\frac{{\partial{q_{i}}}}{{\partial{x_{i}}}}
+\frac{\partial}{{\partial t}}\left({\rho e}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}e}\right)=-p\frac{{\partial{u_{i}}}}{{\partial{x_{i}}}}+{\tau_{ji}}\frac{{\partial{u_{i}}}}{{\partial{x_{j}}}}+\frac{{\partial{q_{i}}}}{{\partial{x_{i}}}}\label{eq:EnergyC}
 \end{equation}
 
 \end_inset
@@ -586,7 +586,7 @@ ble.
  element should be added to equation 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:NS"
+reference "eq:MomentumC"
 
 \end_inset
 
@@ -723,7 +723,7 @@ surface energy density
 \begin_inset Formula $\gamma$
 \end_inset
 
-) is the force (F)exerted on the interface measured along a line (L) whereas
+) is the force (F) exerted on the interface measured along a line (L) whereas
  surface energy is the Energy (W) stored in the interface measured along
  an area (
 \begin_inset Formula $\varDelta A)$
@@ -763,7 +763,7 @@ Surface energy can be defined as the energy difference between the bulk
 
 \begin_layout Standard
 The Surface tension effect is responsible to various well know effects such
- as capillary action, Soap Bubble and a Liquid Drop to mention a few.
+ as capillary action, Soap Bubble and a Liquid Drop just to mention a few.
 \end_layout
 
 \begin_layout Standard
@@ -786,11 +786,11 @@ and
 \begin_inset Formula $R_{2}$
 \end_inset
 
-are the relevant curvature radii of the surface.
+ are the relevant curvature radii of the surface.
 \end_layout
 
 \begin_layout Standard
-for a drop the contact angle (
+For a liquid drop laying on a solid surface, the contact angle (
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -817,7 +817,7 @@ are the respective liquid-solid, Solid-air and Liquid-air surface tensions.
 \end_layout
 
 \begin_layout Standard
-in this context the capillary effect height (h) is defined by:
+In this context, the capillary effect height (h) is defined by:
 \end_layout
 
 \begin_layout Standard
@@ -841,18 +841,24 @@ At the microscale, the surface tension force becomes one of the most important
 \end_layout
 
 \begin_layout Standard
-therore surface tension gradients are balanced by shear forces created at
- the bounding materials:
+Therefore surface tension gradients are balanced by shear forces created
+ at the bounding materials:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\nabla\gamma=\tau_{A}+\tau_{B}$
 \end_inset
 
+ , where 
+\begin_inset Formula $\tau_{A},$
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
+\begin_inset Formula $\tau_{B}$
+\end_inset
+
+ are the respective shear force of two liquids.
+ 
 \begin_inset Note Note
 status open
 
@@ -874,8 +880,54 @@ Slip boundary effect
 \end_layout
 
 \begin_layout Standard
-Many years the it was accepted to assume a no-slip velocity condition at
- the fluid–solid boundary 
+Considering the flow of an incompressible, Newtonian, isotropic fluid, the
+ ruling equations were shown to be 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MassC"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MomentumC"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:EnergyC"
+
+\end_inset
+
+.
+ Nevertheless, the proper thermomechanical state of the fluid at the boundary
+ should be considered.
+ For many years it was accepted that at macroscopic length scales, a no-slip
+ condition at the fluid–solid boundary can be assumed.
+ In other words: the fluid and boundary have the same speed, temperature
+ and pressure.
+ A 
+\shape italic
+no-penetration
+\shape default
+ boundary condition is applied, in which flow is prevented from flowing
+ through the solid boundary 
+\series bold
+normal
+\series default
+ to the wall.
+ This conditions when 
+\series bold
+tangential
+\series default
+ to the wall, are known as the 
+\series bold
+no-slip boundary condition
+\series default
+ since the fluid appears to stick to the wall 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Nguyen1970"
@@ -883,10 +935,65 @@ key "Nguyen1970"
 \end_inset
 
 .
- The emergence of microfluidics with its wall-dominated flows raises the
- neccity to deal with slip boundary condition.
- The concept of a slip boundary condition was first proposed by Navier (1823).
- Navier slip boundary condition assumes constant slip length.
+\end_layout
+
+\begin_layout Standard
+The microfluidics emergence, where the flow is dominated by the walls, raises
+ the need to better understand the slip boundary conditions, which can be
+ divided as:
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Slip phenomena
+\bar default
+: The tangential fluid velocity component is different from the solid surface
+ boundary.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Molecular (intrinsic) slip
+\bar default
+: The liquid molecules adjacent to the solid boundary slip on top of the
+ solid molecules.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Apparent slip
+\bar default
+: 
+\begin_inset Quotes eld
+\end_inset
+
+No-slip
+\begin_inset Quotes erd
+\end_inset
+
+ is imposed on small regions, but it is not manifested at large scales.
+ For example: electrokinetics , acoustic streaming, liquid flowing over
+ a gas layer.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Effective slip
+\bar default
+: molecular or apparent slip is assumed from a macroscopic measurement or
+ calculation but the actual source of the slip cannot be determined from
+ this measurement alone.
+ 
+\end_layout
+
+\begin_layout Standard
+The concept of a slip boundary condition was first proposed by Navier (1823).
+ Navier slip boundary condition assumes a constant slip length.
  In Navier’s model, the magnitude of the slip velocity, 
 \begin_inset Formula $u_{0}$
 \end_inset
@@ -899,7 +1006,7 @@ key "Rothsrein2010"
 
 \end_inset
 
- and shown schematically in 
+ and shown schematically in in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:slip"
@@ -930,6 +1037,17 @@ where
 \end_layout
 
 \begin_layout Standard
+The slip length, 
+\shape italic
+b
+\shape default
+, can be interpreted as the distance within the top and bottom walls where
+ the no-slip boundary condition would have been satisfied.
+ For the no-slip case, the flow velocity matches the wall's velocity: 0
+ at the bottom wall and the top wall velocity at the top wall.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -943,9 +1061,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
