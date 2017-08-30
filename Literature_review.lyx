@@ -317,19 +317,10 @@ For non-Newtonian fluids the shearing stress is not linearly related to
 
 \begin_layout Standard
 \noindent
-There are several rheological models, classified into Bingham plastic
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-insert in this definitions reference to document that explains them
-\end_layout
-
-\end_inset
-
- and pseudo-plastic (that have non-zero yield stress), shear-thinning and
- shear-thickening (that increase or decrease resistance with stronger shear)
- as can be seen in figure
+There are several rheological models, classified into Bingham plastic and
+ pseudo-plastic (that have non-zero yield stress), shear-thinning and shear-thic
+kening (that increase or decrease resistance with stronger shear) as can
+ be seen in figure
 \begin_inset space ~
 \end_inset
 
@@ -474,7 +465,7 @@ key "Nguyen1970"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\partial}{{\partial t}}\left({r{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}\label{eq:MomentumC}
+\frac{\partial}{{\partial t}}\left({\rho{u_{i}}}\right)+\frac{\partial}{{\partial{x_{i}}}}\left({\rho{u_{j}}{u_{i}}}\right)=\rho{F_{i}}-\frac{{\partial p}}{{\partial{x_{i}}}}+\frac{\partial}{{\partial{x_{i}}}}{\tau_{ji}}\label{eq:MomentumC}
 \end{equation}
 
 \end_inset
@@ -594,10 +585,10 @@ reference "eq:MomentumC"
  Such element should scale at least as the length's cube power to be taken
  in consideration.
  As an example, it is possible to think of the magnetic body force (
-\begin_inset Formula $F_{i}=\frac{1}{\mu}(\vec{\nabla}\times\vec{B})\times B_{i}\cdotp dV,$
+\begin_inset Formula $F_{i}=\frac{1}{\mu}(\vec{\nabla}\times\vec{B})\times B_{i}\cdotp dV$
 \end_inset
 
- 
+, 
 \series bold
 B
 \series default
@@ -605,15 +596,10 @@ B
 \begin_inset Formula $\mu$
 \end_inset
 
-is the magnetic permeability )
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\color black
-add citation to chorlton1981 
-\end_layout
+ is the magnetic permeability)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chorlton1981"
 
 \end_inset
 
@@ -649,7 +635,7 @@ Small channel cross section dimensions are considered to be in the micro
 \begin_inset Formula $\ensuremath{a\approx U^{2}{L^{-1}}\approx{L^{-3}}}$
 \end_inset
 
-and shear stress 
+ and shear stress 
 \begin_inset Formula $\ensuremath{\tau=F/A\approx\{U^{2}L^{-1}\}{L^{-2}}\thickapprox L^{-3}}$
 \end_inset
 
@@ -682,18 +668,6 @@ key "Sharp2002"
 
 \series bold
 Surface tension effect
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-missing
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -734,19 +708,54 @@ surface energy density
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\gamma=\frac{F}{L}$
-\end_inset
+\begin_inset Formula 
+\begin{equation}
+\gamma=\frac{F}{L}=\frac{W}{\triangle A}\label{eq:surface_tension}
+\end{equation}
 
-=
-\begin_inset Formula $\frac{W}{\triangle A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename figs/surface tension 1.png
+	filename figs/surface tension.png
+	width 4cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Force distribution between liquid molecules emphasize the unequally distribution
+ on the surface.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ST_fig"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -775,7 +784,11 @@ The pressure gradient
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\varDelta P=\gamma\left(\frac{1}{R_{1}}+\frac{1}{R_{2}}\right)$
+\begin_inset Formula 
+\begin{equation}
+\varDelta P=\gamma\left(\frac{1}{R_{1}}+\frac{1}{R_{2}}\right)\label{eq:static pressure surface tension}
+\end{equation}
+
 \end_inset
 
 , where 
@@ -786,7 +799,11 @@ and
 \begin_inset Formula $R_{2}$
 \end_inset
 
- are the relevant curvature radii of the surface.
+ are the relevant curvature radii of the surface and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is the surface tension.
 \end_layout
 
 \begin_layout Standard
@@ -798,22 +815,26 @@ For a liquid drop laying on a solid surface, the contact angle (
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\gamma_{LS}-\gamma_{SA}=\gamma_{LA}cos(\theta)$
+\begin_inset Formula 
+\begin{equation}
+\gamma_{LS}-\gamma_{SA}=\gamma_{LA}cos(\theta)\label{eq:surface tension LS,SA}
+\end{equation}
+
 \end_inset
 
  where 
-\begin_inset Formula $\gamma{}_{LS},$
+\begin_inset Formula $\gamma{}_{LS}$
 \end_inset
 
-
+, 
 \begin_inset Formula $\gamma_{SA,}$
 \end_inset
 
-and 
+ and 
 \begin_inset Formula $\gamma_{LA}$
 \end_inset
 
-are the respective liquid-solid, Solid-air and Liquid-air surface tensions.
+ are the respective liquid-solid, Solid-air and Liquid-air surface tensions.
 \end_layout
 
 \begin_layout Standard
@@ -821,15 +842,22 @@ In this context, the capillary effect height (h) is defined by:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $h=\frac{2\gamma_{LA}cos(\theta)}{\rho gr}$
+\begin_inset Formula 
+\begin{equation}
+h=\frac{2\gamma_{LA}cos(\theta)}{\rho gr}\label{eq:capillary height}
+\end{equation}
+
 \end_inset
 
  , where 
 \begin_inset Formula $\rho$
 \end_inset
 
-is the liquid density g is the gravitational acceleration and r is the capillary
- tube radii.
+is the liquid density g is the gravitational acceleration and 
+\begin_inset Formula $r$
+\end_inset
+
+ is the capillary tube radii.
 \end_layout
 
 \begin_layout Standard
@@ -859,12 +887,9 @@ Therefore surface tension gradients are balanced by shear forces created
 
  are the respective shear force of two liquids.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-reference: LLOYD_04STFM
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Trefethen1969"
 
 \end_inset
 
@@ -1052,6 +1077,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename figs/slip_bc.PNG
 
@@ -1608,6 +1634,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename figs/poiseuille.png
 	scale 50
@@ -1658,118 +1685,88 @@ However when the electric filed is applied, the ERF fluid is no logder a
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 The velocity profile of laminar flow 
-\backslash
-begin{equation} u =  - 
-\backslash
-frac{1}{{8
-\backslash
-mu }}
-\backslash
-frac{{dp}}{{dx}}
-\backslash
-left( {{H^2} - 4{y^2}} 
-\backslash
-right) 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-Then the average velocity ${u_m}$ can be given as fallowing 
-\backslash
-begin{equation} {u_m} =  - 
-\backslash
-frac{1}{{12
-\backslash
-mu H}}
-\backslash
-frac{{dp}}{{dx}}
-\backslash
-left( {{H^3} - {h^3}} 
-\backslash
-right) 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-The volume flux 
-\backslash
-textit{q} is 
-\backslash
-begin{equation} q = bH{u_m} =  - 
-\backslash
-frac{b}{{12
-\backslash
-mu }}
-\backslash
-frac{{dp}}{{dx}}
-\backslash
-left( {{H^3} - {h^3}} 
-\backslash
-right) 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-Assume pressure 
-\backslash
-textit{p} varies linearly along the length 
-\backslash
-textit{L} of the electrode and $
-\backslash
-Delta {P_
-\backslash
-mu }$ is the pressure drop due to viscosity.
-  
-\backslash
-begin{equation} 
-\backslash
-frac{{
-\backslash
-Delta P}}{L} =  - 
-\backslash
-frac{{dp}}{{dx}} 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-Subtract the pressure gradient into the volume flux we obtain equation :
- 
-\backslash
-lior{how do I cite equation?}  
-\backslash
-begin{equation} q = bH{u_m} = 
-\backslash
-frac{b}{{12
-\backslash
-mu }}
-\backslash
-frac{{
-\backslash
-Delta P}}{L}
-\backslash
-left( {{H^3} - {h^3}} 
-\backslash
-right) 
-\backslash
-end{equation} This quantity can be determined by experiment data from PIV.
-\end_layout
+\begin_inset Formula 
+\begin{equation}
+u=-\frac{1}{{8\mu}}\frac{{dp}}{{dx}}\left({{H^{2}}-4{y^{2}}}\right)
+\end{equation}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Then the average velocity
+\begin_inset Formula ${u_{m}}$
+\end_inset
+
+ can be given as fallowing 
+\begin_inset Formula 
+\begin{equation}
+{u_{m}}=-\frac{1}{{12\mu H}}\frac{{dp}}{{dx}}\left({{H^{3}}-{h^{3}}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The volume flux 
+\begin_inset Formula $\textit{q}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{equation}
+q=bH{u_{m}}=-\frac{b}{{12\mu}}\frac{{dp}}{{dx}}\left({{H^{3}}-{h^{3}}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assume pressure 
+\begin_inset Formula $\textit{p}$
+\end_inset
+
+ varies linearly along the length
+\begin_inset Formula $\textit{L}$
+\end_inset
+
+ of the electrode and
+\begin_inset Formula $\Delta{P_{\mu}}$
+\end_inset
+
+ is the pressure drop due to viscosity.
+ 
+\begin_inset Formula 
+\begin{equation}
+\frac{{\Delta P}}{L}=-\frac{{dp}}{{dx}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Subtract the pressure gradient into the volume flux we obtain equation :
+ 
+\begin_inset Formula 
+\begin{equation}
+q=bH{u_{m}}=\frac{b}{{12\mu}}\frac{{\Delta P}}{L}\left({{H^{3}}-{h^{3}}}\right)
+\end{equation}
+
+\end_inset
+
+ This quantity can be determined by experiment data from PIV.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -2116,6 +2113,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename figs/micropiv1.png
 	scale 50
