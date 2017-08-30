@@ -100,7 +100,7 @@ Rheology
 \end_layout
 
 \begin_layout Standard
-The Rheology branch or physics deals with deformation and flow of matter.
+The Rheology branch of physics deals with deformation and flow of matter.
  Among others, it focus on the non-Newtonian flow of liquids, as well as,
  the plastic flow of solids.
  
@@ -513,7 +513,7 @@ where
 \begin_inset Formula $\tau_{ji}$
 \end_inset
 
-is the stress tensor, 
+ is the stress tensor, 
 \begin_inset Formula $e$
 \end_inset
 
@@ -631,7 +631,7 @@ Small channel cross section dimensions are considered to be in the micro
 \begin_inset Formula $\ensuremath{U\approx{L^{-2}}}.$
 \end_inset
 
- As a result the acceleration 
+ As a result, the acceleration 
 \begin_inset Formula $\ensuremath{a\approx U^{2}{L^{-1}}\approx{L^{-3}}}$
 \end_inset
 
@@ -643,13 +643,14 @@ Small channel cross section dimensions are considered to be in the micro
 \begin_inset Formula $L^{-3}$
 \end_inset
 
- whereas pressure drop per length unit will scale as 
+; whereas pressure drop per length unit will scale as 
 \begin_inset Formula $\ensuremath{\triangle P/L\approx\{L^{-3}\}{L^{-1}}\approx{L^{-4}}}.$
 \end_inset
 
- This indicates that at very narrow channels the flow will increase dramatically
- and Newtonian fluids in regular situations might turn non-Newtonian while
- at the same time pressure drop will increase significantly 
+ This indicates that at very narrow channels the flow will increase dramatically.
+ In such cases, Newtonian fluids in regular situations, might turn into
+ non-Newtonian behaviour.
+ At the same time, the pressure drop will increase significantly 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sharp2002"
@@ -657,8 +658,8 @@ key "Sharp2002"
 \end_inset
 
 .
- Fluids that are Newtonian at ordinary rates of shear and extension can
- become non-Newtonian at very high shear rates.
+ Fluids that are Newtonian at ordinary rates of shear can become non-Newtonian
+ at very high shear rates.
  The pressure gradient becomes particularly large in small cross section
  channels.
  
@@ -686,10 +687,10 @@ surface energy density
  Considering a liquid, every molecule in the liquid bulk is acted upon by
  exactly the same amount of force pulling uniformly from every side.
  However, a surface molecule has only forces acting toward the liquid side.
- The air – liquid forces are insignificant in comparison to the liquid –
- liquid cohesive forces.
+ The air–liquid forces are insignificant in comparison to the liquid–liquid
+ cohesive forces.
  The surface molecules are attracted the liquid center forming a dense molecules
- layer , meaning that there is a high energy density at the surface of a
+ layer, meaning that there is a high energy density at the surface of a
  liquid.
  Surface tension is defined as the force parallel to the surface perpendicular
  to a unit length line drawn on the surface.
@@ -764,8 +765,8 @@ key "ST_fig"
 
 \begin_layout Standard
 Surface energy can be defined as the energy difference between the bulk
- of the material and the surface of the material.
- Surface energy is defined as the surface energy per unit surface area.
+ of the material and the surface of the material or the surface energy per
+ unit surface area.
  The surface energy per unit area is identical to the surface tension measured.
  
 \end_layout
@@ -853,7 +854,7 @@ h=\frac{2\gamma_{LA}cos(\theta)}{\rho gr}\label{eq:capillary height}
 \begin_inset Formula $\rho$
 \end_inset
 
-is the liquid density g is the gravitational acceleration and 
+ is the liquid density, g is the gravitational acceleration and 
 \begin_inset Formula $r$
 \end_inset
 
@@ -1236,7 +1237,7 @@ Electrorheological Fluid (ERF)
 \end_layout
 
 \begin_layout Standard
-The electrorheology effect was already early discover in 1949
+The electrorheology (ER) effect was already discover in 1949
 \begin_inset space ~
 \end_inset
 
@@ -1247,10 +1248,9 @@ key "Winslow1949"
 
 \end_inset
 
-, yet its advantages for the implementation of the Electrorheological Fluid
+, yet its advantages for implementation of the Electrorheological Fluid
  (ERF) into practical applications are just been explored.
- The fast viscosity change of this material open the ways into novel application
-s.
+ The fast viscosity change of this material open the way into novel applications.
  Works on micro-fluidic applications implementing the Giant ERF (GERF) effect
 \begin_inset space ~
 \end_inset
@@ -1301,14 +1301,55 @@ The ERF are composed of at least two main components: a carrier fluid (solvent)
 ER fluid behavior
 \end_layout
 
-\begin_layout Paragraph
-Volume fraction:
+\begin_layout Standard
+As mentioned previously, the ERF can change its behavior from nearly solid
+ up to liquid state.
+ In such semi-solid materials/fluids they will begin to move when they are
+ subjected to a strong enough force, causing them to change from their original
+ shape and move in response to the applied force.
+ Generally, their motion resistance to flow, viscosity, is of interest.
+ However, there are situations were it suits us to assume that it is solid.
+ Instead of measuring a liquid property, such as viscosity, a solid property
+ such as 
+\series bold
+yield stress
+\series default
+ might be more appropriated.
+ Imposition of large enough external stress will cause the structure to
+ yield and flow (insert figure reference).
+ The 
+\series bold
+yield stress
+\series default
+ is the applied stress at the onset of flow in a structured fluid.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figs/Yield Strees 1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figs/Yield Strees 2.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 It is expected that with larger number of particles in the fluid, the higher
- the yield strength of the fluid.
- The volume fraction of some phase is defined as: 
+ will be the yield stress strength of the fluid.
+ The 
+\series bold
+volume fraction
+\series default
+ of some phase is defined as: 
 \begin_inset Formula 
 \begin{equation}
 {\varphi_{i}}=\frac{{v_{i}}}{{\sum{v_{i}}}}\times100\%
@@ -1327,7 +1368,7 @@ where
 \begin_layout Standard
 \noindent
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Paragraph
 Dielectric constant:
@@ -1430,7 +1471,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Paragraph
 Shear strain rate:
@@ -1473,14 +1514,76 @@ where
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
+
+\series bold
 General model of stress
+\series default
+:
 \end_layout
 
 \begin_layout Standard
-The general shear stress is important property of the ER fluid.
- It strongly affecting the varies ERF application described above.
- The most widely accepted model of ERF has been proposed by
+As indicated a solid-liquid or viscoplastic material has a yield stress
+ that needs to be exceeded before deformation or flow can occur.
+ Empirical relations have been proposed to account for the behavior of such
+ materials, mainly the Bingham, Casson, and Herschel-Buckley equations.
+ The simplest model is the two parameter model proposed by Bingham (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+add ref bingham, 1916; Bird et al., 1982
+\end_layout
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=\tau_{\text{y}}+\eta_{\text{p}}\dot{\gamma}$
+\end_inset
+
+
+\begin_inset Formula $\left|\tau\right|>\tau_{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\gamma}=0$
+\end_inset
+
+
+\begin_inset Formula $\left|\tau\right|\leq\tau_{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The model takes into consideration only two parameters, the yield stress,
+ 
+\begin_inset Formula $\tau_{y}$
+\end_inset
+
+, and the plastic viscosity, 
+\begin_inset Formula $\eta_{p}$
+\end_inset
+
+.
+ It is important to consider that after the onset of flow the plastic viscosity
+ defines the rate of change of the excess shear stress 
+\begin_inset Formula $\tau-\tau_{y}=\dot{\gamma}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+From this the most accepted model of ERF has been proposed by Klingenberg
+ et al
 \begin_inset space ~
 \end_inset
 
@@ -1491,11 +1594,11 @@ key "Klingenberg1991"
 
 \end_inset
 
-.
+ based on the Bingham model.
  It relates the shear stress to the shear rate and electrical field: 
 \begin_inset Formula 
 \begin{equation}
-\tau(\dot{\gamma},E)=\tau_{y}(E)+\eta_{\inf}\dot{\gamma}+\tau_{ex}(\dot{\gamma},E)\label{eq:klingenberg}
+\tau(\dot{\gamma},E)=\tau_{y}(E)+\eta_{\infty}\dot{\gamma}+\tau_{ex}(\dot{\gamma},E)\label{eq:klingenberg}
 \end{equation}
 
 \end_inset
@@ -1504,29 +1607,126 @@ where
 \begin_inset Formula $\tau_{y}(E)$
 \end_inset
 
- is the dynamic yield stress.
- 
-\begin_inset Formula $\eta_{\inf}\dot{\gamma}$
+ is the dynamic yield stress, 
+\begin_inset Formula $\eta_{\infty}\dot{\gamma}$
 \end_inset
 
  is the viscous contribution to the shear stress at large shear rates and
- no electric field.
+ no electric field and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\eta_{\infty}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ is the high shear rate apparent viscosity of the unelectrified suspension,
  
 \begin_inset Formula $\tau_{ex}(\dot{\gamma},E)$
 \end_inset
 
  is the excess stress representing the coupling of hydrodynamic and electrostati
 c polarization interactions.
- Using experimental data We able to obtain these terms.Then the general shear
- stress can be calculate.
-\end_layout
-
-\begin_layout Paragraph
-Mason number (Mn)
+ 
 \end_layout
 
 \begin_layout Standard
-This is the key dimensionless parameter developed by
+The definition of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\tau_{ex}(\dot{\gamma},E)$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ is somewhat arbitrarily and is defined in terms of experimentally determined
+ quantities.
+ A dimensionless parameter, the Mason number, can be defined to characterize
+ the ERF 
+\begin_inset Quotes eld
+\end_inset
+
+fibrous
+\begin_inset Quotes erd
+\end_inset
+
+ formed structures mentioned earlier, therefore also the term 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\tau_{ex}(\dot{\gamma},E)$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ should also depend only on this dimensionless parameter.
+\end_layout
+
+\begin_layout Standard
+The dimensionless parameter, the 
+\series bold
+Mason number
+\series default
+ (Mn)
 \begin_inset space ~
 \end_inset
 
@@ -1537,21 +1737,10 @@ key "Allan1962"
 
 \end_inset
 
-.
- Mn defines when the ER effect is dominant over viscous effects in the flow.
- When Mn 
-\begin_inset Formula $\ll1$
-\end_inset
-
-, the characteristics of the fluid depend strongly on electric field.
- For Mn 
-\begin_inset Formula $>1$
-\end_inset
-
- the viscous effects are dominant: 
+, indicates the relation between viscous force and polarization force: 
 \begin_inset Formula 
 \begin{equation}
-Mn=\frac{{{\eta_{a}}\dot{\gamma}}}{{2{\varepsilon_{0}}{K_{f}}{{\left({\beta E}\right)}^{2}}}}\label{eq:Mn}
+Mn=\frac{viscous\_force}{polarization\_force}=\frac{{{\eta_{a}}\dot{\gamma}}}{{2{\varepsilon_{0}}{K_{f}}{{\left({\beta E}\right)}^{2}}}}\label{eq:Mn}
 \end{equation}
 
 \end_inset
@@ -1573,11 +1762,26 @@ where
 \begin_inset Formula $E$
 \end_inset
 
- is the electric field (effective viscosity 
+ is the electric field and 
 \begin_inset Formula $\eta_{a}$
 \end_inset
 
- is defined in the introduction)
+ is effective viscosity.
+ 
+\end_layout
+
+\begin_layout Standard
+It defines when the ER effect is dominant over viscous effects in the flow.
+ When Mn 
+\begin_inset Formula $\ll1$
+\end_inset
+
+, the characteristics of the fluid depend strongly on electric field and
+ for Mn 
+\begin_inset Formula $>1$
+\end_inset
+
+ the viscous effects are dominant.
 \end_layout
 
 \begin_layout Standard
@@ -1767,127 +1971,6 @@ q=bH{u_{m}}=\frac{b}{{12\mu}}\frac{{\Delta P}}{L}\left({{H^{3}}-{h^{3}}}\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{comment} The velocity profile of laminar flow 
-\backslash
-begin{equation} u =  - 
-\backslash
-frac{1}{{8
-\backslash
-mu }}
-\backslash
-frac{{dp}}{{dx}}
-\backslash
-left( {{H^2} - 4{y^2}} 
-\backslash
-right) 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-Then the average velocity ${u_m}$ can be given as fallowing 
-\backslash
-begin{equation} {u_m} =  - 
-\backslash
-frac{1}{{12
-\backslash
-mu H}}
-\backslash
-frac{{dp}}{{dx}}
-\backslash
-left( {{H^3} - {h^3}} 
-\backslash
-right) 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-The volume flux 
-\backslash
-textit{q} is 
-\backslash
-begin{equation} q = bH{u_m} =  - 
-\backslash
-frac{b}{{12
-\backslash
-mu }}
-\backslash
-frac{{dp}}{{dx}}
-\backslash
-left( {{H^3} - {h^3}} 
-\backslash
-right) 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-Assume pressure 
-\backslash
-textit{p} varies linearly along the length 
-\backslash
-textit{L} of the electrode and $
-\backslash
-Delta {P_
-\backslash
-mu }$ is the pressure drop due to viscosity.
-  
-\backslash
-begin{equation} 
-\backslash
-frac{{
-\backslash
-Delta P}}{L} =  - 
-\backslash
-frac{{dp}}{{dx}} 
-\backslash
-end{equation}
-\end_layout
-
-\begin_layout Plain Layout
-
-Subtract the pressure gradient into the volume flux we obtain equation :
- 
-\backslash
-lior{how do I cite equation?}  
-\backslash
-begin{equation} q = bH{u_m} = 
-\backslash
-frac{b}{{12
-\backslash
-mu }}
-\backslash
-frac{{
-\backslash
-Delta P}}{L}
-\backslash
-left( {{H^3} - {h^3}} 
-\backslash
-right) 
-\backslash
-end{equation} This quantity can be determined by experiment data from PIV.
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{comment}
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
