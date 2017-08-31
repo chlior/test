@@ -1237,7 +1237,7 @@ Electrorheological Fluid (ERF)
 \end_layout
 
 \begin_layout Standard
-The electrorheology (ER) effect was already discover in 1949
+The electrorheology (ER) effect was already discovered in 1949
 \begin_inset space ~
 \end_inset
 
@@ -1248,8 +1248,8 @@ key "Winslow1949"
 
 \end_inset
 
-, yet its advantages for implementation of the Electrorheological Fluid
- (ERF) into practical applications are just been explored.
+, yet its advantages leading to the implementation of the Electrorheological
+ Fluid (ERF) into practical applications are just been explored.
  The fast viscosity change of this material open the way into novel applications.
  Works on micro-fluidic applications implementing the Giant ERF (GERF) effect
 \begin_inset space ~
@@ -1274,20 +1274,10 @@ key "Wang2011"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Change opening (Duplicated)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-The ERF are composed of at least two main components: a carrier fluid (solvent)
+The ERFs are composed of at least two main components: a carrier fluid (solvent)
  and suspended particles.
  Upon application of a strong electric field, the suspended particles connect
  to form a structure resembling a chain or a string.
@@ -1302,9 +1292,9 @@ ER fluid behavior
 \end_layout
 
 \begin_layout Standard
-As mentioned previously, the ERF can change its behavior from nearly solid
+As mentioned previously; the ERF can change its behavior from nearly solid,
  up to liquid state.
- In such semi-solid materials/fluids they will begin to move when they are
+ Such semi-solid materials/fluids they will begin to move when they are
  subjected to a strong enough force, causing them to change from their original
  shape and move in response to the applied force.
  Generally, their motion resistance to flow, viscosity, is of interest.
@@ -1517,9 +1507,9 @@ where
 \begin_layout Standard
 
 \series bold
-General model of stress
+General model for stress
 \series default
-:
+.
 \end_layout
 
 \begin_layout Standard
@@ -1541,22 +1531,10 @@ add ref bingham, 1916; Bird et al., 1982
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\tau=\tau_{\text{y}}+\eta_{\text{p}}\dot{\gamma}$
-\end_inset
-
-
-\begin_inset Formula $\left|\tau\right|>\tau_{y}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\dot{\gamma}=0$
-\end_inset
-
-
-\begin_inset Formula $\left|\tau\right|\leq\tau_{y}$
+\begin_inset Formula $\begin{cases}
+\tau=\tau_{\text{y}}+\eta_{\text{p}}\dot{\gamma} & \left|\tau\right|>\tau_{y}\\
+\dot{\gamma}=0 & \left|\tau\right|\leq\tau_{y}
+\end{cases}$
 \end_inset
 
 
@@ -1575,15 +1553,15 @@ The model takes into consideration only two parameters, the yield stress,
 .
  It is important to consider that after the onset of flow the plastic viscosity
  defines the rate of change of the excess shear stress 
-\begin_inset Formula $\tau-\tau_{y}=\dot{\gamma}$
+\begin_inset Formula $\tau-\tau_{y}\wasypropto\dot{\gamma}$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-From this the most accepted model of ERF has been proposed by Klingenberg
- et al
+Using the Bingham equations, the most accepted model of ERF has been proposed
+ by Klingenberg et al
 \begin_inset space ~
 \end_inset
 
@@ -1594,8 +1572,9 @@ key "Klingenberg1991"
 
 \end_inset
 
- based on the Bingham model.
- It relates the shear stress to the shear rate and electrical field: 
+.
+ It relates the shear stress to the shear rate and the electrical field:
+ 
 \begin_inset Formula 
 \begin{equation}
 \tau(\dot{\gamma},E)=\tau_{y}(E)+\eta_{\infty}\dot{\gamma}+\tau_{ex}(\dot{\gamma},E)\label{eq:klingenberg}
@@ -1690,7 +1669,8 @@ fibrous
 \begin_inset Quotes erd
 \end_inset
 
- formed structures effect (mentioned earlier), therefore also the term 
+ formed structures' effect (mentioned earlier).
+ Therefore, the term 
 \family roman
 \series medium
 \shape up
@@ -1718,7 +1698,7 @@ fibrous
 \uwave default
 \noun default
 \color inherit
- should depend only on this dimensionless parameter.
+ should depend only on this dimensionless parameter, as well.
 \end_layout
 
 \begin_layout Standard
@@ -1815,18 +1795,19 @@ where
 \begin_layout Standard
 
 \series bold
-Flow model
+The Flow model
 \end_layout
 
 \begin_layout Standard
-Considering flow between stationary parallel electrodes.
- 
-\end_layout
-
-\begin_layout Standard
-Assume electrical field is zero and the ERF in Newtonian fluid.
- This model is a known a pressure-driven flow, name Poiseuille flow.
- Then the velocity profile of ERF flowing in the gap is parabolic.
+Understanding the impact of the different physical effects of flow thru
+ micro channels in general and those involving ERF in particular, makes
+ it possible to describe the expected flow velocity profile.
+ Considering the flow between stationary parallel electrodes and the ERF,
+ if we assume that no electrical field is applied, then a Newtonian fluid
+ should be the governing model.
+ The model is a pressure-driven flow, named Poiseuille flow.
+ In the the Poiseuille flow the velocity profile of ERF flowing in the gap
+ is parabolic (see figure 2.4a).
  
 \end_layout
 
@@ -1881,18 +1862,53 @@ key "Zhang2003"
 \end_layout
 
 \begin_layout Standard
-However when the electric filed is applied, the ERF fluid is no logder a
- Newtonian, and the model is consider to be Bingham plastic.
- The velocity profile is not simply parabolic and describe as a "plug flow".
- When a plug will appear in the middle of the gap.
- represent the plug thickness.
+However when the electric field is applied, the ERF fluid is no longer a
+ Newtonian fluid, and the model is better described by the Bingham plastic
+ model.
+ The velocity profile cannot be described anymore as a simple parabola.
+ The new profile is coined as "plug flow" since a plug like profile will
+ appear in the center of the gap (figure 2.4b).
+ As the electric field increases the flow resistance increases, the thickness
+ h of the plug region will become wider .
+ So, up to 
+\begin_inset Formula $\pm\frac{h}{2}$
+\end_inset
+
+ will have a constant plug velocity and beyond it up to 
+\begin_inset Formula $\pm\frac{H}{2}$
+\end_inset
+
+ (where y=0 is the middle of the gap) will present a laminar flow velocity
+ profile.
+ At some value of the electric field, the plug width h will be the same
+ as H.
+ The flow will stop, due to the "fiber structure" of ERF and will behave
+ as a rigid solid, since the shear stress is below the yield stress.
+ 
 \end_layout
 
 \begin_layout Standard
-The velocity profile of laminar flow 
+The description of this special behavior is given by the following equations
+ developed by Zhang et al.:
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+velocity profile
+\series default
+ 
+\series bold
+of the laminar flow part
+\series default
+ of the ERF 
+\bar under
+under electric field
+\bar default
+ is:
 \begin_inset Formula 
 \begin{equation}
-u=-\frac{1}{{8\mu}}\frac{{dp}}{{dx}}\left({{H^{2}}-4{y^{2}}}\right)
+u=-\frac{1}{8\mu}\frac{dp}{dx}\left(H^{2}-4y^{2}\right)
 \end{equation}
 
 \end_inset
@@ -1901,14 +1917,21 @@ u=-\frac{1}{{8\mu}}\frac{{dp}}{{dx}}\left({{H^{2}}-4{y^{2}}}\right)
 \end_layout
 
 \begin_layout Standard
-Then the average velocity
-\begin_inset Formula ${u_{m}}$
+The 
+\series bold
+velocity of the plug
+\series default
+ (from the center up to a distance 
+\begin_inset Formula $\pm\frac{h}{2}$
 \end_inset
 
- can be given as fallowing 
+) is:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{u_{m}}=-\frac{1}{{12\mu H}}\frac{{dp}}{{dx}}\left({{H^{3}}-{h^{3}}}\right)
+u_{c}=-\frac{\mathllap{}dp}{8\mu dx}(H^{2}-h^{2})
 \end{equation}
 
 \end_inset
@@ -1917,14 +1940,38 @@ Then the average velocity
 \end_layout
 
 \begin_layout Standard
-The volume flux 
+therefore, the total fluid profile 
+\series bold
+average velocity
+\series default
+ 
+\begin_inset Formula $u_{m}$
+\end_inset
+
+ can be given as fallows: 
+\begin_inset Formula 
+\begin{equation}
+u_{m}=-\frac{1}{12\mu H}\frac{dp}{dx}\left(H^{3}-h^{3}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+volume flux
+\series default
+ 
 \begin_inset Formula $\textit{q}$
 \end_inset
 
- is 
+ is:
 \begin_inset Formula 
 \begin{equation}
-q=bH{u_{m}}=-\frac{b}{{12\mu}}\frac{{dp}}{{dx}}\left({{H^{3}}-{h^{3}}}\right)
+q=bHu_{m}=-\frac{b}{12\mu}\frac{dp}{dx}\left(H^{3}-h^{3}\right)
 \end{equation}
 
 \end_inset
@@ -1933,23 +1980,50 @@ q=bH{u_{m}}=-\frac{b}{{12\mu}}\frac{{dp}}{{dx}}\left({{H^{3}}-{h^{3}}}\right)
 \end_layout
 
 \begin_layout Standard
-Assume pressure 
+where 
+\shape italic
+b
+\shape default
+ is the length of the electrode.
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+pressure drop
+\series default
+ 
+\begin_inset Formula $\Delta P_{\mu}$
+\end_inset
+
+ due to viscosity is:
+\begin_inset Formula 
+\begin{equation}
+\frac{{\Delta P_{\mu}}}{L}=-\frac{dp}{dx}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+assuming the pressure 
 \begin_inset Formula $\textit{p}$
 \end_inset
 
- varies linearly along the length
+ varies linearly along the length 
 \begin_inset Formula $\textit{L}$
 \end_inset
 
- of the electrode and
-\begin_inset Formula $\Delta{P_{\mu}}$
-\end_inset
+ of the electrode.
+\end_layout
 
- is the pressure drop due to viscosity.
- 
+\begin_layout Standard
+The volume flux is: 
 \begin_inset Formula 
 \begin{equation}
-\frac{{\Delta P}}{L}=-\frac{{dp}}{{dx}}
+q=bHu_{m}=\frac{b}{12\mu}\frac{\Delta P}{L}\left(H^{3}-h^{3}\right)
 \end{equation}
 
 \end_inset
@@ -1958,29 +2032,42 @@ Assume pressure
 \end_layout
 
 \begin_layout Standard
-Subtract the pressure gradient into the volume flux we obtain equation :
- 
+This quantity can be determined by experimental data using Particle image
+ velocimetry (PIV).
+\end_layout
+
+\begin_layout Standard
+It is interesting to note that a nonlinear cubic equation in 
+\begin_inset Formula $\Delta P$
+\end_inset
+
+ can be derived from which, when the volume flux q is given, the relationship
+ between 
+\begin_inset Formula $\Delta P$
+\end_inset
+
+ and 
+\begin_inset Formula $\tau_{y}$
+\end_inset
+
+ is determined:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-q=bH{u_{m}}=\frac{b}{{12\mu}}\frac{{\Delta P}}{L}\left({{H^{3}}-{h^{3}}}\right)
+\left(\Delta P\right)^{3}-\frac{12\mu qL}{bH^{3}}\left(\Delta P\right)^{2}-\left(\frac{2L}{H}\tau_{y}\right)^{3}=0
 \end{equation}
 
 \end_inset
 
- This quantity can be determined by experiment data from PIV.
-\end_layout
 
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-Example of true materials that fulfill such behaviors is for example:
 \end_layout
 
 \begin_layout Standard
 \noindent
-A common material that have been used for microflow is the 
+A practical example of a common material that obeys the behaviors indicated
+ so far and can be used for micro-flow testing is the 
 \shape italic
 RheOil4.0
 \shape default
@@ -1997,7 +2084,7 @@ key "Fludicon"
 
 .
  RheOil 4.0 can be specified as a silicon oil–based ER suspension with 50
- vol% polyurethane particle with an average particle diameter of 3.5 mm.
+ vol% polyurethane particles with an average particle diameter of 3.5 mm.
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Freyer2015"
@@ -2012,6 +2099,160 @@ Giant Electrorheological Fluid (GERF)
 \end_layout
 
 \begin_layout Standard
+So far, we were dealing with general characteristics of fluids in micro-channels.
+ It was shown that there is a section of fluids that exhibit a fluid-solid
+ behavior that can be modeled as having a yield stress value that needs
+ to be overcome to permit the onset of flow.
+ Among those fluids the ERF is unique in the sense that it can change it
+ yield stress values and properties by applying and electric field.
+ However, many attempts to formulate ERF with a practical, high yield stress
+ values, seem to have an apparent upper limit.
+ This is while considering reasonably-sized particles and electric field
+ values below the dielectric breakdown.
+ It appears that the basic characteristics that originate the ER effect
+ are those that are placing an upper limit to the yield stress.
+ Recently a new concept for the formulation of ERF was explored and found
+ to overcome this limitations.
+ A new kind of ER materials was formulated that exhibit Giant Electrorheological
+ Fluid (GERF) properties.
+\end_layout
+
+\begin_layout Standard
+The main difference between the ERF and the GERF is that ER effect relies
+ on induced polarization mechanism while the GER effect relies on molecular
+ dipoles.
+\end_layout
+
+\begin_layout Standard
+The basic difference between the dimensionless maximum electric susceptibility
+ of a collection of permanent dipoles and a system of polarizable particles,
+ is as follows.
+ In general for a polarizable particle, the Clausius-Mossotti relation implies:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{\varepsilon_{s}-1}{\varepsilon_{s}+2}=\cfrac{4\pi\alpha}{3\upsilon}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\epsilon_{s}$
+\end_inset
+
+ is the relative dielectric constant, 
+\begin_inset Formula $\upsilon$
+\end_inset
+
+ is the particle volume and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the polarizability (which can be expressed as the ratio of the induced
+ dipole momentum to the actual electric field that induced it).
+\end_layout
+
+\begin_layout Standard
+In our case the polarizability can be expressed as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha=a^{3}\frac{\left(\varepsilon_{s}-1\right)}{\left(\varepsilon_{s}+2\right)}\stackrel{\varepsilon_{s}\rightarrow\infty}{\longrightarrow}a^{3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $a^{3}=\cfrac{3\upsilon}{4\pi}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+If we take the largest possible density of polarizable particles, 
+\begin_inset Formula $N=\dfrac{1}{\upsilon}=\left(\frac{4\pi a^{3}}{3}\right)^{-1}$
+\end_inset
+
+, then the dimensionless 
+\begin_inset Formula $\chi=N\alpha$
+\end_inset
+
+ has the maximum value of 
+\begin_inset Formula $\frac{3}{4\pi}=0.239$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On the other hand, a molecular dipoles collection, the polarizability is
+ caused due to thermal Brownian motion and the alignment to the applied
+ electric field.
+ This leads to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha=\dfrac{\mu_{0}^{\phantom{0}2}}{3k_{B}T}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ is the molecular dipole moment, 
+\begin_inset Formula $k_{B}$
+\end_inset
+
+ is the Boltzmann constant, and T the temperature.
+\end_layout
+
+\begin_layout Standard
+to get some rough indication of the effect we can use T room temperature,
+ 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ be one electronic charge separated from its opposite by 
+\begin_inset Formula $\textrm{1Å}$
+\end_inset
+
+.
+ In this case the density of polarizable particles is 
+\begin_inset Formula $N=\nicefrac{1}{molecularvolume}$
+\end_inset
+
+, we obtain 
+\begin_inset Formula $\chi\thickapprox4-50$
+\end_inset
+
+, depending on the molecular volume [Wen 2008].
+ It can be seen that there is an order of magnitude of the maximum values
+ which are theoretically possible in the GERF relative to the ERF.
+ 
+\end_layout
+
+\begin_layout Standard
 The giant electrorheological (GER) fluid was discovered in 2003 by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2019,12 +2260,11 @@ key "Wen2003a"
 
 \end_inset
 
-, and show enhance ER properties.
- The GER fluid breaking the theoretical upper bound on conventional ER static
- yield stress of 3.kPa (book).
- GER fluid yield stress displays an opposite dependence on particle size
- and can reach above 250kPa.and a shear thinning effect at parallel-plate
- sandwich configuration 
+.
+ The GER fluid as indicated surpassed the ERF upper limit of static yield
+ stress of 3.kPa (book).
+ GER fluid yield stress has an inverse dependence on particle size and can
+ have values larger that 250 kPa 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Wen2004"
@@ -2032,18 +2272,8 @@ key "Wen2004"
 \end_inset
 
 .
- The GER fluid is consists of Urea coated nanoparticles of Barium Titanium
- Oxalate suspended in silicone oil
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Wen2003a"
-
-\end_inset
-
-.
- The GER effect mechanism is based on the alignment of molecular dipoles
- through the hydrogen bonding network however, is explanation still lacking
- 
+ Some explanations been studied, about the GER effect mechanism, are based
+ on molecular dipoles alignment through hydrogen bonding 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Chen2010,Wen2008,Hong2015"
@@ -2055,11 +2285,15 @@ key "Chen2010,Wen2008,Hong2015"
 \end_layout
 
 \begin_layout Standard
-GERF Material 
-\end_layout
+Practical materials used as GER fluids consist of Urea coated nanoparticles
+ of Barium Titanium Oxalate suspended in silicone oil
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wen2003a"
 
-\begin_layout Standard
-Some fabrication process are describe at 
+\end_inset
+
+, but other GERF fabrication process are mentioned in the literature 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Gong2008,Hong2015,Wen2004"
@@ -2067,14 +2301,12 @@ key "Gong2008,Hong2015,Wen2004"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-The common material are used and will use at this thesis is the 
+ Commercial common material available and the one that will be applied in
+ this research is the 
 \shape italic
 GER STR 0201
 \shape default
- that fabricated by 
+ fabricated by 
 \shape italic
 Smart Materials Laboratory
 \shape default
@@ -2086,9 +2318,20 @@ key "SML"
 \end_inset
 
 .
- Specification given of 50% particles weight percentage.
- particles are Titanium Dioxide of 0.1um approximate diameter.
- kinematic viscosity of 200cSt at 25 degree and density of 1.500 
+ It consists of 
+\begin_inset Formula $\thicksim0.1\mu m$
+\end_inset
+
+ diameter Titanium Dioxide particles 50 weight% having a kinematic viscosity
+ of 200cSt at 
+\begin_inset Formula $25$
+\end_inset
+
+
+\begin_inset Formula $^{\circ}C$
+\end_inset
+
+ and density of 1.500 
 \begin_inset Formula $\frac{\textrm{g}}{\textrm{cm^{3}}}$
 \end_inset
 
