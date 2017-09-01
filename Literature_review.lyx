@@ -2365,41 +2365,125 @@ PIV
 \noindent
 Particle image velocimetry (PIV) is a quantitative optical measurement technique
  that provides instantaneous two-dimensional velocity fields.
- 
+ (traugott2015)
 \end_layout
 
 \begin_layout Standard
-\noindent
-Pair images of flow are capture with a known time gap.
- Field movement is provide using pattern matching technique.
- 
+Fluid flow is recorded using camera and analyses in software to gain a movement
+ field.
+ The time gap between images is known, hence velocity field can be calculated.
+\end_layout
+
+\begin_layout Standard
+The method possessed many benefits, PIV is non intrusive method, A whole
+ velocity filed is gained, additional calculation function are possible
+ for specific cases due the computerize of the data.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Particle Seeding
+\end_layout
+
+\begin_layout Standard
+Visually observation of liquid flow is possible only if a separated contrast
+ particle are present.
+ Some interrogated liquids are compose of two different color.
+ such as ER fluid that contain particles of different materials.
+ For some other particles that are not flow observable it is possible to
+ add tracer particles that are visible.That visible particle are the information
+ that been transfer.
+ there for trace should have been integrate at the liquid as colloid particles
+ and there for should have a respective diameter.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-cite from Hadar
+need to be cited
 \end_layout
 
 \end_inset
 
-Then velocity field is then calculated from the time and distance data.
- In case of colloids we will track the contrast between the particles.
- In other case when the fluid is invisible the fluid should be seeded.
+ this particles called 
+\shape italic
+Tracers
+\shape default
+.
 \end_layout
 
 \begin_layout Standard
-The fluid pattern visibility alternation are Shadow-graphic or Florescent
- seeded particles.
- Hence pattern on fluid are normally doesn't exist the fluid 
+proper tracer must be small enough to follow the fluid motion and should
+ not alter the fluid or the flow properties, large enough to be visible
+ by the camera.
 \end_layout
 
 \begin_layout Standard
-is possible to capture The fluid is contain particles by applying light
- source place opposite to the camera and see the shadows of the particles.
- In this technique the particles we assume the particles have the same dynamic
- properties as the carrier fluid, and the particles are at size and color
- that make them visible to the camera.
- The other way is seeding The other is seeding.
+Uniform seeding is critical to the success of obtaining velocity field.
+\end_layout
+
+\begin_layout Standard
+particles respons time:
+\end_layout
+
+\begin_layout Standard
+Velocity lag of a particle in a continuously accelerating fluid
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=U_{p}-U_{f}=d^{2}\frac{(\rho_{p}-\rho_{f})dU_{f}}{8\mu dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The particle velocity response to the fluid velocity if heavy particles
+ (p>> f ) in a continuously accelerating flow is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{p}(t)=U_{f}\left[1-exp\left(-\frac{t}{\tau_{p}}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Particle response time:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{p}=d_{p}^{2}\frac{\rho_{p}}{18\mu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stock number is defined as the ratio of the particle response time to the
+ Kolmogorov time scale, where Kolmogorov is the smallest fluid length scale.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $St=\frac{\tau_{p}}{\tau_{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $St\rightarrow0$
+\end_inset
+
+ the particles behave like tracer.
+ when 
+\begin_inset Formula $St\rightarrow\infty$
+\end_inset
+
+ the particles behave like fluid.
 \end_layout
 
 \begin_layout Standard
@@ -2407,57 +2491,7 @@ is possible to capture The fluid is contain particles by applying light
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%PIV intro
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%Particle seeding (specify when sidding is not necessery)
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%Florecent vs shadow-graphic
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%Pattern Matching (correleation: single pass multi pass, multi fft)
+cite piv 4
 \end_layout
 
 \end_inset
@@ -2465,6 +2499,101 @@ status collapsed
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+formula cite dbiri2006
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Florescent vs shadow-graphic
+\end_layout
+
+\begin_layout Standard
+When the fluid is lake of flow pattern the method of tracking is by seeding
+ 
+\series bold
+florescent particles
+\series default
+.
+ these particles emit light whenever high energy of are been absorbed.
+ The energy source in that case is mainly laser.
+ for most of PIV experiment it is essential to spread the laser to a plane
+ sheet, this is to receive a two dimensional flow information.
+ 
+\end_layout
+
+\begin_layout Standard
+florescent seeding is not always necessary.
+ for fluid such as ER fluid that consist of suspended particles in carrier
+ fluid visibility can be obtain just from normal light source.
+ by placing the a light source the tracers shadow it is observed, and the
+ information of flow are transfer through the shadow particles, this is
+ called 
+\series bold
+shadow-graphic
+\series default
+ PIV.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+need to be cited
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pattern Correlation
+\end_layout
+
+\begin_layout Standard
+Tracking the fluid movement through the tracers it is occur by obtain an
+ pair of image and correlate the 
+\begin_inset Quotes eld
+\end_inset
+
+pixels
+\begin_inset Quotes erd
+\end_inset
+
+ moment.
+\end_layout
+
+\begin_layout Standard
+the correlation 
+\end_layout
+
+\begin_layout Standard
+(correlation: single pass multi pass, multi fft) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cite matPIV tut
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R(x,y)=\stackrel[i=-K]{i=K}{\sum}\stackrel[i=-L]{i=L}{\sum}I(i,j)\cdot I^{\prime}(i+x,j+y)$
 \end_inset
 
 
