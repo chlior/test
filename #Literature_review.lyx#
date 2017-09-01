@@ -610,7 +610,7 @@ key "Chorlton1981"
 Micro Scale Effects
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsubsection
 
 \series bold
 Scaling effects
@@ -665,7 +665,7 @@ key "Sharp2002"
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsubsection
 
 \series bold
 Surface tension effect
@@ -898,7 +898,7 @@ key "Trefethen1969"
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsubsection
 \noindent
 
 \series bold
@@ -1116,18 +1116,63 @@ name "fig:Slip_Figure"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsubsection
 
 \series bold
 Entrance length 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-missing
 \end_layout
+
+\begin_layout Standard
+Up to this point it was assumed that each effect occurs without taking in
+ consideration from where the fluids enter of exit the interest zone.
+ in practical cases this is not the case.
+ The differences of micro and macro scale flows are behavior reflect fundamental
+ physics discrepancies.
+ There are scales where the wall becomes significant or others where a large
+ electrical field makes its impact.
+ This without mention some practical aspects involving fabrication processes.
+ an important aspect to be considered is the entrance length effect.
+ the fluid under test generally flows from a relative large reservoir into
+ a small constant cross section test region.
+ it is understood that the flow profile will need to adapt to the models
+ change.
+ it will require a distance to adjust to the walls presence and other aspects
+ of the test channel.
+ Beyond the 
+\series bold
+entrance length
+\series default
+, the fluid flow will be considered fully developed.
+ After this point the velocity profile is considered not to change anymore.
+ The areas in the fluid that will be affected more slowly by the boundaries
+ or the walls are certainly those farther from them namely the centerline
+ of the pipe.
+ it is expect that the centerline velocity would initially get its fully
+ developed value, but it would continuously slowly increase downstream infinitel
+y.
+ Therefore, a standard is set to indicate when the flow can be considered
+ fully developed.
+ Shah and London [Shah, R.
+ K., and London, A.
+ L., Laminar Flow Forced Convection in Ducts, New York: Academic, 1978.] defined
+ the entrance length as the point where the developing centerline velocity
+ is 0.99 times the fully developed value.
+\end_layout
+
+\begin_layout Standard
+in macroscopic cases, where the Reynolds number is assumed to be relatively
+ high, the entrance length 
+\begin_inset Formula $L_{e}$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{L_{e}}{D_{h}}\thickapprox0.06Re_{D_{h}}
+\end{equation}
 
 \end_inset
 
@@ -1135,30 +1180,53 @@ missing
 \end_layout
 
 \begin_layout Standard
-Consequently, an arbitrary standard needs to be set beyond which the flow
- is considered close enough to fully developed to be considered fully developed.
- Shah and London [23] define the entrance length Le as the point where the
- developing centerline velocity is equal to 0.99 times its fully developed
- value.
- 
+where 
+\begin_inset Formula $D_{h}$
+\end_inset
+
+ is the hydraulic diameter and 
+\begin_inset Formula $Re_{D_{h}}$
+\end_inset
+
+ is the Reynolds number based on the hydraulic diameter[Fox, R.
+ W., and McDonald, A.
+ T., Introduction to Fluid Mechanics, New York: Wiley, 1999.].
 \end_layout
 
 \begin_layout Standard
-according to Shah and London [23].
- This expression predicts that even in the limit of the Reynolds number
- approaching zero, the entrance length is approximately 0.6 hydraulic diameters
- long.
- 
+Due to the Reynolds number scaling, dimensionaly small systems generally
+ have low Reynolds number.
+ with Reynolds number going to zero, the entrance length from the above
+ function will trend to zero as well.
+ this is not the actual seen behavior.
+ therefore for low Reynolds numbers the function is [Shah and London]:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{L_{e}}{D_{h}}\thickapprox\dfrac{0.6}{1+0.035Re_{D_{h}}}+0.056Re_{D_{h}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The expression indicates that for very low Reynolds number around the zero
+ limit, the entrance length will be a practical value of about 0.6 hydraulic
+ diameters long 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Nguyen1970"
 
 \end_inset
 
- [23]
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 
 \series bold
 Electrokinetic effect 
@@ -1174,6 +1242,149 @@ missing
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The Electrokinetic effect are a set of physical phenomena related to the
+ motion and electrical response of liquids and particles on them.
+ This effects allow the generation of motion thru electrical filed application
+ or generation of electric field as a consequence of motion.
+ In this review, the motion generation by electrokinetic effects will be
+ discussed namey: electrophoresis and electro-osmosis.
+ The use of this effects is very suitable to move liquids and particles
+ at small length scales, since this are surface force effects which naturally
+ have very short ranges.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Electro-osmosis 
+\end_layout
+
+\begin_layout Standard
+Electro-osmosis effects can be simplified by considering a liquid in contact
+ with a planar wall.
+ A polar liquid (water) brought into contact with a solid will generate
+ an electric charge that accumulates at the solid's surface.
+ Those charges cause the migration of liquid charges near the wall.
+ the ions in the liquid are drawn to the surface forming a thin layer, the
+ 
+\shape italic
+Stern layer
+\shape default
+, of ions paired to surface charges.
+ This layer in turn, originates a charge redistribution deeper into the
+ fluid.
+ An additional layer with charges of the same sign as in the Stern layer
+ is generated.
+ This layer is called the diffuse or 
+\shape italic
+Gouy-Chapman
+\shape default
+ layer.
+ These two layers compose the 
+\series bold
+electric double layer (EDL)
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figs/electric double layer.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this EDL, the Stern layer cannot move due the closeness of the charges
+ involved while the diffuse (
+\shape italic
+Gouy-Chapman
+\shape default
+) layer is movable.
+ The diffuse layer been charged can be moved by the application of an electric
+ field.
+ Therefore, the Stern - diffuse layers boundary between is called the shear
+ surface because of the relative motion across it.
+ The potential at the wall is called the wall potential w and the potential
+ at the shear plane is called the zeta potential .
+ This situation is shown in Figure 2.16 and is typical of the charge distribution
+s observed in many microfluidic devices.
+ Both glass [36] and polymer-based [39] microfluidic devices tend to have
+ negatively charged or deprotonated surface chemistries, which means that
+ the EDL is positively charged.
+ After assuming a Boltzmann distribution of the charge in the EDL and the
+ Poisson relationship: r2 = − E " (2.86) between the charge density E and
+ the potential , and that the electrolyte is symmetric (e.g., Na+, Cl−), the
+ governing equation for the potential is found to be the Poisson-Boltzmann
+ equation: d2 dy2 = 2Fzc1 " sinh 
+\end_layout
+
+\begin_layout Standard
+============================
+\end_layout
+
+\begin_layout Standard
+Because of the proximity of charges, the Stern layer is fixed in place while
+ the diffuse layer can be moved.
+ In particular, the diffuse layer has a net charge and can be moved with
+ an electric field.
+ Consequently, the boundary between the Stern layer and the diffuse layer
+ is called the shear surface because of the relative motion across it.
+ The potential at the wall is called the wall potential w and the potential
+ at the shear plane is called the zeta potential .
+ This situation is shown in Figure 2.16 and is typical of the charge distribution
+s observed in many microfluidic devices.
+ Both glass [36] and polymer-based [39] microfluidic devices tend to have
+ negatively charged or deprotonated surface chemistries, which means that
+ the EDL is positively charged.
+ After assuming a Boltzmann distribution of the charge in the EDL and the
+ Poisson relationship: r2 = − E " (2.86) between the charge density E and
+ the potential , and that the electrolyte is symmetric (e.g., Na+, Cl−), the
+ governing equation for the potential is found to be the Poisson-Boltzmann
+ equation: d2 dy2 = 2Fzc1 " sinh 
+\end_layout
+
+\begin_layout Standard
+zF KT 
+\end_layout
+
+\begin_layout Standard
+(2.87) where c1 is the concentration of ions far from the surface, z is the
+ charge number (valence) of each ion, " = "r"0 is the dielectric constant,
+ and F is Faraday’s constant.
+ Faraday’s constant is equal to the charge of 1 mole of singly-ionized molecules
+—F = 9.65 × 104 C mol−1.
+ This equation is clearly nonlinear and difficult to solve.
+ However, the relative thickness of the EDL is usually small enough in micron-si
+zed systems, that the hyperbolic sine term can be replaced by the first
+ term in its Taylor series—just its argument.
+ This approximation is called the Debye-H¨uckel limit of thin EDLs, and
+ it greatly simplifies (2.87) to: d2 dy2 = 
+\end_layout
+
+\begin_layout Standard
+2 D where2 D = s "KT 2z2F2c1 (2.88) where D is called the Debye length of
+ the electrolyte.
+ The solution to this ordinary differential equation is quite straightforward
+ and found to be: = w exp 
+\end_layout
+
+\begin_layout Standard
+− y D 
+\end_layout
+
+\begin_layout Standard
+(2.89) Hence, the Debye length represents the decay distance for the potential
+ as well as the electric field at low potentials.
+\end_layout
+
+\begin_layout Standard
+***********************************
 \end_layout
 
 \begin_layout Standard
@@ -1274,16 +1485,6 @@ key "Wang2011"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Change opening (Duplicated)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1304,11 +1505,11 @@ ER fluid behavior
 \begin_layout Standard
 As mentioned previously; the ERF can change its behavior from nearly solid,
  up to liquid state.
- In such semi-solid materials/fluids they will begin to move when they are
- subjected to a strong enough force, causing them to change from their original
- shape and move in response to the applied force.
+ Such semi-solid materials/fluids will begin to move when they are subjected
+ to a strong enough force, causing them to change from their original shape
+ and move in response to the applied force.
  Generally, their motion resistance to flow, viscosity, is of interest.
- However, there are situations were it suits us to assume that it is solid.
+ However, there are situations were it suits to assume that it is solid.
  Instead of measuring a liquid property, such as viscosity, a solid property
  such as 
 \series bold
@@ -1541,10 +1742,14 @@ add ref bingham, 1916; Bird et al., 1982
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
 \tau=\tau_{\text{y}}+\eta_{\text{p}}\dot{\gamma} & \left|\tau\right|>\tau_{y}\\
 \dot{\gamma}=0 & \left|\tau\right|\leq\tau_{y}
-\end{cases}$
+\end{cases}
+\end{equation}
+
 \end_inset
 
 
@@ -1730,7 +1935,7 @@ key "Allan1962"
 , indicates the relation between viscous force and polarization force: 
 \begin_inset Formula 
 \begin{equation}
-Mn=\frac{viscous\_force}{polarization\_force}=\frac{{{\eta_{a}}\dot{\gamma}}}{{2{\varepsilon_{0}}{K_{f}}{{\left({\beta E}\right)}^{2}}}}\label{eq:Mn}
+Mn=\frac{viscous\_force}{polarization\_force}=\frac{\eta_{a}\dot{\gamma}}{2\varepsilon_{0}\varepsilon_{r}\left(\beta E\right)^{2}}\label{eq:Mn}
 \end{equation}
 
 \end_inset
@@ -1740,7 +1945,7 @@ where
 \end_inset
 
  is the permitivity of the free space, 
-\begin_inset Formula $K_{f}$
+\begin_inset Formula $\varepsilon_{r}$
 \end_inset
 
  is the relative permitivity of the carrier liquid, 
@@ -2018,7 +2223,7 @@ pressure drop
 \end_layout
 
 \begin_layout Standard
-assuming the pressure 
+Assuming the pressure 
 \begin_inset Formula $\textit{p}$
 \end_inset
 
@@ -2026,11 +2231,7 @@ assuming the pressure
 \begin_inset Formula $\textit{L}$
 \end_inset
 
- of the electrode.
-\end_layout
-
-\begin_layout Standard
-The volume flux is: 
+ of the electrode, the volume flux takes the form of: 
 \begin_inset Formula 
 \begin{equation}
 q=bHu_{m}=\frac{b}{12\mu}\frac{\Delta P}{L}\left(H^{3}-h^{3}\right)
@@ -2114,7 +2315,7 @@ So far, we were dealing with general characteristics of fluids in micro-channels
  behavior that can be modeled as having a yield stress value that needs
  to be overcome to permit the onset of flow.
  Among those fluids the ERF is unique in the sense that it can change it
- yield stress values and properties by applying and electric field.
+ yield stress values and properties by applying an electric field.
  However, many attempts to formulate ERF with a practical, high yield stress
  values, seem to have an apparent upper limit.
  This is while considering reasonably-sized particles and electric field
@@ -2143,7 +2344,7 @@ The basic difference between the dimensionless maximum electric susceptibility
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\dfrac{\varepsilon_{s}-1}{\varepsilon_{s}+2}=\cfrac{4\pi\alpha}{3\upsilon}
+\dfrac{\varepsilon_{r}-1}{\varepsilon_{r}+2}=\cfrac{4\pi\alpha}{3\upsilon}
 \end{equation}
 
 \end_inset
@@ -2153,7 +2354,7 @@ The basic difference between the dimensionless maximum electric susceptibility
 
 \begin_layout Standard
 where 
-\begin_inset Formula $\epsilon_{s}$
+\begin_inset Formula $\epsilon_{r}$
 \end_inset
 
  is the relative dielectric constant, 
@@ -2169,14 +2370,14 @@ where
 \end_layout
 
 \begin_layout Standard
-In our case the polarizability can be expressed as:
+In our case, the polarizability can be expressed as:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\alpha=a^{3}\frac{\left(\varepsilon_{s}-1\right)}{\left(\varepsilon_{s}+2\right)}\stackrel{\varepsilon_{s}\rightarrow\infty}{\longrightarrow}a^{3}
-\]
+\begin{equation}
+\alpha=a^{3}\frac{\left(\varepsilon_{r}-1\right)}{\left(\varepsilon_{r}+2\right)}\stackrel{\varepsilon_{r}\rightarrow\infty}{\longrightarrow}a^{3}
+\end{equation}
 
 \end_inset
 
@@ -2208,14 +2409,18 @@ If we take the largest possible density of polarizable particles,
 \end_layout
 
 \begin_layout Standard
-On the other hand, a molecular dipoles collection, the polarizability is
- caused due to thermal Brownian motion and the alignment to the applied
+On the other hand, for a molecular dipoles collection, the polarizability
+ is caused due to thermal Brownian motion and the alignment to the applied
  electric field.
  This leads to:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\alpha=\dfrac{\mu_{0}^{\phantom{0}2}}{3k_{B}T}$
+\begin_inset Formula 
+\begin{equation}
+\alpha=\dfrac{\mu_{0}^{\phantom{0}2}}{3k_{B}T}
+\end{equation}
+
 \end_inset
 
 
@@ -2234,8 +2439,7 @@ where
 \end_layout
 
 \begin_layout Standard
-to get some rough indication of the effect we can use T room temperature,
- 
+As a rough indication of the effect we can use T room temperature, 
 \begin_inset Formula $\mu_{0}$
 \end_inset
 
@@ -2245,7 +2449,7 @@ to get some rough indication of the effect we can use T room temperature,
 
 .
  In this case the density of polarizable particles is 
-\begin_inset Formula $N=\nicefrac{1}{molecularvolume}$
+\begin_inset Formula $N=\nicefrac{1}{molecular\_volume}$
 \end_inset
 
 , we obtain 
@@ -2253,8 +2457,8 @@ to get some rough indication of the effect we can use T room temperature,
 \end_inset
 
 , depending on the molecular volume [Wen 2008].
- It can be seen that there is an order of magnitude of the maximum values
- which are theoretically possible in the GERF relative to the ERF.
+ It can be seen at least an order of magnitude difference between the maximum
+ values which are theoretically possible in the GERF relative to the ERF.
  
 \end_layout
 
@@ -2268,7 +2472,7 @@ key "Wen2003a"
 
 .
  The GER fluid as indicated surpassed the ERF upper limit of static yield
- stress of 3.kPa (book).
+ stress of 3 kPa (book).
  GER fluid yield stress has an inverse dependence on particle size and can
  have values larger that 250 kPa 
 \begin_inset CommandInset citation
