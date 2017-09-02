@@ -698,19 +698,9 @@ surface energy density
 \begin_inset Formula $\gamma$
 \end_inset
 
-) is the force (
-\begin_inset Formula $F$
-\end_inset
-
-) exerted on the interface measured along a line (
-\begin_inset Formula $L$
-\end_inset
-
-) whereas surface energy is the Energy (
-\begin_inset Formula $W$
-\end_inset
-
-) stored in the interface measured along an area (
+) is the force (F) exerted on the interface measured along a line (L) whereas
+ surface energy is the Energy (W) stored in the interface measured along
+ an area (
 \begin_inset Formula $\varDelta A)$
 \end_inset
 
@@ -1162,15 +1152,11 @@ entrance length
 y.
  Therefore, a standard is set to indicate when the flow can be considered
  fully developed.
- Shah and London 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Shah1978"
-
-\end_inset
-
- defined the entrance length as the point where the developing centerline
- velocity is 0.99 times the fully developed value.
+ Shah and London [Shah, R.
+ K., and London, A.
+ L., Laminar Flow Forced Convection in Ducts, New York: Academic, 1978.] defined
+ the entrance length as the point where the developing centerline velocity
+ is 0.99 times the fully developed value.
 \end_layout
 
 \begin_layout Standard
@@ -1202,14 +1188,9 @@ where
 \begin_inset Formula $Re_{D_{h}}$
 \end_inset
 
- is the Reynolds number based on the hydraulic diameter
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Fox1999"
-
-\end_inset
-
-.
+ is the Reynolds number based on the hydraulic diameter[Fox, R.
+ W., and McDonald, A.
+ T., Introduction to Fluid Mechanics, New York: Wiley, 1999.].
 \end_layout
 
 \begin_layout Standard
@@ -1218,14 +1199,7 @@ Due to the Reynolds number scaling, dimensionaly small systems generally
  with Reynolds number going to zero, the entrance length from the above
  function will trend to zero as well.
  this is not the actual seen behavior.
- therefore for low Reynolds numbers the function is 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Shah1978"
-
-\end_inset
-
-:
+ therefore for low Reynolds numbers the function is [Shah and London]:
 \end_layout
 
 \begin_layout Standard
@@ -1255,13 +1229,25 @@ key "Nguyen1970"
 \begin_layout Subsection
 
 \series bold
-Electrokinetic effect
+Electrokinetic effect 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+missing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 The Electrokinetic effect stands for a set of physical phenomena related
- to the liquids and particles response to motion and electrical field.
- This effects allow the generation of fluid motion through electrical filed
+ to the motion and electrical response of liquids and particles on them.
+ This effects allow the generation of fluid motion thru electrical filed
  application or generation of electric field as a consequence of fluid motion.
  In this review, the motion generation by electrokinetic effects will be
  discussed, namely: electrophoresis and electro-osmosis.
@@ -1312,10 +1298,9 @@ status open
 
 \begin_layout Plain Layout
 \noindent
-\align center
+\align left
 \begin_inset Graphics
 	filename figs/electric double layer.png
-	scale 70
 
 \end_inset
 
@@ -1411,27 +1396,12 @@ key "Nguyen1970"
 \end_layout
 
 \begin_layout Standard
-where 
-\begin_inset Formula $z$
-\end_inset
-
- is the valence of each involved ion, 
-\begin_inset Formula $F$
-\end_inset
-
- is Faraday’s constant, 
+where z is the valence of each involved ion, F is Faraday’s constant, 
 \begin_inset Formula $c_{\infty}$
 \end_inset
 
- is the concentration of ions far from the surface, 
-\begin_inset Formula $k$
-\end_inset
-
- the Boltzman constant and 
-\begin_inset Formula $T$
-\end_inset
-
- the temperature.
+ is the concentration of ions far from the surface, k the Boltzman constant
+ and T the temperature.
 \end_layout
 
 \begin_layout Standard
@@ -1583,11 +1553,7 @@ reference "fig:electrophoretic"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-q_{s}E_{el}=6\pi\eta u_{ep}r_{0}
-\]
-
+\begin_inset Formula $q_{s}E_{el}=6\pi\eta u_{ep}r_{0}$
 \end_inset
 
 
@@ -1612,11 +1578,7 @@ where
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-q_{s}=\dfrac{\varepsilon_{0}\varepsilon_{r}\zeta}{\lambda_{D}}\left(1+\dfrac{r_{0}}{\lambda_{D}}\right)
-\]
-
+\begin_inset Formula $q_{s}=\dfrac{\varepsilon_{0}\varepsilon_{r}\zeta}{\lambda_{D}}\left(1+\dfrac{r_{0}}{\lambda_{D}}\right)$
 \end_inset
 
 
@@ -1765,7 +1727,7 @@ yield stress
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename figs/Yield Stress.png
+	filename figs/Yield Strees 2.png
 
 \end_inset
 
@@ -1793,6 +1755,155 @@ where
 
  is the volume of particles i phase, and it is measured as a percentage
  of the total volume (including the solute and the particles).
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Paragraph
+Dielectric constant:
+\end_layout
+
+\begin_layout Plain Layout
+A quantity that defines the ability of a substance to store electrical energy
+ in an applied electric field: 
+\begin_inset Formula 
+\begin{equation}
+{{\varepsilon}_{r}}(\omega)=\frac{\varepsilon(\omega)}{{{\varepsilon}_{0}}}=\varepsilon{{(\omega)}_{r,real}}+i\cdot\varepsilon{{(\omega)}_{r,imagenery}}
+\end{equation}
+
+\end_inset
+
+where ..
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+alex{
+\end_layout
+
+\end_inset
+
+define the terms in the equation
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+alex{
+\end_layout
+
+\end_inset
+
+we do not write terms using 
+\begin_inset Quotes eld
+\end_inset
+
+names
+\begin_inset Quotes erd
+\end_inset
+
+, but only subscripts and define them, i.e.
+ instead of 
+\begin_inset Formula $()_{real}$
+\end_inset
+
+ we use 
+\begin_inset Formula $\Re()$
+\end_inset
+
+ and 
+\begin_inset Formula $\Im()$
+\end_inset
+
+ and write 
+\begin_inset Formula $\Re(\omega)$
+\end_inset
+
+ is a real part of a complex frequency - i actually do not understand what
+ is written there ?.
+ I suggest to read Klingenberg paper and adopt his notation
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Paragraph
+Shear strain rate:
+\end_layout
+
+\begin_layout Plain Layout
+describes the shearing deformation rate of change in time for two dimensional
+ channel flow.
+ 
+\begin_inset Formula 
+\begin{equation}
+\dot{\gamma}=\frac{u}{h}=\frac{\partial{u}}{\partial{y}}+\frac{\partial{v}}{\partial{x}}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $u$
+\end_inset
+
+ is the velocity along the channel and 
+\begin_inset Formula $h$
+\end_inset
+
+ is the channel height.
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are the Cartesian coordinate axis.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2136,7 +2247,7 @@ status open
 
 \begin_layout Plain Layout
 (a)Velocity profile of ERF with zero electric field.(b)Velocity profile of
- ERF with electric field 
+ ERF in electrode gap with electric field 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Zhang2003"
@@ -2176,11 +2287,7 @@ However when the electric field is applied, the ERF fluid is no longer a
  (where y=0 is the middle of the gap) will present a laminar flow velocity
  profile.
  At some value of the electric field, the plug width h will be the same
- as 
-\begin_inset Formula $H$
-\end_inset
-
-.
+ as H.
  The flow will stop, due to the "fiber structure" of ERF and will behave
  as a rigid solid, since the shear stress is below the yield stress.
  
@@ -2188,15 +2295,7 @@ However when the electric field is applied, the ERF fluid is no longer a
 
 \begin_layout Standard
 The description of this special behavior is given by the following equations
- developed by Zhang et al.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Zhang2003"
-
-\end_inset
-
- :
+ developed by Zhang et al.:
 \end_layout
 
 \begin_layout Standard
@@ -2662,7 +2761,7 @@ Non-intrusive experimental method
 \begin_layout Subsection
 
 \size normal
- Particle Image Velocimetry
+Particle Image Velocimetry
 \size default
  (PIV)
 \end_layout
@@ -2670,7 +2769,7 @@ Non-intrusive experimental method
 \begin_layout Standard
 \noindent
 Particle image velocimetry (PIV) is a quantitative optical measurement technique
- that provides instantaneous two-dimensional velocity fields
+ that provides instantaneous two-dimensional velocity fields 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Traugott2015"
@@ -2678,12 +2777,12 @@ key "Traugott2015"
 \end_inset
 
 .
- Fluidic flow is recorded using a camera and analyses in computer software
+ Fluidic flow is recorded using a camera and analyzed in computer software
  to gain a movement field.
  The time gap between images is known, hence velocity field can be calculated.
- The method possessed many benefits; PIV is non intrusive method, A whole
- velocity filed is gained, additional calculation function are possible
- for specific cases due the computerize of the data.
+ The method possess many benefits; PIV is a non intrusive method, an entire
+ velocity filed is gained, additional function calculations are possible
+ for specific cases due the computerized data.
 \end_layout
 
 \begin_layout Standard
@@ -2695,15 +2794,17 @@ Particle Seeding
 
 \begin_layout Standard
 \noindent
-The visibility of liquid flow exist only if a contrast colors inside the
- fluid is present.
- Some liquids are compose of two different color, such as ER fluid that
- contain particles of different materials.
- If the flow isn't observable it is possible to add particles that are visible.
- That visible particle are the information that will be transfer and evaluated.
- Therefor these particle should been integrate inside the liquid as colloid
+The visibility of liquid flow exist only if contrasting colors inside the
+ fluid are present.
+ Some liquids display two different colors, such as ER fluid containing
+ particles of different materials.
+ If the flow isn't observable, it is possible to add particles that are
+ visible.
+ Those visible particles are carrying the information that will be transferred
+ and evaluated.
+ Therefore, these particle should been integrated inside the liquid as colloid
  particles and have the same dynamic properties as the studied fluid.
- this particles are called 
+ This particles are called 
 \shape italic
 Tracers
 \shape default
@@ -2712,11 +2813,12 @@ Tracers
 
 \begin_layout Standard
 \noindent
-proper tracer must be small enough to follow the fluid motion and should
- not alter the fluid or the flow properties, large enough to be visible
+A proper tracer must be small enough to follow the fluid motion and not
+ alter the fluid or the flow properties, but large enough to be visible
  by the camera.
- A homogeneous distribution of medium density, Uniform seeding, is desired
- for high quality PIV recordings in order to obtain optimal evaluation
+ A homogeneous distribution of the medium's density and uniform seeding,
+ is desired for high quality PIV recordings in order to obtain optimal evaluatio
+n
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Jahanmiri2011,Dabiri2006"
@@ -2724,8 +2826,8 @@ key "Jahanmiri2011,Dabiri2006"
 \end_inset
 
 .
- In 1888 The movement of the spherical particle carried by the viscosity
- liquid was described by Basset 
+ In 1888, the movement of spherical particles carried by a viscous liquid
+ was described by Basset 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Basset1888b,Basset1888c,Brennen2005"
@@ -2733,9 +2835,9 @@ key "Basset1888b,Basset1888c,Brennen2005"
 \end_inset
 
 .
- By observing from Basset equations the term expressing the drag force affecting
- the particle that moves in the flow field with velocity different from
- that of a liquid.
+ Implementing Basset equations, the term expressing the drag force affecting
+ a particle moving in the flow field with velocity different from that of
+ a liquid is calculated.
  
 \end_layout
 
@@ -2765,7 +2867,7 @@ Velocity lag of a particle in a continuously accelerating fluid
 
 \end_inset
 
-The particle velocity response to the fluid velocity if heavy particles
+The particle velocity response to the fluid velocity, for heavy particles
  (
 \begin_inset Formula $\rho_{p}\gg\rho_{f}$
 \end_inset
@@ -2835,20 +2937,16 @@ and where
 
 \begin_layout Standard
 Therefore, the smallest time scales of the fluid must be greater than the
- particle’s relaxation time, if the particle is to accurately represent
- the local fluid velocity.
+ particle’s relaxation time, for the particle to accurately represent the
+ local fluid velocity.
 \end_layout
 
 \begin_layout Standard
-Stock number is defined as the ratio of the particle relaxation time 
-\begin_inset Formula $t_{p}$
-\end_inset
-
- to the Kolmogorov time scale 
+It is possible to define the Kolmogorov time scale, 
 \begin_inset Formula $t_{K}$
 \end_inset
 
-, where Kolmogorov is the smallest fluid time scale
+, as the smallest time scale representing a fluid 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Jimenez2004,Kolmogorov1941"
@@ -2856,7 +2954,16 @@ key "Jimenez2004,Kolmogorov1941"
 \end_inset
 
 .
+ The Stock number is defined as the ratio of the particle relaxation time
  
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ to the Kolmogorov time scale 
+\begin_inset Formula $t_{K}$
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
@@ -2871,12 +2978,11 @@ St=\frac{t_{p}}{t_{K}}\label{eq:Stokes}
 \end_layout
 
 \begin_layout Standard
-When 
+When, 
 \begin_inset Formula $St\rightarrow0$
 \end_inset
 
- the particles behave like tracer.
- when 
+ the particles behaves like a tracer and when 
 \begin_inset Formula $St\rightarrow\infty$
 \end_inset
 
@@ -2898,16 +3004,18 @@ Florescent vs shadow-graphic
 \end_layout
 
 \begin_layout Standard
-When the fluid is lake of flow pattern the method of tracking is by seeding
- 
+Having particles that follow the fluid patterns, the contrast can be achieved
+ by different methods.
+ One method is the seeding of 
 \series bold
 florescent particles
 \series default
 .
- these particles emit light whenever high energy of are been absorbed.
- The energy source in that case is mainly laser.
- for most of PIV experiment it is essential to spread the laser to a plane
- sheet, this is to receive a two dimensional flow information.
+ These particles emit light whenever they absorb electromagnetic energy.
+ The energy source in this case is mainly a laser source.
+ For most of PIV experiments it is essential to spread the laser light into
+ a plane two dimensional light sheet as to receive two dimensional information
+ of the flow.
  
 \end_layout
 
