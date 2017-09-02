@@ -3014,17 +3014,17 @@ florescent particles
  These particles emit light whenever they absorb electromagnetic energy.
  The energy source in this case is mainly a laser source.
  For most of PIV experiments it is essential to spread the laser light into
- a plane two dimensional light sheet as to receive two dimensional information
+ a plane two dimensional light sheet as to receive larger are information
  of the flow.
  
 \end_layout
 
 \begin_layout Standard
-florescent seeding is not always necessary.
- for fluid such as ER fluid that consist of suspended particles in carrier
- fluid visibility can be obtain just from normal light source.
- by placing the a light source the tracers shadow it is observed, and the
- information of flow are transfer through the shadow particles, this is
+Florescent seeding is not always necessary.
+ For fluids such as ERF that consist of suspended particles in a carrier
+ fluid, the visibility can be obtain just by using a regular light source.
+ By illuminating the tracers, their shadow can be observed.
+ The information of the flow collected through the shadow particles, is
  called 
 \series bold
 shadow-graphic
@@ -3039,8 +3039,8 @@ Pattern Correlation
 \end_layout
 
 \begin_layout Standard
-Tracking the fluid movement through the tracers it is occur by obtain an
- pair of image and correlate the 
+Tracking the fluid movement through the tracers is done by obtaining a pair
+ of images and correlating the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3048,11 +3048,12 @@ pixels
 \begin_inset Quotes erd
 \end_inset
 
- moment.
- Initially the images divided to sub interrogation windows, then a correlation
- is applied on the pair of image and calculated the best fitting.
- each interrogation window movement is calculate and movement vector is
- produce, as shown in 
+ movement.
+ Initially, the images are divided into sub interrogation windows.
+ Then a correlation algorithm is applied on the pair of images and a best
+ fit is calculated.
+ Each interrogation window movement is calculated and a displacement vector
+ is produced, as shown in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:piv_frame-to-frame"

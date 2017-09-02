@@ -3011,19 +3011,20 @@ Having particles that follow the fluid patterns, the contrast can be achieved
 florescent particles
 \series default
 .
- These particles emit light whenever high energy of are been absorbed.
- The energy source in that case is mainly laser.
- for most of PIV experiment it is essential to spread the laser to a plane
- sheet, this is to receive a two dimensional flow information.
+ These particles emit light whenever they absorb electromagnetic energy.
+ The energy source in this case is mainly a laser source.
+ For most of PIV experiments it is essential to spread the laser light into
+ a plane two dimensional light sheet as to receive larger are information
+ of the flow.
  
 \end_layout
 
 \begin_layout Standard
-florescent seeding is not always necessary.
- for fluid such as ER fluid that consist of suspended particles in carrier
- fluid visibility can be obtain just from normal light source.
- by placing the a light source the tracers shadow it is observed, and the
- information of flow are transfer through the shadow particles, this is
+Florescent seeding is not always necessary.
+ For fluids such as ERF that consist of suspended particles in a carrier
+ fluid, the visibility can be obtain just by using a regular light source.
+ By illuminating the tracers, their shadow can be observed.
+ The information of the flow collected through the shadow particles, is
  called 
 \series bold
 shadow-graphic
