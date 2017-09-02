@@ -698,9 +698,19 @@ surface energy density
 \begin_inset Formula $\gamma$
 \end_inset
 
-) is the force (F) exerted on the interface measured along a line (L) whereas
- surface energy is the Energy (W) stored in the interface measured along
- an area (
+) is the force (
+\begin_inset Formula $F$
+\end_inset
+
+) exerted on the interface measured along a line (
+\begin_inset Formula $L$
+\end_inset
+
+) whereas surface energy is the Energy (
+\begin_inset Formula $W$
+\end_inset
+
+) stored in the interface measured along an area (
 \begin_inset Formula $\varDelta A)$
 \end_inset
 
@@ -1152,11 +1162,15 @@ entrance length
 y.
  Therefore, a standard is set to indicate when the flow can be considered
  fully developed.
- Shah and London [Shah, R.
- K., and London, A.
- L., Laminar Flow Forced Convection in Ducts, New York: Academic, 1978.] defined
- the entrance length as the point where the developing centerline velocity
- is 0.99 times the fully developed value.
+ Shah and London 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shah1978"
+
+\end_inset
+
+ defined the entrance length as the point where the developing centerline
+ velocity is 0.99 times the fully developed value.
 \end_layout
 
 \begin_layout Standard
@@ -1188,9 +1202,14 @@ where
 \begin_inset Formula $Re_{D_{h}}$
 \end_inset
 
- is the Reynolds number based on the hydraulic diameter[Fox, R.
- W., and McDonald, A.
- T., Introduction to Fluid Mechanics, New York: Wiley, 1999.].
+ is the Reynolds number based on the hydraulic diameter
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fox1999"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1199,7 +1218,14 @@ Due to the Reynolds number scaling, dimensionaly small systems generally
  with Reynolds number going to zero, the entrance length from the above
  function will trend to zero as well.
  this is not the actual seen behavior.
- therefore for low Reynolds numbers the function is [Shah and London]:
+ therefore for low Reynolds numbers the function is 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shah1978"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -1229,25 +1255,13 @@ key "Nguyen1970"
 \begin_layout Subsection
 
 \series bold
-Electrokinetic effect 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-missing
-\end_layout
-
-\end_inset
-
-
+Electrokinetic effect
 \end_layout
 
 \begin_layout Standard
 The Electrokinetic effect stands for a set of physical phenomena related
- to the motion and electrical response of liquids and particles on them.
- This effects allow the generation of fluid motion thru electrical filed
+ to the liquids and particles response to motion and electrical field.
+ This effects allow the generation of fluid motion through electrical filed
  application or generation of electric field as a consequence of fluid motion.
  In this review, the motion generation by electrokinetic effects will be
  discussed, namely: electrophoresis and electro-osmosis.
@@ -1298,9 +1312,10 @@ status open
 
 \begin_layout Plain Layout
 \noindent
-\align left
+\align center
 \begin_inset Graphics
 	filename figs/electric double layer.png
+	scale 70
 
 \end_inset
 
@@ -1396,12 +1411,27 @@ key "Nguyen1970"
 \end_layout
 
 \begin_layout Standard
-where z is the valence of each involved ion, F is Faraday’s constant, 
+where 
+\begin_inset Formula $z$
+\end_inset
+
+ is the valence of each involved ion, 
+\begin_inset Formula $F$
+\end_inset
+
+ is Faraday’s constant, 
 \begin_inset Formula $c_{\infty}$
 \end_inset
 
- is the concentration of ions far from the surface, k the Boltzman constant
- and T the temperature.
+ is the concentration of ions far from the surface, 
+\begin_inset Formula $k$
+\end_inset
+
+ the Boltzman constant and 
+\begin_inset Formula $T$
+\end_inset
+
+ the temperature.
 \end_layout
 
 \begin_layout Standard
@@ -1553,7 +1583,11 @@ reference "fig:electrophoretic"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q_{s}E_{el}=6\pi\eta u_{ep}r_{0}$
+\begin_inset Formula 
+\[
+q_{s}E_{el}=6\pi\eta u_{ep}r_{0}
+\]
+
 \end_inset
 
 
@@ -1578,7 +1612,11 @@ where
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q_{s}=\dfrac{\varepsilon_{0}\varepsilon_{r}\zeta}{\lambda_{D}}\left(1+\dfrac{r_{0}}{\lambda_{D}}\right)$
+\begin_inset Formula 
+\[
+q_{s}=\dfrac{\varepsilon_{0}\varepsilon_{r}\zeta}{\lambda_{D}}\left(1+\dfrac{r_{0}}{\lambda_{D}}\right)
+\]
+
 \end_inset
 
 
@@ -1713,21 +1751,50 @@ yield stress
 \series bold
 yield stress
 \series default
- is the applied stress at the onset of flow in a structured fluid.
+ is the applied stress at the onset of flow in a structured fluid 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-yield-stress"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename figs/Yield Strees 1.png
+	filename figs/Yield Stress.png
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Graphics
-	filename figs/Yield Strees 2.png
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The yield stress presented at a shear stress and shear rate chart
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-yield-stress"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1755,155 +1822,6 @@ where
 
  is the volume of particles i phase, and it is measured as a percentage
  of the total volume (including the solute and the particles).
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Paragraph
-Dielectric constant:
-\end_layout
-
-\begin_layout Plain Layout
-A quantity that defines the ability of a substance to store electrical energy
- in an applied electric field: 
-\begin_inset Formula 
-\begin{equation}
-{{\varepsilon}_{r}}(\omega)=\frac{\varepsilon(\omega)}{{{\varepsilon}_{0}}}=\varepsilon{{(\omega)}_{r,real}}+i\cdot\varepsilon{{(\omega)}_{r,imagenery}}
-\end{equation}
-
-\end_inset
-
-where ..
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-alex{
-\end_layout
-
-\end_inset
-
-define the terms in the equation
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-.
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-alex{
-\end_layout
-
-\end_inset
-
-we do not write terms using 
-\begin_inset Quotes eld
-\end_inset
-
-names
-\begin_inset Quotes erd
-\end_inset
-
-, but only subscripts and define them, i.e.
- instead of 
-\begin_inset Formula $()_{real}$
-\end_inset
-
- we use 
-\begin_inset Formula $\Re()$
-\end_inset
-
- and 
-\begin_inset Formula $\Im()$
-\end_inset
-
- and write 
-\begin_inset Formula $\Re(\omega)$
-\end_inset
-
- is a real part of a complex frequency - i actually do not understand what
- is written there ?.
- I suggest to read Klingenberg paper and adopt his notation
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Paragraph
-Shear strain rate:
-\end_layout
-
-\begin_layout Plain Layout
-describes the shearing deformation rate of change in time for two dimensional
- channel flow.
- 
-\begin_inset Formula 
-\begin{equation}
-\dot{\gamma}=\frac{u}{h}=\frac{\partial{u}}{\partial{y}}+\frac{\partial{v}}{\partial{x}}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $u$
-\end_inset
-
- is the velocity along the channel and 
-\begin_inset Formula $h$
-\end_inset
-
- is the channel height.
- 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- are the Cartesian coordinate axis.
- 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2247,7 +2165,7 @@ status open
 
 \begin_layout Plain Layout
 (a)Velocity profile of ERF with zero electric field.(b)Velocity profile of
- ERF in electrode gap with electric field 
+ ERF with electric field 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Zhang2003"
@@ -2287,7 +2205,11 @@ However when the electric field is applied, the ERF fluid is no longer a
  (where y=0 is the middle of the gap) will present a laminar flow velocity
  profile.
  At some value of the electric field, the plug width h will be the same
- as H.
+ as 
+\begin_inset Formula $H$
+\end_inset
+
+.
  The flow will stop, due to the "fiber structure" of ERF and will behave
  as a rigid solid, since the shear stress is below the yield stress.
  
@@ -2295,7 +2217,15 @@ However when the electric field is applied, the ERF fluid is no longer a
 
 \begin_layout Standard
 The description of this special behavior is given by the following equations
- developed by Zhang et al.:
+ developed by Zhang et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zhang2003"
+
+\end_inset
+
+ :
 \end_layout
 
 \begin_layout Standard
