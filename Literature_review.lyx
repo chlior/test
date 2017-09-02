@@ -2971,8 +2971,8 @@ Pattern Correlation
 \end_layout
 
 \begin_layout Standard
-Tracking the fluid movement through the tracers it is occur by obtain an
- pair of image and correlate the 
+Tracking the fluid movement through the tracers is done by obtaining a pair
+ of images and correlating the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2980,11 +2980,12 @@ pixels
 \begin_inset Quotes erd
 \end_inset
 
- moment.
- Initially the images divided to sub interrogation windows, then a correlation
- is applied on the pair of image and calculated the best fitting.
- each interrogation window movement is calculate and movement vector is
- produce, as shown in 
+ movement.
+ Initially, the images are divided into sub interrogation windows.
+ Then a correlation algorithm is applied on the pair of images and a best
+ fit is calculated.
+ Each interrogation window movement is calculated and a displacement vector
+ is produced, as shown in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:piv_frame-to-frame"
@@ -3190,13 +3191,13 @@ name "fig:piv_cross-correlation-map"
 \end_layout
 
 \begin_layout Standard
-Calculating the offset of the correlation peak from the center of the domain
- gives the average distance the particles in the interrogation window travelled
+Calculating the offset of the correlation peak from the center of the domain,
+ gives the average distance the particles in the interrogation window traveled
  between frames.
- In practise, correlations are calculated via fast Fourier transforms (FFT’s)
- for speed, and the correlation peak is fitted with a gaussian function,
+ In practice, correlations are calculated via fast Fourier transforms (FFT’s)
+ for speed, and the correlation peak is fitted with a Gaussian function,
  to improve the sub-pixel accuracy of the displacement estimation.
- Since its inception, cross-correlation PIV has seen improvements
+ Since its inception, cross-correlation PIV has seen many improvements
 \end_layout
 
 \begin_layout Subsection
