@@ -1837,17 +1837,14 @@ As indicated a solid-liquid or viscoplastic material has a yield stress
  that needs to be exceeded before deformation or flow can occur.
  Empirical relations have been proposed to account for the behavior of such
  materials, mainly the Bingham, Casson, and Herschel-Buckley equations.
- The simplest model is the two parameter model proposed by Bingham (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-add ref bingham, 1916; Bird et al., 1982
-\end_layout
+ The simplest model is the two parameter model proposed by Bingham 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bingham1916,Bird1983"
 
 \end_inset
 
-):
+ :
 \end_layout
 
 \begin_layout Standard
@@ -2459,7 +2456,14 @@ The main difference between the ERF and the GERF is that ER effect relies
 The basic difference between the dimensionless maximum electric susceptibility
  of a collection of permanent dipoles and a system of polarizable particles,
  is as follows.
- In general for a polarizable particle, the Clausius-Mossotti relation implies:
+ In general for a polarizable particle, the Clausius-Mossotti relation implies
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ashcroft1986"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -2491,7 +2495,14 @@ where
 \end_layout
 
 \begin_layout Standard
-In our case, the polarizability can be expressed as:
+In our case, the polarizability can be expressed as
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wen2008"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -2556,11 +2567,19 @@ where
 \begin_inset Formula $k_{B}$
 \end_inset
 
- is the Boltzmann constant, and T the temperature.
+ is the Boltzmann constant, and 
+\begin_inset Formula $T$
+\end_inset
+
+ the temperature.
 \end_layout
 
 \begin_layout Standard
-As a rough indication of the effect we can use T room temperature, 
+As a rough indication of the effect we can use 
+\begin_inset Formula $T$
+\end_inset
+
+ room temperature, 
 \begin_inset Formula $\mu_{0}$
 \end_inset
 
@@ -2577,7 +2596,14 @@ As a rough indication of the effect we can use T room temperature,
 \begin_inset Formula $\chi\thickapprox4-50$
 \end_inset
 
-, depending on the molecular volume [Wen 2008].
+, depending on the molecular volume 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wen2008"
+
+\end_inset
+
+.
  It can be seen at least an order of magnitude difference between the maximum
  values which are theoretically possible in the GERF relative to the ERF.
  
@@ -2772,31 +2798,7 @@ key "Basset1888b,Basset1888c,Brennen2005"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-==Im not sure if this si necceserry.
- it come from PPT fro PIV workshop==
-\end_layout
-
-\begin_layout Plain Layout
-particles respons time:
-\end_layout
-
-\begin_layout Plain Layout
-Velocity lag of a particle in a continuously accelerating fluid
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $V=U_{p}-U_{f}=d^{2}\frac{(\rho_{p}-\rho_{f})dU_{f}}{8\mu dt}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
+\noindent
 The particle velocity response to the fluid velocity, for heavy particles
  (
 \begin_inset Formula $\rho_{p}\gg\rho_{f}$
