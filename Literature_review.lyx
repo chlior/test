@@ -2761,7 +2761,7 @@ Non-intrusive experimental method
 \begin_layout Subsection
 
 \size normal
- Particle Image Velocimetry
+Particle Image Velocimetry
 \size default
  (PIV)
 \end_layout
@@ -2769,7 +2769,7 @@ Non-intrusive experimental method
 \begin_layout Standard
 \noindent
 Particle image velocimetry (PIV) is a quantitative optical measurement technique
- that provides instantaneous two-dimensional velocity fields
+ that provides instantaneous two-dimensional velocity fields 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Traugott2015"
@@ -2777,12 +2777,12 @@ key "Traugott2015"
 \end_inset
 
 .
- Fluidic flow is recorded using a camera and analyses in computer software
+ Fluidic flow is recorded using a camera and analyzed in computer software
  to gain a movement field.
  The time gap between images is known, hence velocity field can be calculated.
- The method possessed many benefits; PIV is non intrusive method, A whole
- velocity filed is gained, additional calculation function are possible
- for specific cases due the computerize of the data.
+ The method possess many benefits; PIV is a non intrusive method, an entire
+ velocity filed is gained, additional function calculations are possible
+ for specific cases due the computerized data.
 \end_layout
 
 \begin_layout Standard
@@ -2794,15 +2794,17 @@ Particle Seeding
 
 \begin_layout Standard
 \noindent
-The visibility of liquid flow exist only if a contrast colors inside the
- fluid is present.
- Some liquids are compose of two different color, such as ER fluid that
- contain particles of different materials.
- If the flow isn't observable it is possible to add particles that are visible.
- That visible particle are the information that will be transfer and evaluated.
- Therefor these particle should been integrate inside the liquid as colloid
+The visibility of liquid flow exist only if contrasting colors inside the
+ fluid are present.
+ Some liquids display two different colors, such as ER fluid containing
+ particles of different materials.
+ If the flow isn't observable, it is possible to add particles that are
+ visible.
+ Those visible particles are carrying the information that will be transferred
+ and evaluated.
+ Therefore, these particle should been integrated inside the liquid as colloid
  particles and have the same dynamic properties as the studied fluid.
- this particles are called 
+ This particles are called 
 \shape italic
 Tracers
 \shape default
@@ -2811,11 +2813,12 @@ Tracers
 
 \begin_layout Standard
 \noindent
-proper tracer must be small enough to follow the fluid motion and should
- not alter the fluid or the flow properties, large enough to be visible
+A proper tracer must be small enough to follow the fluid motion and not
+ alter the fluid or the flow properties, but large enough to be visible
  by the camera.
- A homogeneous distribution of medium density, Uniform seeding, is desired
- for high quality PIV recordings in order to obtain optimal evaluation
+ A homogeneous distribution of the medium's density and uniform seeding,
+ is desired for high quality PIV recordings in order to obtain optimal evaluatio
+n
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Jahanmiri2011,Dabiri2006"
@@ -2823,8 +2826,8 @@ key "Jahanmiri2011,Dabiri2006"
 \end_inset
 
 .
- In 1888 The movement of the spherical particle carried by the viscosity
- liquid was described by Basset 
+ In 1888, the movement of spherical particles carried by a viscous liquid
+ was described by Basset 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Basset1888b,Basset1888c,Brennen2005"
@@ -2832,9 +2835,9 @@ key "Basset1888b,Basset1888c,Brennen2005"
 \end_inset
 
 .
- By observing from Basset equations the term expressing the drag force affecting
- the particle that moves in the flow field with velocity different from
- that of a liquid.
+ Implementing Basset equations, the term expressing the drag force affecting
+ a particle moving in the flow field with velocity different from that of
+ a liquid is calculated.
  
 \end_layout
 
@@ -2864,7 +2867,7 @@ Velocity lag of a particle in a continuously accelerating fluid
 
 \end_inset
 
-The particle velocity response to the fluid velocity if heavy particles
+The particle velocity response to the fluid velocity, for heavy particles
  (
 \begin_inset Formula $\rho_{p}\gg\rho_{f}$
 \end_inset
@@ -2934,20 +2937,16 @@ and where
 
 \begin_layout Standard
 Therefore, the smallest time scales of the fluid must be greater than the
- particle’s relaxation time, if the particle is to accurately represent
- the local fluid velocity.
+ particle’s relaxation time, for the particle to accurately represent the
+ local fluid velocity.
 \end_layout
 
 \begin_layout Standard
-Stock number is defined as the ratio of the particle relaxation time 
-\begin_inset Formula $t_{p}$
-\end_inset
-
- to the Kolmogorov time scale 
+It is possible to define the Kolmogorov time scale, 
 \begin_inset Formula $t_{K}$
 \end_inset
 
-, where Kolmogorov is the smallest fluid time scale
+, as the smallest time scale representing a fluid 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Jimenez2004,Kolmogorov1941"
@@ -2955,7 +2954,16 @@ key "Jimenez2004,Kolmogorov1941"
 \end_inset
 
 .
+ The Stock number is defined as the ratio of the particle relaxation time
  
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ to the Kolmogorov time scale 
+\begin_inset Formula $t_{K}$
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
@@ -2970,12 +2978,11 @@ St=\frac{t_{p}}{t_{K}}\label{eq:Stokes}
 \end_layout
 
 \begin_layout Standard
-When 
+When, 
 \begin_inset Formula $St\rightarrow0$
 \end_inset
 
- the particles behave like tracer.
- when 
+ the particles behaves like a tracer and when 
 \begin_inset Formula $St\rightarrow\infty$
 \end_inset
 
@@ -2997,25 +3004,27 @@ Florescent vs shadow-graphic
 \end_layout
 
 \begin_layout Standard
-When the fluid is lake of flow pattern the method of tracking is by seeding
- 
+Having particles that follow the fluid patterns, the contrast can be achieved
+ by different methods.
+ One method is the seeding of 
 \series bold
 florescent particles
 \series default
 .
- these particles emit light whenever high energy of are been absorbed.
- The energy source in that case is mainly laser.
- for most of PIV experiment it is essential to spread the laser to a plane
- sheet, this is to receive a two dimensional flow information.
+ These particles emit light whenever they absorb electromagnetic energy.
+ The energy source in this case is mainly a laser source.
+ For most of PIV experiments it is essential to spread the laser light into
+ a plane two dimensional light sheet as to receive larger are information
+ of the flow.
  
 \end_layout
 
 \begin_layout Standard
-florescent seeding is not always necessary.
- for fluid such as ER fluid that consist of suspended particles in carrier
- fluid visibility can be obtain just from normal light source.
- by placing the a light source the tracers shadow it is observed, and the
- information of flow are transfer through the shadow particles, this is
+Florescent seeding is not always necessary.
+ For fluids such as ERF that consist of suspended particles in a carrier
+ fluid, the visibility can be obtain just by using a regular light source.
+ By illuminating the tracers, their shadow can be observed.
+ The information of the flow collected through the shadow particles, is
  called 
 \series bold
 shadow-graphic

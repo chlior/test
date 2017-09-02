@@ -1374,7 +1374,7 @@ reference "fig:EDL"
 \end_layout
 
 \begin_layout Standard
-Foe the above model, the Poisson-Boltzmann equation[
+For the above model, the Poisson-Boltzmann equation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Nguyen1970"
@@ -1430,15 +1430,14 @@ where
 \end_inset
 
  and 
-\begin_inset Formula $\lambda_{D}^{2}$
+\begin_inset Formula $\lambda_{D}$
 \end_inset
 
 is the electrolyte's Debye length.
 \end_layout
 
 \begin_layout Standard
-from which the potential decay at a distance from the wall can be calculated
- to be:
+The potential decay at a distance from the wall can be calculated to be:
 \end_layout
 
 \begin_layout Standard
@@ -1459,11 +1458,11 @@ ic effect can be calculated.
 \begin_inset Formula $u_{eof}$
 \end_inset
 
- is found to be, 
+ is found to be (known as the 
 \shape italic
 Helmholtz-Smoluchowski
 \shape default
- equation:
+ equation):
 \end_layout
 
 \begin_layout Standard
@@ -1474,7 +1473,7 @@ Helmholtz-Smoluchowski
 \end_layout
 
 \begin_layout Standard
-Where 
+where 
 \begin_inset Formula $\eta$
 \end_inset
 
@@ -1484,8 +1483,8 @@ Where
 
  is the electric field applied to the system.
  Assuming that the fluid velocity and potential gradients are zero at the
- edge of the EDL, (outside EDL the potential and velocity are constant)
- and on the wall the potential is equal to the zeta potential of the wall.
+ edge of the EDL (outside EDL the potential and velocity are constant) and
+ on the wall the potential is equal to the zeta potential of the wall.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1501,7 +1500,7 @@ Electrophoresis is similar to the electro-osmotic effect.
  the human gnome project.
  In this effect the particles get an EDL and the application of an electric
  field to the particles moving in the fluid will induce some drag.
- this drag needs to be considered in the model of the fluid flow.
+ This drag needs to be considered in the model of the fluid flow.
 \end_layout
 
 \begin_layout Standard
@@ -1550,7 +1549,7 @@ reference "fig:electrophoretic"
 \end_inset
 
 .
- the respective equation is:
+ The respective equation is:
 \end_layout
 
 \begin_layout Standard
@@ -1574,7 +1573,7 @@ where
 \end_inset
 
  is the surface charge of the particle.
- from this the relation between the surface charge (assuming a nonconducting
+ From this, the relation between the surface charge (assuming a nonconducting
  particle) and the zeta potential is:
 \end_layout
 
@@ -1587,7 +1586,7 @@ where
 
 \begin_layout Standard
 Due to the dimensions of the particles two limits are of interest.
- The first its where the Debye length is 
+ The first is where the Debye length is 
 \series bold
 large
 \series default
@@ -1600,40 +1599,18 @@ large
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{cases}
-u_{ep}=\dfrac{q_{s}E_{el}}{6\pi\eta r_{0}} & \textrm{used with molecules where the charge q_{s} is known}\\
-u_{ep}=\dfrac{2\varepsilon_{0}\varepsilon_{r}\zeta E_{el}}{3\eta},
-\end{cases}$
+\align left
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+u_{ep}=\dfrac{q_{s}E_{el}}{6\pi\eta r_{0}} & \textrm{used with molecules where the charge q_{s} is known.}\\
+u_{ep}=\dfrac{2\varepsilon_{0}\varepsilon_{r}\zeta E_{el}}{3\eta}, & \textrm{used for small particles where the zeta potential is available. Known as the H\ddot{u}ckel equation.}
+\end{cases}
+\end{equation}
+
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u_{ep}=\dfrac{q_{s}E_{el}}{6\pi\eta r_{0}}$
-\end_inset
-
- , used with molecules where the charge 
-\begin_inset Formula $q_{s}$
-\end_inset
-
- is known 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u_{ep}=\dfrac{2\varepsilon_{0}\varepsilon_{r}\zeta E_{el}}{3\eta}$
-\end_inset
-
- , used for small particles where the zeta potential is available.
- Known as the 
-\begin_inset Formula $H\ddot{u}ckel$
-\end_inset
-
- equation.
 \end_layout
 
 \begin_layout Standard
@@ -1642,7 +1619,11 @@ In the special case where the Debye Length is
 small
 \series default
  compared to particle radius the approximation becomes:
-\begin_inset Formula $u_{eof}=\dfrac{\varepsilon_{0}\varepsilon_{r}E_{el}\zeta}{\eta}$
+\begin_inset Formula 
+\begin{equation}
+u_{eof}=\dfrac{\varepsilon_{0}\varepsilon_{r}E_{el}\zeta}{\eta}
+\end{equation}
+
 \end_inset
 
 
@@ -1651,14 +1632,6 @@ small
 \begin_layout Standard
 which is similar to the electroosmosis case.
  
-\end_layout
-
-\begin_layout Standard
-============================
-\end_layout
-
-\begin_layout Standard
-***********************************
 \end_layout
 
 \begin_layout Section
@@ -2786,54 +2759,52 @@ Non-intrusive experimental method
 \end_layout
 
 \begin_layout Subsection
-PIV
+
+\size normal
+Particle Image Velocimetry
+\size default
+ (PIV)
 \end_layout
 
 \begin_layout Standard
 \noindent
 Particle image velocimetry (PIV) is a quantitative optical measurement technique
- that provides instantaneous two-dimensional velocity fields.
- (traugott2015)
-\end_layout
+ that provides instantaneous two-dimensional velocity fields 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Traugott2015"
 
-\begin_layout Standard
-Fluid flow is recorded using camera and analyses in software to gain a movement
- field.
+\end_inset
+
+.
+ Fluidic flow is recorded using a camera and analyzed in computer software
+ to gain a movement field.
  The time gap between images is known, hence velocity field can be calculated.
+ The method possess many benefits; PIV is a non intrusive method, an entire
+ velocity filed is gained, additional function calculations are possible
+ for specific cases due the computerized data.
 \end_layout
 
 \begin_layout Standard
-The method possessed many benefits, PIV is non intrusive method, A whole
- velocity filed is gained, additional calculation function are possible
- for specific cases due the computerize of the data.
-\end_layout
-
-\begin_layout Standard
+\noindent
 
 \series bold
 Particle Seeding
 \end_layout
 
 \begin_layout Standard
-Visually observation of liquid flow is possible only if a separated contrast
- particle are present.
- Some interrogated liquids are compose of two different color.
- such as ER fluid that contain particles of different materials.
- For some other particles that are not flow observable it is possible to
- add tracer particles that are visible.That visible particle are the information
- that been transfer.
- there for trace should have been integrate at the liquid as colloid particles
- and there for should have a respective diameter.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-need to be cited
-\end_layout
-
-\end_inset
-
- this particles called 
+\noindent
+The visibility of liquid flow exist only if contrasting colors inside the
+ fluid are present.
+ Some liquids display two different colors, such as ER fluid containing
+ particles of different materials.
+ If the flow isn't observable, it is possible to add particles that are
+ visible.
+ Those visible particles are carrying the information that will be transferred
+ and evaluated.
+ Therefore, these particle should been integrated inside the liquid as colloid
+ particles and have the same dynamic properties as the studied fluid.
+ This particles are called 
 \shape italic
 Tracers
 \shape default
@@ -2841,99 +2812,185 @@ Tracers
 \end_layout
 
 \begin_layout Standard
-proper tracer must be small enough to follow the fluid motion and should
- not alter the fluid or the flow properties, large enough to be visible
+\noindent
+A proper tracer must be small enough to follow the fluid motion and not
+ alter the fluid or the flow properties, but large enough to be visible
  by the camera.
+ A homogeneous distribution of the medium's density and uniform seeding,
+ is desired for high quality PIV recordings in order to obtain optimal evaluatio
+n
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jahanmiri2011,Dabiri2006"
+
+\end_inset
+
+.
+ In 1888, the movement of spherical particles carried by a viscous liquid
+ was described by Basset 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Basset1888b,Basset1888c,Brennen2005"
+
+\end_inset
+
+.
+ Implementing Basset equations, the term expressing the drag force affecting
+ a particle moving in the flow field with velocity different from that of
+ a liquid is calculated.
+ 
 \end_layout
 
 \begin_layout Standard
-Uniform seeding is critical to the success of obtaining velocity field.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+==Im not sure if this si necceserry.
+ it come from PPT fro PIV workshop==
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 particles respons time:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Velocity lag of a particle in a continuously accelerating fluid
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $V=U_{p}-U_{f}=d^{2}\frac{(\rho_{p}-\rho_{f})dU_{f}}{8\mu dt}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-The particle velocity response to the fluid velocity if heavy particles
- (p>> f ) in a continuously accelerating flow is:
+\end_inset
+
+The particle velocity response to the fluid velocity, for heavy particles
+ (
+\begin_inset Formula $\rho_{p}\gg\rho_{f}$
+\end_inset
+
+ ) in a continuously accelerating flow is 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dabiri2006,Novotny2012"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U_{p}(t)=U_{f}\left[1-exp\left(-\frac{t}{\tau_{p}}\right)\right]$
+\begin_inset Formula 
+\begin{equation}
+U_{p}(t)=U_{f}\left[1-exp\left(-\frac{t}{t_{p}}\right)\right]\label{eq: particle velocity response}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Particle response time:
+where 
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ particle relaxation time 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dabiri2006,Novotny2012,Stark2013"
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\tau_{p}=d_{p}^{2}\frac{\rho_{p}}{18\mu}$
+\begin_inset Formula 
+\begin{equation}
+t_{p}=d_{p}^{2}\frac{\rho_{p}}{18\mu}\label{eq:particle relaxation time}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Stock number is defined as the ratio of the particle response time to the
- Kolmogorov time scale, where Kolmogorov is the smallest fluid length scale.
+and where 
+\begin_inset Formula $ρ_{p}$
+\end_inset
+
+ is the particle density, 
+\begin_inset Formula $d_{p}$
+\end_inset
+
+ is the particle diameter, and 
+\begin_inset Formula $μ$
+\end_inset
+
+ is the fluid dynamic viscosity.
+\end_layout
+
+\begin_layout Standard
+Therefore, the smallest time scales of the fluid must be greater than the
+ particle’s relaxation time, for the particle to accurately represent the
+ local fluid velocity.
+\end_layout
+
+\begin_layout Standard
+It is possible to define the Kolmogorov time scale, 
+\begin_inset Formula $t_{K}$
+\end_inset
+
+, as the smallest time scale representing a fluid 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jimenez2004,Kolmogorov1941"
+
+\end_inset
+
+.
+ The Stock number is defined as the ratio of the particle relaxation time
  
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ to the Kolmogorov time scale 
+\begin_inset Formula $t_{K}$
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $St=\frac{\tau_{p}}{\tau_{k}}$
+\begin_inset Formula 
+\begin{equation}
+St=\frac{t_{p}}{t_{K}}\label{eq:Stokes}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-When 
+When, 
 \begin_inset Formula $St\rightarrow0$
 \end_inset
 
- the particles behave like tracer.
- when 
+ the particles behaves like a tracer and when 
 \begin_inset Formula $St\rightarrow\infty$
 \end_inset
 
  the particles behave like fluid.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-cite piv 4
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-formula cite dbiri2006
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dabiri2006,Novotny2012"
 
 \end_inset
 
@@ -2947,16 +3004,18 @@ Florescent vs shadow-graphic
 \end_layout
 
 \begin_layout Standard
-When the fluid is lake of flow pattern the method of tracking is by seeding
- 
+Having particles that follow the fluid patterns, the contrast can be achieved
+ by different methods.
+ One method is the seeding of 
 \series bold
 florescent particles
 \series default
 .
- these particles emit light whenever high energy of are been absorbed.
- The energy source in that case is mainly laser.
- for most of PIV experiment it is essential to spread the laser to a plane
- sheet, this is to receive a two dimensional flow information.
+ These particles emit light whenever they absorb electromagnetic energy.
+ The energy source in this case is mainly a laser source.
+ For most of PIV experiments it is essential to spread the laser light into
+ a plane two dimensional light sheet as to receive two dimensional information
+ of the flow.
  
 \end_layout
 
@@ -2971,16 +3030,6 @@ florescent seeding is not always necessary.
 shadow-graphic
 \series default
  PIV.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-need to be cited
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3000,19 +3049,207 @@ pixels
 \end_inset
 
  moment.
+ Initially the images divided to sub interrogation windows, then a correlation
+ is applied on the pair of image and calculated the best fitting.
+ each interrogation window movement is calculate and movement vector is
+ produce, as shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:piv_frame-to-frame"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-the correlation 
-\end_layout
-
-\begin_layout Standard
-(correlation: single pass multi pass, multi fft) 
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-cite matPIV tut
+\align center
+\begin_inset Graphics
+	filename figs/piv_frame-to-frame.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conceptual arrangement of frame-to-frame image sampling associated with
+ double frame/single exposure particle image velocimetry
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Raffel1998"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:piv_frame-to-frame"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+To generate the correlation map, the interrogation window (from the first
+ image) is shifted pixel by pixel over the search area (from the second
+ image), and a correlation coefficient is calculated for each (x,y) shift
+ according to the discrete formula
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stark2013,Sveen2004,Raffel1998"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R(x,y)=\stackrel[i=-K]{i=K}{\sum}\stackrel[i=-L]{i=L}{\sum}I(i,j)\cdot I^{\prime}(i+x,j+y)\label{eq:piv_correlation_function}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $I$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and 
+\begin_inset Formula $I^{\prime}$
+\end_inset
+
+ are the intensity values from the two frames, and 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are half the size of the interrogation window.
+ Variables 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are indices indicating the window offset.
+ By iterating 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ over the entire correlation domain a map is generated, as shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:piv_cross-correlation-map"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/piv_cross-correlation-map.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example cross-correlation map.
+ The distance between the peak and the center of the domain is the average
+ distance the particles within an interrogation window have traveled between
+ frames
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stark2013"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:piv_cross-correlation-map"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -3021,17 +3258,29 @@ cite matPIV tut
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R(x,y)=\stackrel[i=-K]{i=K}{\sum}\stackrel[i=-L]{i=L}{\sum}I(i,j)\cdot I^{\prime}(i+x,j+y)$
-\end_inset
-
-
+Calculating the offset of the correlation peak from the center of the domain
+ gives the average distance the particles in the interrogation window travelled
+ between frames.
+ In practise, correlations are calculated via fast Fourier transforms (FFT’s)
+ for speed, and the correlation peak is fitted with a gaussian function,
+ to improve the sub-pixel accuracy of the displacement estimation.
+ Since its inception, cross-correlation PIV has seen improvements
 \end_layout
 
 \begin_layout Subsection
-\begin_inset Formula $\mu$
+
+\size normal
+Microscopic Particle Image Velocimetry (microPIV)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jahanmiri2011"
+
 \end_inset
 
-PIV
+
 \end_layout
 
 \begin_layout Standard
@@ -3132,9 +3381,28 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Some caption for the figure.
- Don't forget adding label to the figure and later using the cross-reference
- to it.
+Schematic view of a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mpiv
+\end_layout
+
+\end_inset
+
+ system: laser light applied through a beam-splitter with an epi-fluorescent
+ filter (green light passes only in one direction)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Santiago1998"
+
+\end_inset
+
+.
  
 \begin_inset CommandInset label
 LatexCommand label
