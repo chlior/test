@@ -1245,12 +1245,12 @@ missing
 \end_layout
 
 \begin_layout Standard
-The Electrokinetic effect are a set of physical phenomena related to the
- motion and electrical response of liquids and particles on them.
- This effects allow the generation of motion thru electrical filed application
- or generation of electric field as a consequence of motion.
+The Electrokinetic effect stands for a set of physical phenomena related
+ to the motion and electrical response of liquids and particles on them.
+ This effects allow the generation of fluid motion thru electrical filed
+ application or generation of electric field as a consequence of fluid motion.
  In this review, the motion generation by electrokinetic effects will be
- discussed namey: electrophoresis and electro-osmosis.
+ discussed, namely: electrophoresis and electro-osmosis.
  The use of this effects is very suitable to move liquids and particles
  at small length scales, since this are surface force effects which naturally
  have very short ranges.
@@ -1262,17 +1262,17 @@ Electro-osmosis
 \end_layout
 
 \begin_layout Standard
-Electro-osmosis effects can be simplified by considering a liquid in contact
+Electro-osmosis effect can be explained by considering a liquid in contact
  with a planar wall.
  A polar liquid (water) brought into contact with a solid will generate
  an electric charge that accumulates at the solid's surface.
  Those charges cause the migration of liquid charges near the wall.
- the ions in the liquid are drawn to the surface forming a thin layer, the
- 
+ The ions in the liquid are drawn to the surface forming a thin layer of
+ ions paired to surface charges, the 
 \shape italic
 Stern layer
 \shape default
-, of ions paired to surface charges.
+.
  This layer in turn, originates a charge redistribution deeper into the
  fluid.
  An additional layer with charges of the same sign as in the Stern layer
@@ -1297,6 +1297,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 \begin_inset Graphics
 	filename figs/electric double layer.png
 
@@ -1309,7 +1311,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-EDL
+The electric double layer : (a) the Stern and the diffuse layers (b) the
+ EDL potential.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EDL"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1329,9 +1339,9 @@ In this EDL, the Stern layer cannot move due the closeness of the charges
 Gouy-Chapman
 \shape default
 ) layer is movable.
- The diffuse layer been charged can be moved by the application of an electric
- field.
- Therefore, the Stern - diffuse layers boundary is referred as the 
+ The diffuse layer, by been charged, can be moved by the application of
+ an electric field.
+ Therefore, the Stern-diffuse layer's boundary is referred as the 
 \shape italic
 shear surface
 \shape default
@@ -1352,136 +1362,277 @@ zeta potential
 \begin_inset Formula $\zeta$
 \end_inset
 
-) [Figure////].
- This situation is shown in Figure 2.16 and is typical of the charge distribution
-s observed in many microfluidic devices.
- Both glass [36] and polymer-based [39] microfluidic devices tend to have
- negatively charged or deprotonated surface chemistries, which means that
- the EDL is positively charged.
- After assuming a Boltzmann distribution of the charge in the EDL and the
- Poisson relationship: r2 = − E " (2.86) between the charge density E and
- the potential , and that the electrolyte is symmetric (e.g., Na+, Cl−), the
- governing equation for the potential is found to be the Poisson-Boltzmann
- equation: d2 dy2 = 2Fzc1 " sinh 
-\end_layout
+) [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EDL"
 
-\begin_layout Standard
-============================
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Because of the proximity of charges, the Stern layer is fixed in place while
- the diffuse layer can be moved.
- In particular, the diffuse layer has a net charge and can be moved with
- an electric field.
- Consequently, the boundary between the Stern layer and the diffuse layer
- is called the shear surface because of the relative motion across it.
- The potential at the wall is called the wall potential w and the potential
- at the shear plane is called the zeta potential .
- This situation is shown in Figure 2.16 and is typical of the charge distribution
-s observed in many microfluidic devices.
- Both glass [36] and polymer-based [39] microfluidic devices tend to have
- negatively charged or deprotonated surface chemistries, which means that
- the EDL is positively charged.
- After assuming a Boltzmann distribution of the charge in the EDL and the
- Poisson relationship: r2 = − E " (2.86) between the charge density E and
- the potential , and that the electrolyte is symmetric (e.g., Na+, Cl−), the
- governing equation for the potential is found to be the Poisson-Boltzmann
- equation: d2 dy2 = 2Fzc1 " sinh 
-\end_layout
-
-\begin_layout Standard
-zF KT 
-\end_layout
-
-\begin_layout Standard
-(2.87) where c1 is the concentration of ions far from the surface, z is the
- charge number (valence) of each ion, " = "r"0 is the dielectric constant,
- and F is Faraday’s constant.
- Faraday’s constant is equal to the charge of 1 mole of singly-ionized molecules
-—F = 9.65 × 104 C mol−1.
- This equation is clearly nonlinear and difficult to solve.
- However, the relative thickness of the EDL is usually small enough in micron-si
-zed systems, that the hyperbolic sine term can be replaced by the first
- term in its Taylor series—just its argument.
- This approximation is called the Debye-H¨uckel limit of thin EDLs, and
- it greatly simplifies (2.87) to: d2 dy2 = 
-\end_layout
-
-\begin_layout Standard
-2 D where2 D = s "KT 2z2F2c1 (2.88) where D is called the Debye length of
- the electrolyte.
- The solution to this ordinary differential equation is quite straightforward
- and found to be: = w exp 
-\end_layout
-
-\begin_layout Standard
-− y D 
-\end_layout
-
-\begin_layout Standard
-(2.89) Hence, the Debye length represents the decay distance for the potential
- as well as the electric field at low potentials.
-\end_layout
-
-\begin_layout Standard
-***********************************
-\end_layout
-
-\begin_layout Standard
-\noindent
-Any electrode surface immersed in an electrolyte solution induces the Electrokin
-etic effect.
- It take place at the interface between liquids and solids, such as glass,
- due to chemical interaction.
- The result is an electrically charged double layer that originates a charge
- distribution in a very thin layer of fluid close to the electrode surface
+].
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Zeta potential?, add reference
 \end_layout
 
-\end_inset
-
-.
- This double layer is similar to the one created at the surface of particles
- in liquid suspensions.
- The electrical properties of such a layer are important, since they significant
-ly affect the electrochemical parameters.
- Application of an electric field to this layer creates a body force capable
- of moving the fluid as if it were slipping over a wall surface.
- Generally, Slip boundary effect may exist in cases such as the one described
- before, where the large shear forces are applied at the wall interface.
- This Phenomenon of slip boundary occurs in any flow situation where the
- tangential fluid velocity component appears to be different from that of
- the solid surface immediately in contact with it
-\begin_inset space ~
-\end_inset
-
-
+\begin_layout Standard
+For the above model, the Poisson-Boltzmann equation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Nguyen1970"
 
 \end_inset
 
-.
- It is important to be aware that other effects, such the electroosmotic
- effect and the electrophoretic effect (charges around particles), occur
- at the small scale domain as well
-\begin_inset Note Note
+ can describe the potential:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{d^{2}\phi}{dy^{2}}=\dfrac{2Fzc_{\infty}}{\varepsilon_{0}\varepsilon_{r}}sinh(\dfrac{zF\phi}{kT})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where z is the valence of each involved ion, F is Faraday’s constant, 
+\begin_inset Formula $c_{\infty}$
+\end_inset
+
+ is the concentration of ions far from the surface, k the Boltzman constant
+ and T the temperature.
+\end_layout
+
+\begin_layout Standard
+For an EDL at the thin thickness limit this nonlinear equation can be approximat
+ed into the 
+\begin_inset Formula $Debye-H\ddot{u}ckel$
+\end_inset
+
+ equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{d^{2}\phi}{dy^{2}}=\dfrac{\phi}{\lambda_{D}^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\lambda_{D}^{2}=\sqrt{\dfrac{\varepsilon_{0}\varepsilon_{r}kT}{2z^{2}F^{2}c_{\infty}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{D}$
+\end_inset
+
+is the electrolyte's Debye length.
+\end_layout
+
+\begin_layout Standard
+The potential decay at a distance from the wall can be calculated to be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\phi_{w}\exp(-\dfrac{y}{\lambda_{D}})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By adding this potential to Navier-Stokes equation the flow of the electro-osmot
+ic effect can be calculated.
+ Therefore, the electro-osmosis component of the flow 
+\begin_inset Formula $u_{eof}$
+\end_inset
+
+ is found to be (known as the 
+\shape italic
+Helmholtz-Smoluchowski
+\shape default
+ equation):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{eof}=\dfrac{\varepsilon_{0}\varepsilon_{r}E_{el}\zeta}{\eta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the dynamic viscosity and 
+\begin_inset Formula $E_{el}$
+\end_inset
+
+ is the electric field applied to the system.
+ Assuming that the fluid velocity and potential gradients are zero at the
+ edge of the EDL (outside EDL the potential and velocity are constant) and
+ on the wall the potential is equal to the zeta potential of the wall.
+\end_layout
+
+\begin_layout Subsubsection
+Electrophoresis
+\end_layout
+
+\begin_layout Standard
+Electrophoresis is similar to the electro-osmotic effect.
+ The main difference is that in the electro-osmotic effect the charges are
+ near the walls while in Electrophoresis the effect occurs at the particles
+ and molecules surface.
+ This effect is well know and used among others in the research of DNA and
+ the human gnome project.
+ In this effect the particles get an EDL and the application of an electric
+ field to the particles moving in the fluid will induce some drag.
+ This drag needs to be considered in the model of the fluid flow.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-not clear what do you mean? the previous effect is different? not clear
+\begin_inset Graphics
+	filename figs/electroporetic.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+electrophoretic particle's charge distribution
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:electrophoretic"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The forces involved in a particle under the electrophoretic effect are shown
+ in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:electrophoretic"
+
+\end_inset
+
 .
+ The respective equation is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{s}E_{el}=6\pi\eta u_{ep}r_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $u_{ep}$
+\end_inset
+
+ is the electrophoretic particle velocity relative to the fluid, 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ is the particle radius and 
+\begin_inset Formula $q_{s}$
+\end_inset
+
+ is the surface charge of the particle.
+ From this, the relation between the surface charge (assuming a nonconducting
+ particle) and the zeta potential is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{s}=\dfrac{\varepsilon_{0}\varepsilon_{r}\zeta}{\lambda_{D}}\left(1+\dfrac{r_{0}}{\lambda_{D}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Due to the dimensions of the particles two limits are of interest.
+ The first is where the Debye length is 
+\series bold
+large
+\series default
+ relative to the particle radius.
+ In this case the expression for the electrophoretic velocity 
+\begin_inset Formula $u_{ep}$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+u_{ep}=\dfrac{q_{s}E_{el}}{6\pi\eta r_{0}} & \textrm{used with molecules where the charge q_{s} is known.}\\
+u_{ep}=\dfrac{2\varepsilon_{0}\varepsilon_{r}\zeta E_{el}}{3\eta}, & \textrm{used for small particles where the zeta potential is available.}\\
+ & \textrm{ Known as the H\ddot{u}ckel equation.}
+\end{cases}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the special case where the Debye Length is 
+\series bold
+small
+\series default
+ compared to particle radius the approximation becomes:
+\begin_inset Formula 
+\begin{equation}
+u_{eof}=\dfrac{\varepsilon_{0}\varepsilon_{r}E_{el}\zeta}{\eta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is similar to the electroosmosis case.
+ 
 \end_layout
 
 \begin_layout Section
@@ -2609,50 +2760,54 @@ Non-intrusive experimental method
 \end_layout
 
 \begin_layout Subsection
-
-\size normal
- Particle Image Velocimetry
-\size default
- (PIV)
+PIV
 \end_layout
 
 \begin_layout Standard
 \noindent
 Particle image velocimetry (PIV) is a quantitative optical measurement technique
- that provides instantaneous two-dimensional velocity fields
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Traugott2015"
+ that provides instantaneous two-dimensional velocity fields.
+ (traugott2015)
+\end_layout
 
-\end_inset
-
-.
- Fluidic flow is recorded using a camera and analyses in computer software
- to gain a movement field.
+\begin_layout Standard
+Fluid flow is recorded using camera and analyses in software to gain a movement
+ field.
  The time gap between images is known, hence velocity field can be calculated.
- The method possessed many benefits; PIV is non intrusive method, A whole
+\end_layout
+
+\begin_layout Standard
+The method possessed many benefits, PIV is non intrusive method, A whole
  velocity filed is gained, additional calculation function are possible
  for specific cases due the computerize of the data.
 \end_layout
 
 \begin_layout Standard
-\noindent
 
 \series bold
 Particle Seeding
 \end_layout
 
 \begin_layout Standard
-\noindent
-The visibility of liquid flow exist only if a contrast colors inside the
- fluid is present.
- Some liquids are compose of two different color, such as ER fluid that
- contain particles of different materials.
- If the flow isn't observable it is possible to add particles that are visible.
- That visible particle are the information that will be transfer and evaluated.
- Therefor these particle should been integrate inside the liquid as colloid
- particles and have the same dynamic properties as the studied fluid.
- this particles are called 
+Visually observation of liquid flow is possible only if a separated contrast
+ particle are present.
+ Some interrogated liquids are compose of two different color.
+ such as ER fluid that contain particles of different materials.
+ For some other particles that are not flow observable it is possible to
+ add tracer particles that are visible.That visible particle are the information
+ that been transfer.
+ there for trace should have been integrate at the liquid as colloid particles
+ and there for should have a respective diameter.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+need to be cited
+\end_layout
+
+\end_inset
+
+ this particles called 
 \shape italic
 Tracers
 \shape default
@@ -2660,160 +2815,61 @@ Tracers
 \end_layout
 
 \begin_layout Standard
-\noindent
 proper tracer must be small enough to follow the fluid motion and should
  not alter the fluid or the flow properties, large enough to be visible
  by the camera.
- A homogeneous distribution of medium density, Uniform seeding, is desired
- for high quality PIV recordings in order to obtain optimal evaluation
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Jahanmiri2011"
-
-\end_inset
-
-.
- In 1888 The movement of the spherical particle carried by the viscosity
- liquid was described by Basset 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Basset1888b,Basset1888c,Brennen2005"
-
-\end_inset
-
-.
- By observing from Basset equations the term expressing the drag force affecting
- the particle that moves in the flow field with velocity different from
- that of a liquid.
- 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-==Im not sure if this si necceserry.
- it come from PPT fro PIV workshop==
+Uniform seeding is critical to the success of obtaining velocity field.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 particles respons time:
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Velocity lag of a particle in a continuously accelerating fluid
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Formula $V=U_{p}-U_{f}=d^{2}\frac{(\rho_{p}-\rho_{f})dU_{f}}{8\mu dt}$
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
+\begin_layout Standard
 The particle velocity response to the fluid velocity if heavy particles
- (
-\begin_inset Formula $\rho_{p}\gg\rho_{f}$
-\end_inset
-
- ) in a continuously accelerating flow is 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Dabiri2006,Novotny2012"
-
-\end_inset
-
-:
+ (p>> f ) in a continuously accelerating flow is:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{p}(t)=U_{f}\left[1-exp\left(-\frac{t}{t_{p}}\right)\right]\label{eq: particle velocity response}
-\end{equation}
-
+\begin_inset Formula $U_{p}(t)=U_{f}\left[1-exp\left(-\frac{t}{\tau_{p}}\right)\right]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-where 
-\begin_inset Formula $t_{p}$
-\end_inset
-
- particle relaxation time 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Dabiri2006,Novotny2012,Stark2013"
-
-\end_inset
-
-: 
+Particle response time:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-t_{p}=d_{p}^{2}\frac{\rho_{p}}{18\mu}\label{eq:particle relaxation time}
-\end{equation}
-
+\begin_inset Formula $\tau_{p}=d_{p}^{2}\frac{\rho_{p}}{18\mu}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-and where 
-\begin_inset Formula $ρ_{p}$
-\end_inset
-
- is the particle density, 
-\begin_inset Formula $d_{p}$
-\end_inset
-
- is the particle diameter, and 
-\begin_inset Formula $μ$
-\end_inset
-
- is the fluid dynamic viscosity.
-\end_layout
-
-\begin_layout Standard
-Therefore, the smallest time scales of the fluid must be greater than the
- particle’s relaxation time, if the particle is to accurately represent
- the local fluid velocity.
-\end_layout
-
-\begin_layout Standard
-Stock number is defined as the ratio of the particle relaxation time 
-\begin_inset Formula $t_{p}$
-\end_inset
-
- to the Kolmogorov time scale 
-\begin_inset Formula $t_{K}$
-\end_inset
-
-, where Kolmogorov is the smallest fluid time scale
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Jimenez2004,Kolmogorov1941"
-
-\end_inset
-
-.
+Stock number is defined as the ratio of the particle response time to the
+ Kolmogorov time scale, where Kolmogorov is the smallest fluid length scale.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-St=\frac{t_{p}}{t_{K}}\label{eq:Stokes}
-\end{equation}
-
+\begin_inset Formula $St=\frac{\tau_{p}}{\tau_{k}}$
 \end_inset
 
 
@@ -2830,10 +2886,28 @@ When
 \end_inset
 
  the particles behave like fluid.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Dabiri2006,Novotny2012"
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cite piv 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+formula cite dbiri2006
+\end_layout
 
 \end_inset
 
@@ -2871,6 +2945,16 @@ florescent seeding is not always necessary.
 shadow-graphic
 \series default
  PIV.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+need to be cited
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2890,207 +2974,19 @@ pixels
 \end_inset
 
  moment.
- Initially the images divided to sub interrogation windows, then a correlation
- is applied on the pair of image and calculated the best fitting.
- each interrogation window movement is calculate and movement vector is
- produce, as shown in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:piv_frame-to-frame"
-
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+the correlation 
+\end_layout
+
+\begin_layout Standard
+(correlation: single pass multi pass, multi fft) 
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figs/piv_frame-to-frame.PNG
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Conceptual arrangement of frame-to-frame image sampling associated with
- double frame/single exposure particle image velocimetry
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Raffel1998"
-
-\end_inset
-
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:piv_frame-to-frame"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-To generate the correlation map, the interrogation window (from the first
- image) is shifted pixel by pixel over the search area (from the second
- image), and a correlation coefficient is calculated for each (x,y) shift
- according to the discrete formula
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Stark2013,Sveen2004,Raffel1998"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-R(x,y)=\stackrel[i=-K]{i=K}{\sum}\stackrel[i=-L]{i=L}{\sum}I(i,j)\cdot I^{\prime}(i+x,j+y)\label{eq:piv_correlation_function}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $I$
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- and 
-\begin_inset Formula $I^{\prime}$
-\end_inset
-
- are the intensity values from the two frames, and 
-\begin_inset Formula $K$
-\end_inset
-
- and 
-\begin_inset Formula $L$
-\end_inset
-
- are half the size of the interrogation window.
- Variables 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- are indices indicating the window offset.
- By iterating 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- over the entire correlation domain a map is generated, as shown in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:piv_cross-correlation-map"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figs/piv_cross-correlation-map.PNG
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Example cross-correlation map.
- The distance between the peak and the center of the domain is the average
- distance the particles within an interrogation window have traveled between
- frames
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Stark2013"
-
-\end_inset
-
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:piv_cross-correlation-map"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
+cite matPIV tut
 \end_layout
 
 \end_inset
@@ -3099,29 +2995,17 @@ name "fig:piv_cross-correlation-map"
 \end_layout
 
 \begin_layout Standard
-Calculating the offset of the correlation peak from the center of the domain
- gives the average distance the particles in the interrogation window travelled
- between frames.
- In practise, correlations are calculated via fast Fourier transforms (FFT’s)
- for speed, and the correlation peak is fitted with a gaussian function,
- to improve the sub-pixel accuracy of the displacement estimation.
- Since its inception, cross-correlation PIV has seen improvements
+\begin_inset Formula $R(x,y)=\stackrel[i=-K]{i=K}{\sum}\stackrel[i=-L]{i=L}{\sum}I(i,j)\cdot I^{\prime}(i+x,j+y)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-
-\size normal
-Microscopic Particle Image Velocimetry (microPIV)
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Jahanmiri2011"
-
+\begin_inset Formula $\mu$
 \end_inset
 
-
+PIV
 \end_layout
 
 \begin_layout Standard
@@ -3222,28 +3106,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Schematic view of a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mpiv
-\end_layout
-
-\end_inset
-
- system: laser light applied through a beam-splitter with an epi-fluorescent
- filter (green light passes only in one direction)
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Santiago1998"
-
-\end_inset
-
-.
+Some caption for the figure.
+ Don't forget adding label to the figure and later using the cross-reference
+ to it.
  
 \begin_inset CommandInset label
 LatexCommand label
